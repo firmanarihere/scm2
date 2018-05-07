@@ -12,6 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import v.home;
 import v.menu;
+import v.tokoPenjualanProduk;
 
 /**
  *
@@ -20,10 +21,12 @@ import v.menu;
 public class c_home {
 
     private home vHome;
+    private tokoPenjualanProduk vToko;
     private String username;
 
     public c_home(String username) {
         vHome = new home();
+        vToko = new tokoPenjualanProduk();
         this.username = username;
         vHome.getBtnGudang().addActionListener(new gudangAction());
         vHome.getBtnKoperasi().addActionListener(new koperasiAction());
@@ -33,7 +36,7 @@ public class c_home {
         vHome.getBtnToko().addActionListener(new tokoAction());
         vHome.getBtnRuProduksi().addActionListener(new ruProduksiAction());
         vHome.getBtnLogOut().addActionListener(new logOutAction());
-        
+
         vHome.getLabelUsername().setText(this.username);
         vHome.setVisible(true);
     }
@@ -62,9 +65,16 @@ public class c_home {
 
     private class tokoAction implements ActionListener {
 
+        private c_toko toko;
+
+        public tokoAction() {
+            toko = new c_toko(vHome);
+            toko.getView().setVisible(false);
+        }
+
         @Override
         public void actionPerformed(ActionEvent e) {
-            new c_toko(vHome);
+            toko.getView().setVisible(true);
             vHome.setVisible(false);
         }
 
@@ -97,6 +107,4 @@ public class c_home {
         }
     }
 
-    
-    
 }

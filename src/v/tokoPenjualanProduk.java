@@ -26,8 +26,8 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         return btnKembali;
     }
 
-    public JButton getBtnUpgrade() {
-        return btnUpgrade;
+    public JButton getBtnMulaiJual() {
+        return btnMulaiJual;
     }
 
     public JLabel getItem1Value() {
@@ -52,7 +52,7 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         item2Value = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         item1Value = new javax.swing.JLabel();
-        btnUpgrade = new javax.swing.JButton();
+        btnMulaiJual = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -74,9 +74,9 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         item1Value.setText("Koin");
         getContentPane().add(item1Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 30, 70, 40));
 
-        btnUpgrade.setText("UPGRADE");
-        btnUpgrade.setFocusable(false);
-        getContentPane().add(btnUpgrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, -1, 60));
+        btnMulaiJual.setText("MULAI JUAL");
+        btnMulaiJual.setFocusable(false);
+        getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 120, 60));
 
         btnKembali.setText("KEMBALI");
         btnKembali.setFocusable(false);
@@ -122,7 +122,7 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnKembali;
-    private javax.swing.JButton btnUpgrade;
+    private javax.swing.JButton btnMulaiJual;
     private javax.swing.JLabel item1Value;
     private javax.swing.JLabel item2Value;
     private javax.swing.JLabel jLabel2;

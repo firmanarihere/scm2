@@ -56,6 +56,7 @@ public class c_menu {
                 JOptionPane.showMessageDialog(vLoad, "Pilih dahulu");
             } else {
                 new c_home(vLoad.getIdTabel());
+                vLoad.setVisible(false);
             }
         }
     }

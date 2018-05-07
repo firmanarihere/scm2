@@ -70,14 +70,14 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="btnUpgrade">
+    <Component class="javax.swing.JButton" name="btnMulaiJual">
       <Properties>
-        <Property name="text" type="java.lang.String" value="UPGRADE"/>
+        <Property name="text" type="java.lang.String" value="MULAI JUAL"/>
         <Property name="focusable" type="boolean" value="false"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="140" y="40" width="-1" height="60"/>
+          <AbsoluteConstraints x="140" y="40" width="120" height="60"/>
         </Constraint>
       </Constraints>
     </Component>
