@@ -32,7 +32,6 @@ public class c_home {
         vHome.getBtnSawah3().addActionListener(new sawahAction());
         vHome.getBtnToko().addActionListener(new tokoAction());
         vHome.getBtnRuProduksi().addActionListener(new ruProduksiAction());
-        vHome.getBtnDistribusi().addActionListener(new distribusiAction());
         vHome.getBtnLogOut().addActionListener(new logOutAction());
         
         vHome.getLabelUsername().setText(this.username);
@@ -50,16 +49,6 @@ public class c_home {
                 Logger.getLogger(c_home.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-    }
-
-    private class distribusiAction implements ActionListener {
-
-        @Override
-        public void actionPerformed(ActionEvent e) {
-            new c_distribusi(vHome);
-            vHome.setVisible(false);
-        }
-
     }
 
     private class ruProduksiAction implements ActionListener {
