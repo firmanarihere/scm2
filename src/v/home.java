@@ -85,6 +85,7 @@ public class home extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
         labelUsername = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
@@ -142,6 +143,9 @@ public class home extends javax.swing.JFrame {
         labelUsername.setText("username");
         getContentPane().add(labelUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 120, 30));
 
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mapKosong.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -193,6 +197,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel labelUsername;
     // End of variables declaration//GEN-END:variables
 }
