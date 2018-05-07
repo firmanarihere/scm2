@@ -26,7 +26,8 @@ public class c_toko {
     private int marningA = 5;
     private int marningB = 10;
     private int marningC = 3;
-    private int timeC = 0;
+    private int koin = 100;
+    private int timeC ;
     private time jualThread;
     private Random random = new Random();
 

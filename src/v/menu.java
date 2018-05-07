@@ -53,10 +53,6 @@ public class menu extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this, pesan);
     }
 
-    public int tampilYesNo(String pesan) {
-        return JOptionPane.showConfirmDialog(this, pesan, null, JOptionPane.YES_NO_OPTION);
-    }
-
     public JFrame getUsernameFrame() {
         return usernameFrame;
     }

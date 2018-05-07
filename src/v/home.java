@@ -22,10 +22,6 @@ public class home extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     }
 
-    public JButton getBtnDistribusi() {
-        return btnDistribusi;
-    }
-
     public JButton getBtnGudang() {
         return btnGudang;
     }
@@ -76,7 +72,6 @@ public class home extends javax.swing.JFrame {
         btnToko = new javax.swing.JButton();
         btnSawah2 = new javax.swing.JButton();
         btnKoperasi = new javax.swing.JButton();
-        btnDistribusi = new javax.swing.JButton();
         btnSawah1 = new javax.swing.JButton();
         btnGudang = new javax.swing.JButton();
         btnRuProduksi = new javax.swing.JButton();
@@ -106,10 +101,6 @@ public class home extends javax.swing.JFrame {
         btnKoperasi.setText("Koperasi");
         btnKoperasi.setFocusable(false);
         getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 490, 140, 160));
-
-        btnDistribusi.setText("Disribusi");
-        btnDistribusi.setFocusable(false);
-        getContentPane().add(btnDistribusi, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 190, 100, 80));
 
         btnSawah1.setText("sawah 1");
         btnSawah1.setFocusable(false);
@@ -185,7 +176,6 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnDistribusi;
     private javax.swing.JButton btnGudang;
     private javax.swing.JButton btnKoperasi;
     private javax.swing.JButton btnLogOut;
