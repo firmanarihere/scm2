@@ -39,7 +39,6 @@ public class c_toko {
 
         jualThread = new time();
         jualThread.start();
-        vToko.setVisible(true);
     }
 
     private class mulaiJualAction implements ActionListener {
