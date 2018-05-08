@@ -38,13 +38,7 @@ public class home extends javax.swing.JFrame {
         return btnSawah1;
     }
 
-    public JButton getBtnSawah2() {
-        return btnSawah2;
-    }
-
-    public JButton getBtnSawah3() {
-        return btnSawah3;
-    }
+    
 
     public JButton getBtnToko() {
         return btnToko;
@@ -68,9 +62,7 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnSawah3 = new javax.swing.JButton();
         btnToko = new javax.swing.JButton();
-        btnSawah2 = new javax.swing.JButton();
         btnKoperasi = new javax.swing.JButton();
         btnSawah1 = new javax.swing.JButton();
         btnGudang = new javax.swing.JButton();
@@ -86,33 +78,25 @@ public class home extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnSawah3.setText("sawah 3");
-        btnSawah3.setFocusable(false);
-        getContentPane().add(btnSawah3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 110, 100));
-
         btnToko.setText("Toko");
         btnToko.setFocusable(false);
         getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 230, 120, 130));
 
-        btnSawah2.setText("sawah 2");
-        btnSawah2.setFocusable(false);
-        getContentPane().add(btnSawah2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 110, 100));
-
         btnKoperasi.setText("Koperasi");
         btnKoperasi.setFocusable(false);
-        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 490, 140, 160));
+        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 540, 140, 160));
 
         btnSawah1.setText("sawah 1");
         btnSawah1.setFocusable(false);
-        getContentPane().add(btnSawah1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, 110, 100));
+        getContentPane().add(btnSawah1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 110, 100));
 
         btnGudang.setText("Gudang");
         btnGudang.setFocusable(false);
-        getContentPane().add(btnGudang, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 310, 170, 150));
+        getContentPane().add(btnGudang, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 170, 150));
 
         btnRuProduksi.setText("Rumah Produksi");
         btnRuProduksi.setFocusable(false);
-        getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 460, 190, 160));
+        getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 210, 190, 160));
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
         jLabel1.setText("Jagung");
@@ -127,7 +111,7 @@ public class home extends javax.swing.JFrame {
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 10, 110, 30));
 
         btnLogOut.setText("Logout");
-        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 70, 40));
+        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 70, 40));
 
         labelUsername.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
         labelUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -181,8 +165,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JButton btnLogOut;
     private javax.swing.JButton btnRuProduksi;
     private javax.swing.JButton btnSawah1;
-    private javax.swing.JButton btnSawah2;
-    private javax.swing.JButton btnSawah3;
     private javax.swing.JButton btnToko;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
