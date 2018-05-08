@@ -64,7 +64,7 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         item2Value.setText("Marning");
         getContentPane().add(item2Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 70, 40));
 
-        jLabel2.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("TOKO");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 130, 60));

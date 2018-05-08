@@ -79,7 +79,7 @@ public class c_toko {
                     timeC += 1;
                     if (jual) {
                         if (marningA > 0) {
-                            if (random.nextInt(2) == 1) {
+                            if (random.nextInt(3) == 1) {
                                 marningA -= 1;
                             }
                         }
