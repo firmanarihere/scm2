@@ -7,6 +7,8 @@ package c;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import v.home;
 import v.sawah;
 
@@ -34,6 +36,24 @@ public class c_sawah {
             vHome.setVisible(true);
         }
         
+    }
+    private class time extends Thread {
+
+        @Override
+        public void run() {
+            while (true) {
+                try {
+                    Thread.sleep(1000);
+                    
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(c_toko.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+
+    public sawah getView() {
+        return vSawah;
     }
 
 }

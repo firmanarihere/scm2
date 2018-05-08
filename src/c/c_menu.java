@@ -120,7 +120,7 @@ public class c_menu {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (vMenu.tampilYesNo("Yakin keluar game ?") == JOptionPane.YES_OPTION) {
+            if (JOptionPane.showConfirmDialog(vMenu, "Yakin Keluar Game..???",null,JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
                 System.exit(0);
             }
         }
