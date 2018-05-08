@@ -22,14 +22,10 @@ public class home extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     }
 
-
-    public JButton getBtnDistribusi() {
-        return btnGudang;
-    }
     public JButton getBtnGudang() {
         return btnGudang;
     }
-    
+
     public JButton getBtnKoperasi() {
         return btnKoperasi;
     }
@@ -39,16 +35,22 @@ public class home extends javax.swing.JFrame {
     }
 
     public JButton getBtnSawah1() {
-        return btnSawah;
+        return btnSawah1;
     }
 
-
+    
 
     public JButton getBtnToko() {
         return btnToko;
     }
 
+    public JButton getBtnLogOut() {
+        return btnLogOut;
+    }
 
+    public JLabel getLabelUsername() {
+        return labelUsername;
+    }
     
 
     /**
@@ -60,53 +62,23 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        btnSawah = new javax.swing.JButton();
-        btnToko = new javax.swing.JButton();
-        btnKoperasi = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
-
         btnToko = new javax.swing.JButton();
         btnKoperasi = new javax.swing.JButton();
         btnSawah1 = new javax.swing.JButton();
         btnGudang = new javax.swing.JButton();
-        jLabel6 = new javax.swing.JLabel();
         btnRuProduksi = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        btnLogOut = new javax.swing.JButton();
+        labelUsername = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jagung.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 23, 50, 80));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/uang.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, -1, -1));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/marning.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 20, -1, -1));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/scorebar.png"))); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, -1, -1));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/rumah.png"))); // NOI18N
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 290, -1, -1));
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pohongajelas.png"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, -1));
-
-        btnSawah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/sawah.png"))); // NOI18N
-        btnSawah.setBorderPainted(false);
-        btnSawah.setContentAreaFilled(false);
-        btnSawah.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/sawahHover.png"))); // NOI18N
-        getContentPane().add(btnSawah, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));btnToko.setText("Toko");
+        btnToko.setText("Toko");
         btnToko.setFocusable(false);
         getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 230, 120, 130));
 
@@ -126,43 +98,25 @@ public class home extends javax.swing.JFrame {
         btnRuProduksi.setFocusable(false);
         getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 210, 190, 160));
 
-        btnToko.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/toko.png"))); // NOI18N
-        btnToko.setBorderPainted(false);
-        btnToko.setContentAreaFilled(false);
-        btnToko.setFocusable(false);
-        btnToko.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tokoHover.png"))); // NOI18N
-        getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 60, 310, 240));
+        jLabel1.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        jLabel1.setText("Jagung");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 110, 30));
 
-        btnKoperasi.setBackground(new java.awt.Color(254, 254, 254));
-        btnKoperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/koperasi.png"))); // NOI18N
-        btnKoperasi.setText("\n");
-        btnKoperasi.setBorderPainted(false);
-        btnKoperasi.setContentAreaFilled(false);
-        btnKoperasi.setFocusable(false);
-        btnKoperasi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/koperasiHover.png"))); // NOI18N
-        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 300, 300));
+        jLabel2.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        jLabel2.setText("Koin");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(954, 10, 110, 30));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pohongajelas.png"))); // NOI18N
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 540, -1, -1));
+        jLabel3.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        jLabel3.setText("Marning");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 10, 110, 30));
 
-        btnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudang.png"))); // NOI18N
-        btnGudang.setBorderPainted(false);
-        btnGudang.setContentAreaFilled(false);
-        btnGudang.setFocusable(false);
-        btnGudang.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangHover.png"))); // NOI18N
-        getContentPane().add(btnGudang, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 290, 350, 290));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pohon cemara.png"))); // NOI18N
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, -1, -1));
         btnLogOut.setText("Logout");
         getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 70, 40));
 
-        btnRuProduksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik.png"))); // NOI18N
-        btnRuProduksi.setBorderPainted(false);
-        btnRuProduksi.setContentAreaFilled(false);
-        btnRuProduksi.setFocusable(false);
-        btnRuProduksi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrikHover.png"))); // NOI18N
-        getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 120, 330, 270));
+        labelUsername.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        labelUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelUsername.setText("username");
+        getContentPane().add(labelUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 120, 30));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mapKosong.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -208,18 +162,14 @@ public class home extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGudang;
     private javax.swing.JButton btnKoperasi;
+    private javax.swing.JButton btnLogOut;
     private javax.swing.JButton btnRuProduksi;
-    private javax.swing.JButton btnSawah;
     private javax.swing.JButton btnSawah1;
     private javax.swing.JButton btnToko;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel labelUsername;
     // End of variables declaration//GEN-END:variables
 }
