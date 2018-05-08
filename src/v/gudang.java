@@ -23,65 +23,9 @@ public class gudang extends javax.swing.JFrame {
     }
 
     public JButton getBtnKembali() {
-        return btnKembali;
+        return btnClose;
     }
 
-    public JButton getBtnNext() {
-        return btnNext;
-    }
-
-    public JButton getBtnPrevious() {
-        return btnPrevious;
-    }
-
-    public JLabel getItem1() {
-        return item1;
-    }
-
-    public JLabel getItem1Value() {
-        return item1Value;
-    }
-
-    public JLabel getItem2() {
-        return item2;
-    }
-
-    public JLabel getItem2Value() {
-        return item2Value;
-    }
-
-    public JLabel getItem3() {
-        return item3;
-    }
-
-    public JLabel getItem3Value() {
-        return item3Value;
-    }
-
-    public JLabel getItem4() {
-        return item4;
-    }
-
-    public JLabel getItem4Value() {
-        return item4Value;
-    }
-
-    public JLabel getItem5() {
-        return item5;
-    }
-
-    public JLabel getItem5Value() {
-        return item5Value;
-    }
-
-    public JLabel getItem6() {
-        return item6;
-    }
-
-    public JLabel getItem6Value() {
-        return item6Value;
-    }
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -91,96 +35,45 @@ public class gudang extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        item3Value = new javax.swing.JLabel();
-        item1 = new javax.swing.JLabel();
-        item2 = new javax.swing.JLabel();
-        item3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        item2Value = new javax.swing.JLabel();
-        item4 = new javax.swing.JLabel();
-        item5 = new javax.swing.JLabel();
-        item6 = new javax.swing.JLabel();
-        item4Value = new javax.swing.JLabel();
-        item5Value = new javax.swing.JLabel();
-        item6Value = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        btnPrevious = new javax.swing.JButton();
-        item1Value = new javax.swing.JLabel();
-        btnKembali = new javax.swing.JButton();
-        btnNext = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        btnClose = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        item3Value.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item3Value.setText("-/100");
-        getContentPane().add(item3Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 380, 210, 70));
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangjagung.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, -1, -1));
 
-        item1.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item1.setText("Jagung");
-        getContentPane().add(item1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 210, 70));
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangminyak goreng.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, -1, -1));
 
-        item2.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item2.setText("Bibit");
-        getContentPane().add(item2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 250, 210, 70));
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudanggaram.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 270, -1, -1));
 
-        item3.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item3.setText("Garam");
-        getContentPane().add(item3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 380, 210, 70));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangbibitJagung.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Gudang");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 10, 210, 70));
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/jagagudang2.gif"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, 300, 350));
 
-        item2Value.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item2Value.setText("-/100");
-        getContentPane().add(item2Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 250, 210, 70));
+        btnClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblClose.png"))); // NOI18N
+        btnClose.setBorderPainted(false);
+        btnClose.setContentAreaFilled(false);
+        btnClose.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblClosehover.png"))); // NOI18N
+        getContentPane().add(btnClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 120, -1, -1));
 
-        item4.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item4.setText("Minyak Goreng");
-        getContentPane().add(item4, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 270, 70));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangkotakDasar.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, -1));
 
-        item5.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item5.setText("Bumbu");
-        getContentPane().add(item5, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 250, 210, 70));
-
-        item6.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item6.setText("-");
-        getContentPane().add(item6, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 360, 210, 70));
-
-        item4Value.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item4Value.setText("-/100");
-        getContentPane().add(item4Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 130, 210, 70));
-
-        item5Value.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item5Value.setText("-/100");
-        getContentPane().add(item5Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 250, 210, 70));
-
-        item6Value.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item6Value.setText("-/100");
-        getContentPane().add(item6Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 360, 210, 70));
-
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Gambar Orang");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 140, 180));
-
-        btnPrevious.setText("<");
-        btnPrevious.setFocusable(false);
-        getContentPane().add(btnPrevious, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 480, 70, 80));
-
-        item1Value.setFont(new java.awt.Font("Yu Gothic", 0, 36)); // NOI18N
-        item1Value.setText("-/100");
-        getContentPane().add(item1Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, 210, 70));
-
-        btnKembali.setText("KEMBALI");
-        btnKembali.setFocusable(false);
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 580, 150, 60));
-
-        btnNext.setText(">");
-        btnNext.setFocusable(false);
-        getContentPane().add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(1077, 480, 70, 80));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangBackground.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -221,22 +114,13 @@ public class gudang extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnKembali;
-    private javax.swing.JButton btnNext;
-    private javax.swing.JButton btnPrevious;
-    private javax.swing.JLabel item1;
-    private javax.swing.JLabel item1Value;
-    private javax.swing.JLabel item2;
-    private javax.swing.JLabel item2Value;
-    private javax.swing.JLabel item3;
-    private javax.swing.JLabel item3Value;
-    private javax.swing.JLabel item4;
-    private javax.swing.JLabel item4Value;
-    private javax.swing.JLabel item5;
-    private javax.swing.JLabel item5Value;
-    private javax.swing.JLabel item6;
-    private javax.swing.JLabel item6Value;
-    private javax.swing.JLabel jLabel13;
+    private javax.swing.JButton btnClose;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 }

@@ -31,8 +31,6 @@ public class c_home {
         vHome.getBtnGudang().addActionListener(new gudangAction());
         vHome.getBtnKoperasi().addActionListener(new koperasiAction());
         vHome.getBtnSawah1().addActionListener(new sawahAction());
-        vHome.getBtnSawah2().addActionListener(new sawahAction());
-        vHome.getBtnSawah3().addActionListener(new sawahAction());
         vHome.getBtnToko().addActionListener(new tokoAction());
         vHome.getBtnRuProduksi().addActionListener(new ruProduksiAction());
         vHome.getBtnLogOut().addActionListener(new logOutAction());
