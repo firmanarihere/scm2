@@ -33,9 +33,7 @@ public class c_home {
         vHome.getBtnSawah1().addActionListener(new sawahAction());
         vHome.getBtnToko().addActionListener(new tokoAction());
         vHome.getBtnRuProduksi().addActionListener(new ruProduksiAction());
-        vHome.getBtnLogOut().addActionListener(new logOutAction());
 
-        vHome.getLabelUsername().setText(this.username);
         vHome.setVisible(true);
     }
 
