@@ -38,8 +38,6 @@ public class home extends javax.swing.JFrame {
         return btnSawah1;
     }
 
-    
-
     public JButton getBtnToko() {
         return btnToko;
     }
@@ -51,7 +49,6 @@ public class home extends javax.swing.JFrame {
     public JLabel getLabelUsername() {
         return labelUsername;
     }
-    
 
     /**
      * This method is called from within the constructor to initialize the form.
