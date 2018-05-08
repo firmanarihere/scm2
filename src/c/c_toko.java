@@ -26,7 +26,8 @@ public class c_toko {
     private int marningA = 5;
     private int marningB = 10;
     private int marningC = 3;
-    private int timeC = 0;
+    private int koin = 100;
+    private int timeC ;
     private time jualThread;
     private Random random = new Random();
 
@@ -78,7 +79,7 @@ public class c_toko {
                     timeC += 1;
                     if (jual) {
                         if (marningA > 0) {
-                            if (random.nextInt(2) == 1) {
+                            if (random.nextInt(3) == 1) {
                                 marningA -= 1;
                             }
                         }

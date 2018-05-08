@@ -43,11 +43,12 @@ public class gudang extends javax.swing.JFrame {
         btnClose = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        btnKembali = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangjagung.png"))); // NOI18N
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, -1, -1));
 
@@ -74,6 +75,14 @@ public class gudang extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/gudangBackground.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
+
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel13.setText("Gambar Orang");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, 140, 180));
+
+        btnKembali.setText("KEMBALI");
+        btnKembali.setFocusable(false);
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 580, 150, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -122,5 +131,7 @@ public class gudang extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JButton btnKembali;
+    private javax.swing.JLabel jLabel13;
     // End of variables declaration//GEN-END:variables
 }

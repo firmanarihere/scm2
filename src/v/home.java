@@ -22,10 +22,10 @@ public class home extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     }
 
+
     public JButton getBtnDistribusi() {
         return btnGudang;
     }
-    
     public JButton getBtnGudang() {
         return btnGudang;
     }
@@ -60,6 +60,7 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -70,6 +71,10 @@ public class home extends javax.swing.JFrame {
         btnToko = new javax.swing.JButton();
         btnKoperasi = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+
+        btnToko = new javax.swing.JButton();
+        btnKoperasi = new javax.swing.JButton();
+        btnSawah1 = new javax.swing.JButton();
         btnGudang = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         btnRuProduksi = new javax.swing.JButton();
@@ -101,7 +106,25 @@ public class home extends javax.swing.JFrame {
         btnSawah.setBorderPainted(false);
         btnSawah.setContentAreaFilled(false);
         btnSawah.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/sawahHover.png"))); // NOI18N
-        getContentPane().add(btnSawah, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(btnSawah, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));btnToko.setText("Toko");
+        btnToko.setFocusable(false);
+        getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 230, 120, 130));
+
+        btnKoperasi.setText("Koperasi");
+        btnKoperasi.setFocusable(false);
+        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 540, 140, 160));
+
+        btnSawah1.setText("sawah 1");
+        btnSawah1.setFocusable(false);
+        getContentPane().add(btnSawah1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 110, 100));
+
+        btnGudang.setText("Gudang");
+        btnGudang.setFocusable(false);
+        getContentPane().add(btnGudang, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 170, 150));
+
+        btnRuProduksi.setText("Rumah Produksi");
+        btnRuProduksi.setFocusable(false);
+        getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 210, 190, 160));
 
         btnToko.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/toko.png"))); // NOI18N
         btnToko.setBorderPainted(false);
@@ -131,6 +154,8 @@ public class home extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pohon cemara.png"))); // NOI18N
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 170, -1, -1));
+        btnLogOut.setText("Logout");
+        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 70, 40));
 
         btnRuProduksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik.png"))); // NOI18N
         btnRuProduksi.setBorderPainted(false);
@@ -185,6 +210,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JButton btnKoperasi;
     private javax.swing.JButton btnRuProduksi;
     private javax.swing.JButton btnSawah;
+    private javax.swing.JButton btnSawah1;
     private javax.swing.JButton btnToko;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
