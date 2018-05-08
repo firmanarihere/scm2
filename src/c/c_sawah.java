@@ -89,7 +89,7 @@ public class c_sawah {
             } else if (statusKotak[0] == 3) {//tumbuh 
                 //ganti gambar tananh kososng
                 //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
-                jagung = random.nextInt((3-1)+1)+1;
+                jagung += random.nextInt((3-1)+1)+1;
                 statusKotak[0] = 1;
                 statusSiram[0] = false;
                 statusTime1[0] = 0;
@@ -98,7 +98,7 @@ public class c_sawah {
             } else if (statusKotak[0] == 4) {//siap panen
                 //ganti gambar tanah kosong
                 //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
-                jagung =random.nextInt((7-5)+1)+5;
+                jagung +=random.nextInt((7-5)+1)+5;
                 statusKotak[0] = 1;
                 statusSiram[0] = false;
                 statusTime1[0] = 0;
@@ -121,7 +121,7 @@ public class c_sawah {
                 }
             } else if (statusKotak[1] == 3) {//tumbuh
                 //ganti gambar tananh kososng
-                jagung = random.nextInt((3-1)+1)+1;
+                jagung += random.nextInt((3-1)+1)+1;
                 statusKotak[1] = 1;
                 statusSiram[1] = false;
                 statusTime1[1] = 0;
@@ -129,7 +129,7 @@ public class c_sawah {
                 statusTime3[1] = 0;
             } else if (statusKotak[1] == 4) {//siap panen
                 //ganti gambar tanah kosong
-                jagung =random.nextInt((7-5)+1)+5;
+                jagung +=random.nextInt((7-5)+1)+5;
                 statusKotak[1] = 1;
                 statusSiram[1] = false;
                 statusTime1[1] = 0;
@@ -152,7 +152,7 @@ public class c_sawah {
                 }
             } else if (statusKotak[2] == 3) {//tumbuh
                 //ganti gambar tananh kososng
-                jagung = random.nextInt((3-1)+1)+1;
+                jagung += random.nextInt((3-1)+1)+1;
                 statusKotak[2] = 1;
                 statusSiram[2] = false;
                 statusTime1[2] = 0;
@@ -160,7 +160,7 @@ public class c_sawah {
                 statusTime3[2] = 0;
             } else if (statusKotak[2] == 4) {//siap panen
                 //ganti gambar tanah kosong
-                jagung =random.nextInt((7-5)+1)+5;
+                jagung +=random.nextInt((7-5)+1)+5;
                 statusKotak[2] = 1;
                 statusSiram[2] = false;
                 statusTime1[2] = 0;
@@ -184,7 +184,7 @@ public class c_sawah {
                 }
             } else if (statusKotak[3] == 3) {//tumbuh
                 //ganti gambar tananh kososng
-                jagung = random.nextInt((3-1)+1)+1;
+                jagung += random.nextInt((3-1)+1)+1;
                 statusKotak[3] = 1;
                 statusSiram[3] = false;
                 statusTime1[3] = 0;
@@ -192,7 +192,7 @@ public class c_sawah {
                 statusTime3[3] = 0;
             } else if (statusKotak[3] == 4) {//siap panen
                 //ganti gambar tanah kosong
-                jagung =random.nextInt((7-5)+1)+5;
+                jagung +=random.nextInt((7-5)+1)+5;
                 statusKotak[3] = 1;
                 statusSiram[3] = false;
                 statusTime1[3] = 0;
@@ -216,7 +216,7 @@ public class c_sawah {
                 }
             } else if (statusKotak[4] == 3) {//tumbuh
                 //ganti gambar tananh kososng
-                jagung = random.nextInt((3-1)+1)+1;
+                jagung += random.nextInt((3-1)+1)+1;
                 statusKotak[4] = 1;
                 statusSiram[4] = false;
                 statusTime1[4] = 0;
@@ -224,7 +224,7 @@ public class c_sawah {
                 statusTime3[4] = 0;
             } else if (statusKotak[4] == 4) {//siap panen
                 //ganti gambar tanah kosong
-                jagung =random.nextInt((7-5)+1)+5;
+                jagung +=random.nextInt((7-5)+1)+5;
                 statusKotak[4] = 1;
                 statusSiram[4] = false;
                 statusTime1[4] = 0;
@@ -248,7 +248,7 @@ public class c_sawah {
                 }
             } else if (statusKotak[5] == 3) {//tumbuh
                 //ganti gambar tananh kososng
-                jagung = random.nextInt((3-1)+1)+1;
+                jagung += random.nextInt((3-1)+1)+1;
                 statusKotak[5] = 1;
                 statusSiram[5] = false;
                 statusTime1[5] = 0;
@@ -256,7 +256,7 @@ public class c_sawah {
                 statusTime3[5] = 0;
             } else if (statusKotak[5] == 4) {//siap panen
                 //ganti gambar tanah kosong
-                jagung =random.nextInt((7-5)+1)+5;
+                jagung +=random.nextInt((7-5)+1)+5;
                 statusKotak[5] = 1;
                 statusSiram[5] = false;
                 statusTime1[5] = 0;
