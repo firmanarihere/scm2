@@ -25,7 +25,7 @@ public class c_home {
     private tokoPenjualanProduk vToko;
     private String username;
     
-    public c_home(String username) {
+    public c_home(String username) throws SQLException {
         vHome = new home();
         vToko = new tokoPenjualanProduk();
         this.username = username;
@@ -34,7 +34,9 @@ public class c_home {
         vHome.getBtnSawah1().addActionListener(new sawahAction());
         vHome.getBtnToko().addActionListener(new tokoAction());
         vHome.getBtnRuProduksi().addActionListener(new ruProduksiAction());
+        vHome.getBtnLogOut().addActionListener(new logOutAction());
         
+        vHome.getLabelUsername().setText(username);        
         vHome.setVisible(true);
     }
     
@@ -61,8 +63,8 @@ public class c_home {
         
         private c_toko toko;
         
-        public tokoAction() {
-            toko = new c_toko(vHome);
+        public tokoAction() throws SQLException {
+            toko = new c_toko(vHome, username);
             toko.getView().setVisible(false);
         }
         

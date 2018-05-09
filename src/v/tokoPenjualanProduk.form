@@ -28,7 +28,7 @@
     <Property name="useNullLayout" type="boolean" value="false"/>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="item2Value">
+    <Component class="javax.swing.JLabel" name="lblMarning">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Yu Gothic" size="14" style="0"/>
@@ -56,7 +56,7 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JLabel" name="item1Value">
+    <Component class="javax.swing.JLabel" name="lblKoin">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Yu Gothic" size="14" style="0"/>

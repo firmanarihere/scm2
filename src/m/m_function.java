@@ -50,6 +50,13 @@ public class m_function {
         return data;
     }
     
+    public int getDataInt(String query) throws SQLException {
+        ResultSet hasil = con.getResult(query);
+        hasil.next();
+        int data = hasil.getInt(1);
+        return data;
+    }
+    
     protected DefaultTableModel buatTabel(String namaKolom[], String query) throws SQLException {
         DefaultTableModel tabelModel = new DefaultTableModel(null, namaKolom);
         ResultSet hasil = con.getResult(query);

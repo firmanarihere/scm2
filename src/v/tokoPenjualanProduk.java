@@ -22,6 +22,14 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     }
 
+    public JLabel getLblKoin() {
+        return lblKoin;
+    }
+
+    public JLabel getLblMarning() {
+        return lblMarning;
+    }
+
     public JButton getBtnKembali() {
         return btnKembali;
     }
@@ -31,11 +39,11 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
     }
 
     public JLabel getItem1Value() {
-        return item1Value;
+        return lblKoin;
     }
 
     public JLabel getItem2Value() {
-        return item2Value;
+        return lblMarning;
     }
     
     
@@ -49,9 +57,9 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        item2Value = new javax.swing.JLabel();
+        lblMarning = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        item1Value = new javax.swing.JLabel();
+        lblKoin = new javax.swing.JLabel();
         btnMulaiJual = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
 
@@ -59,20 +67,20 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        item2Value.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        item2Value.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        item2Value.setText("Marning");
-        getContentPane().add(item2Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 70, 40));
+        lblMarning.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        lblMarning.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMarning.setText("Marning");
+        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 70, 40));
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("TOKO");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 130, 60));
 
-        item1Value.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        item1Value.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        item1Value.setText("Koin");
-        getContentPane().add(item1Value, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 30, 70, 40));
+        lblKoin.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        lblKoin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblKoin.setText("Koin");
+        getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 30, 70, 40));
 
         btnMulaiJual.setText("MULAI JUAL");
         btnMulaiJual.setFocusable(false);
@@ -123,8 +131,8 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnKembali;
     private javax.swing.JButton btnMulaiJual;
-    private javax.swing.JLabel item1Value;
-    private javax.swing.JLabel item2Value;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblKoin;
+    private javax.swing.JLabel lblMarning;
     // End of variables declaration//GEN-END:variables
 }
