@@ -114,8 +114,6 @@ public class home extends javax.swing.JFrame {
         labelUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelUsername.setText("username");
         getContentPane().add(labelUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 120, 30));
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mapKosong.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();

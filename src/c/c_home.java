@@ -80,8 +80,8 @@ public class c_home {
 
         private c_sawah sawah;
 
-        public sawahAction() {
-            sawah = new c_sawah(vHome);
+        public sawahAction() throws SQLException {
+            sawah = new c_sawah(vHome, username);
             sawah.getView().setVisible(false);
         }
         

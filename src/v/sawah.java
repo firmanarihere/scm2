@@ -6,6 +6,7 @@
 package v;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 
 /**
  *
@@ -52,6 +53,15 @@ public class sawah extends javax.swing.JFrame {
     public JButton getBtnKotak6() {
         return btnKotak6;
     }
+
+    public JLabel getLblBibit() {
+        return lblBibit;
+    }
+
+    public JLabel getLblJagung() {
+        return lblJagung;
+    }
+    
     
 
     /**
@@ -71,9 +81,8 @@ public class sawah extends javax.swing.JFrame {
         btnKotak2 = new javax.swing.JButton();
         btnKotak1 = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblBibit = new javax.swing.JLabel();
+        lblJagung = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -112,17 +121,13 @@ public class sawah extends javax.swing.JFrame {
         btnKembali.setFocusable(false);
         getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 80, 60));
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        jLabel1.setText("Bibit");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 10, 70, 30));
+        lblBibit.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        lblBibit.setText("Bibit");
+        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 10, 70, 30));
 
-        jLabel2.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        jLabel2.setText("Air");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 10, 70, 30));
-
-        jLabel3.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        jLabel3.setText("Jagung");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 10, 70, 30));
+        lblJagung.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        lblJagung.setText("Jagung");
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 10, 70, 30));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Gambar Orang");
@@ -175,9 +180,8 @@ public class sawah extends javax.swing.JFrame {
     private javax.swing.JButton btnKotak4;
     private javax.swing.JButton btnKotak5;
     private javax.swing.JButton btnKotak6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel lblBibit;
+    private javax.swing.JLabel lblJagung;
     // End of variables declaration//GEN-END:variables
 }

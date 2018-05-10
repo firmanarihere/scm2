@@ -18,14 +18,35 @@ public class m_aset extends m_function {
 
     public m_aset() throws SQLException {
     }
-    
+
     public String cekIdPlayer(String username) throws SQLException {
         String query = "SELECT `id_user` FROM `user` WHERE `username` = '" + username + "'";
         return getDataString(query);
     }
-    
-    public int getKoin(String idPlayer) throws SQLException {
-        String query = "SELECT koin FROM `aset` where id_user = " + idPlayer;
+
+    public int getKoin(String idUser) throws SQLException {
+        String query = "SELECT koin FROM `aset` where id_user = " + idUser;
         return getDataInt(query);
+    }
+
+    public int getBibit(String idUser) throws SQLException {
+        String query = "SELECT bibit FROM `aset` where id_user = " + idUser;
+        return getDataInt(query);
+    }
+
+    public int getJagung(String idUser) throws SQLException {
+        String query = "SELECT jagung FROM `aset` where id_user = " + idUser;
+        return getDataInt(query);
+    }
+
+    //==============================================================================================
+    public boolean setBibit(int bibit, String idUser) throws SQLException {
+        String query = "UPDATE `aset` SET `bibit` = '" + bibit + "' WHERE id_user = " + idUser;
+        return getStatusQuery(query);
+    }
+
+    public boolean setJagung(int jagung, String idUser) throws SQLException {
+        String query = "UPDATE `aset` SET `jagung` = '" + jagung + "' WHERE id_user = " + idUser;
+        return getStatusQuery(query);
     }
 }
