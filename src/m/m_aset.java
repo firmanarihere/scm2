@@ -74,4 +74,17 @@ public class m_aset extends m_function {
         String query = "UPDATE `aset` SET `minyak_goreng` = '" + minyakGoreng + "' WHERE id_user = " + idUser;
         return getStatusQuery(query);
     }
+
+    //===========================================================================
+    public int cekId() throws SQLException {
+        String query = "select id_aset from aset where id_aset = ";
+        return checkId(query);
+    }
+
+    public boolean insertAset() throws SQLException {
+        int id = cekId();
+        String query = "INSERT INTO `aset` VALUES (" + id + "," + id + ",1000,5,5,2,3,1,1,1)";
+        return getStatusQuery(query);
+    }
+
 }

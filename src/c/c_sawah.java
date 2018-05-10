@@ -63,7 +63,6 @@ public class c_sawah {
         vSawah.getBtnKotak6().addActionListener(new kotak6Action());
         vSawah.getBtnAir().addActionListener(new airAction());
 
-        
         vSawah.getBtnAir().setEnabled(false);
 
         t = new time();
@@ -91,7 +90,7 @@ public class c_sawah {
         public void actionPerformed(ActionEvent e) {
             if (statusKotak[0] == 1) {//kosong
                 if (bibit > 0) {
-                    //ganti gambar tanah bibit
+                    vSawah.getBtnKotak1().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung.png")));
                     statusKotak[0] = 2;
                     bibit -= 1;
                     try {
@@ -104,8 +103,8 @@ public class c_sawah {
                     JOptionPane.showMessageDialog(vHome, "Tidak punya bibit");
                 }
             } else if (statusKotak[0] == 3) {//tumbuh 
-                //ganti gambar tananh kososng
-                //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
+                vSawah.getBtnKotak1().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak1().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("<none>")));
                 jagung += random.nextInt((3 - 2) + 1) + 2;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -119,8 +118,8 @@ public class c_sawah {
                 statusTime2[0] = 0;
                 statusTime3[0] = 0;
             } else if (statusKotak[0] == 4) {//siap panen
-                //ganti gambar tanah kosong
-                //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
+                vSawah.getBtnKotak1().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak1().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -143,6 +142,7 @@ public class c_sawah {
         public void actionPerformed(ActionEvent e) {
             if (statusKotak[1] == 1) {//kosong
                 if (bibit > 0) {
+                    vSawah.getBtnKotak2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung.png")));
                     statusKotak[1] = 2;
                     bibit -= 1;
                     try {
@@ -154,8 +154,9 @@ public class c_sawah {
                 } else {
                     JOptionPane.showMessageDialog(vHome, "Tidak punya bibit");
                 }
-            } else if (statusKotak[1] == 3) {//tumbuh
-                //ganti gambar tananh kososng
+            } else if (statusKotak[1] == 3) {//tumbuh 
+                vSawah.getBtnKotak2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak2().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -168,8 +169,9 @@ public class c_sawah {
                 statusTime1[1] = 0;
                 statusTime2[1] = 0;
                 statusTime3[1] = 0;
-            } else if (statusKotak[1] == 4) {//siap panen
-                //ganti gambar tanah kosong
+            } else if (statusKotak[1] == 4) {//siap panen 
+                vSawah.getBtnKotak2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak2().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -192,6 +194,7 @@ public class c_sawah {
         public void actionPerformed(ActionEvent e) {
             if (statusKotak[2] == 1) {//kosong
                 if (bibit > 0) {
+                    vSawah.getBtnKotak3().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung.png")));
                     statusKotak[2] = 2;
                     bibit -= 1;
                     try {
@@ -203,7 +206,9 @@ public class c_sawah {
                 } else {
                     JOptionPane.showMessageDialog(vHome, "Tidak punya bibit");
                 }
-            } else if (statusKotak[2] == 3) {//tumbuh
+            } else if (statusKotak[2] == 3) {//tumbuh 
+                vSawah.getBtnKotak3().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak3().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 //ganti gambar tananh kososng
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
@@ -217,8 +222,9 @@ public class c_sawah {
                 statusTime1[2] = 0;
                 statusTime2[2] = 0;
                 statusTime3[2] = 0;
-            } else if (statusKotak[2] == 4) {//siap panen
-                //ganti gambar tanah kosong
+            } else if (statusKotak[2] == 4) {//siap panen 
+                vSawah.getBtnKotak3().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak3().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -242,6 +248,7 @@ public class c_sawah {
         public void actionPerformed(ActionEvent e) {
             if (statusKotak[3] == 1) {//kosong
                 if (bibit > 0) {
+                    vSawah.getBtnKotak4().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung.png")));
                     statusKotak[3] = 2;
                     bibit -= 1;
                     try {
@@ -253,8 +260,9 @@ public class c_sawah {
                 } else {
                     JOptionPane.showMessageDialog(vHome, "Tidak punya bibit");
                 }
-            } else if (statusKotak[3] == 3) {//tumbuh
-                //ganti gambar tananh kososng
+            } else if (statusKotak[3] == 3) {//tumbuh 
+                vSawah.getBtnKotak4().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak4().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -267,8 +275,9 @@ public class c_sawah {
                 statusTime1[3] = 0;
                 statusTime2[3] = 0;
                 statusTime3[3] = 0;
-            } else if (statusKotak[3] == 4) {//siap panen
-                //ganti gambar tanah kosong
+            } else if (statusKotak[3] == 4) {//siap panen 
+                vSawah.getBtnKotak4().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak4().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -292,6 +301,7 @@ public class c_sawah {
         public void actionPerformed(ActionEvent e) {
             if (statusKotak[4] == 1) {//kosong
                 if (bibit > 0) {
+                    vSawah.getBtnKotak5().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung.png")));
                     statusKotak[4] = 2;
                     bibit -= 1;
                     try {
@@ -303,8 +313,9 @@ public class c_sawah {
                 } else {
                     JOptionPane.showMessageDialog(vHome, "Tidak punya bibit");
                 }
-            } else if (statusKotak[4] == 3) {//tumbuh
-                //ganti gambar tananh kososng
+            } else if (statusKotak[4] == 3) {//tumbuh 
+                vSawah.getBtnKotak5().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak5().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -317,8 +328,9 @@ public class c_sawah {
                 statusTime1[4] = 0;
                 statusTime2[4] = 0;
                 statusTime3[4] = 0;
-            } else if (statusKotak[4] == 4) {//siap panen
-                //ganti gambar tanah kosong
+            } else if (statusKotak[4] == 4) {//siap panen 
+                vSawah.getBtnKotak5().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak5().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -342,6 +354,7 @@ public class c_sawah {
         public void actionPerformed(ActionEvent e) {
             if (statusKotak[5] == 1) {//kosong
                 if (bibit > 0) {
+                    vSawah.getBtnKotak6().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung.png")));
                     statusKotak[5] = 2;
                     bibit -= 1;
                     try {
@@ -353,8 +366,9 @@ public class c_sawah {
                 } else {
                     JOptionPane.showMessageDialog(vHome, "Tidak punya bibit");
                 }
-            } else if (statusKotak[5] == 3) {//tumbuh
-                //ganti gambar tananh kososng
+            } else if (statusKotak[5] == 3) {//tumbuh 
+                vSawah.getBtnKotak6().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak6().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -367,8 +381,9 @@ public class c_sawah {
                 statusTime1[5] = 0;
                 statusTime2[5] = 0;
                 statusTime3[5] = 0;
-            } else if (statusKotak[5] == 4) {//siap panen
-                //ganti gambar tanah kosong
+            } else if (statusKotak[5] == 4) {//siap panen 
+                vSawah.getBtnKotak6().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png")));
+                vSawah.getBtnKotak6().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("")));
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
                     mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
@@ -402,6 +417,8 @@ public class c_sawah {
         public void run() {
             while (true) {
                 try {
+                    bibit = mAset.getBibit(mAset.cekIdPlayer(username));
+                    jagung = mAset.getJagung(mAset.cekIdPlayer(username));
                     Thread.sleep(1000);
                     for (int i = 0; i < statusKotak.length; i++) {
                         if (statusKotak[i] == 2) {
@@ -415,16 +432,16 @@ public class c_sawah {
                             statusTime2[i] += 1;
                             if (statusTime2[i] == 20) {
                                 statusKotak[i] = 3;
-                                //setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/sapi pucet kanan.png")));
-                                //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
+                                btnKotak[i].setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung1.png")));
+                                btnKotak[i].setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung1hover.png")));
                             }
                         }
                         if (statusKotak[i] == 3) {
                             statusTime3[i] += 1;
                             if (statusTime3[i] == 40) {
                                 statusKotak[i] = 4;
-                                //setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/sapi pucet kanan.png")));
-                                //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
+                                btnKotak[i].setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung2.png")));
+                                btnKotak[i].setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung2hover.png")));
                             }
                         }
                     }
@@ -442,6 +459,8 @@ public class c_sawah {
                     System.out.println("kotak 6= " + statusKotak[5]);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(c_toko.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (SQLException ex) {
+                    Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         }

@@ -83,55 +83,89 @@ public class sawah extends javax.swing.JFrame {
         btnKembali = new javax.swing.JButton();
         lblBibit = new javax.swing.JLabel();
         lblJagung = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        bg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnAir.setText("Air");
+        btnAir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tblSiram.png"))); // NOI18N
+        btnAir.setBorderPainted(false);
+        btnAir.setContentAreaFilled(false);
+        btnAir.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAir.setFocusable(false);
-        getContentPane().add(btnAir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 540, 120, 120));
+        btnAir.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tblSiram hover.png"))); // NOI18N
+        getContentPane().add(btnAir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 510, -1, 210));
 
-        btnKotak6.setText("Kotak 6");
+        btnKotak6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png"))); // NOI18N
+        btnKotak6.setBorderPainted(false);
+        btnKotak6.setContentAreaFilled(false);
+        btnKotak6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKotak6.setFocusable(false);
-        getContentPane().add(btnKotak6, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 360, 210, 210));
+        btnKotak6.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(btnKotak6, new org.netbeans.lib.awtextra.AbsoluteConstraints(804, 288, 290, 390));
 
-        btnKotak5.setText("Kotak 5");
+        btnKotak5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png"))); // NOI18N
+        btnKotak5.setBorderPainted(false);
+        btnKotak5.setContentAreaFilled(false);
+        btnKotak5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKotak5.setFocusable(false);
-        getContentPane().add(btnKotak5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, 210, 210));
+        btnKotak5.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(btnKotak5, new org.netbeans.lib.awtextra.AbsoluteConstraints(408, 288, 290, 390));
 
-        btnKotak4.setText("Kotak 4");
+        btnKotak4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png"))); // NOI18N
+        btnKotak4.setBorderPainted(false);
+        btnKotak4.setContentAreaFilled(false);
+        btnKotak4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKotak4.setFocusable(false);
-        getContentPane().add(btnKotak4, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 360, 210, 210));
+        btnKotak4.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(btnKotak4, new org.netbeans.lib.awtextra.AbsoluteConstraints(8, 288, 290, 390));
 
-        btnKotak3.setText("Kotak 3");
+        btnKotak3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png"))); // NOI18N
+        btnKotak3.setBorderPainted(false);
+        btnKotak3.setContentAreaFilled(false);
+        btnKotak3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKotak3.setFocusable(false);
-        getContentPane().add(btnKotak3, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 90, 210, 210));
+        btnKotak3.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(btnKotak3, new org.netbeans.lib.awtextra.AbsoluteConstraints(963, 98, 300, 360));
 
-        btnKotak2.setText("Kotak 2");
+        btnKotak2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png"))); // NOI18N
+        btnKotak2.setBorderPainted(false);
+        btnKotak2.setContentAreaFilled(false);
+        btnKotak2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKotak2.setFocusable(false);
-        getContentPane().add(btnKotak2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 90, 210, 210));
+        btnKotak2.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(btnKotak2, new org.netbeans.lib.awtextra.AbsoluteConstraints(572, 97, 290, 360));
 
-        btnKotak1.setText("Kotak 1");
+        btnKotak1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanah kosong.png"))); // NOI18N
+        btnKotak1.setBorderPainted(false);
+        btnKotak1.setContentAreaFilled(false);
+        btnKotak1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnKotak1.setDefaultCapable(false);
         btnKotak1.setFocusable(false);
-        getContentPane().add(btnKotak1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 90, 210, 210));
+        btnKotak1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(btnKotak1, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 98, 290, 360));
 
         btnKembali.setText("Kembali");
         btnKembali.setFocusable(false);
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 80, 60));
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 80, 60));
 
-        lblBibit.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        lblBibit.setFont(new java.awt.Font("Bw Surco DEMO", 1, 18)); // NOI18N
+        lblBibit.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblBibit.setText("Bibit");
-        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 10, 70, 30));
+        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 120, 40));
 
-        lblJagung.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        lblJagung.setFont(new java.awt.Font("Bw Surco DEMO", 1, 18)); // NOI18N
+        lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblJagung.setText("Jagung");
-        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 10, 70, 30));
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 40, 120, 40));
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Gambar Orang");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 410, 140, 240));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/statusBarSawah.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, -1, -1));
+
+        bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/backgroundsawah.png"))); // NOI18N
+        getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -172,6 +206,7 @@ public class sawah extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel bg;
     private javax.swing.JButton btnAir;
     private javax.swing.JButton btnKembali;
     private javax.swing.JButton btnKotak1;
@@ -180,7 +215,7 @@ public class sawah extends javax.swing.JFrame {
     private javax.swing.JButton btnKotak4;
     private javax.swing.JButton btnKotak5;
     private javax.swing.JButton btnKotak6;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblBibit;
     private javax.swing.JLabel lblJagung;
     // End of variables declaration//GEN-END:variables

@@ -47,6 +47,7 @@ public class c_toko {
         mAset = new m_aset();
         this.vHome = vHome;
         this.username = username;
+        koin = mAset.getKoin(mAset.cekIdPlayer(username));
         marningA = mMarning.getMarningA(mMarning.cekIdPlayer(username));
         marningB = mMarning.getMarningB(mMarning.cekIdPlayer(username));
         marningC = mMarning.getMarningC(mMarning.cekIdPlayer(username));
@@ -55,13 +56,10 @@ public class c_toko {
         empingB = mMarning.getEmpingB(mMarning.cekIdPlayer(username));
         empingC = mMarning.getEmpingC(mMarning.cekIdPlayer(username));
         totalEmping = empingA + empingB + empingC;
-        koin = mAset.getKoin(mAset.cekIdPlayer(username));
 
         vToko.getBtnKembali().addActionListener(new kembaliAction());
         vToko.getBtnMulaiJual().addActionListener(new mulaiJualAction());
 
-        vToko.getLblKoin().setText(koin + "");
-        vToko.getLblMarning().setText(totalMarning + "");
         jualThread = new time();
         jualThread.start();
     }

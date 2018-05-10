@@ -22,6 +22,14 @@ public class home extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     }
 
+    public JLabel getLblJagung() {
+        return lblJagung;
+    }
+
+    public JLabel getLblKoin() {
+        return lblKoin;
+    }    
+
     public JButton getBtnGudang() {
         return btnGudang;
     }
@@ -59,61 +67,137 @@ public class home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnToko = new javax.swing.JButton();
-        btnKoperasi = new javax.swing.JButton();
-        btnSawah1 = new javax.swing.JButton();
-        btnGudang = new javax.swing.JButton();
-        btnRuProduksi = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblJagung = new javax.swing.JLabel();
+        lblKoin = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
         labelUsername = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        statusBar = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        btnToko = new javax.swing.JButton();
+        btnGudang = new javax.swing.JButton();
+        btnKoperasi = new javax.swing.JButton();
+        btnSawah1 = new javax.swing.JButton();
+        btnRuProduksi = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnToko.setText("Toko");
-        btnToko.setFocusable(false);
-        getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 230, 120, 130));
+        lblJagung.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblJagung.setText("Jagung");
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 120, 30));
 
-        btnKoperasi.setText("Koperasi");
-        btnKoperasi.setFocusable(false);
-        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 540, 140, 160));
+        lblKoin.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblKoin.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblKoin.setText("Koin");
+        getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, 100, 30));
 
-        btnSawah1.setText("sawah 1");
-        btnSawah1.setFocusable(false);
-        getContentPane().add(btnSawah1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 150, 110, 100));
-
-        btnGudang.setText("Gudang");
-        btnGudang.setFocusable(false);
-        getContentPane().add(btnGudang, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 170, 150));
-
-        btnRuProduksi.setText("Rumah Produksi");
-        btnRuProduksi.setFocusable(false);
-        getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 210, 190, 160));
-
-        jLabel1.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        jLabel1.setText("Jagung");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 110, 30));
-
-        jLabel2.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        jLabel2.setText("Koin");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(954, 10, 110, 30));
-
-        jLabel3.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        jLabel3.setText("Marning");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 10, 110, 30));
+        jLabel3.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel3.setText("Produk");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 110, 30));
 
         btnLogOut.setText("Logout");
-        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 70, 40));
+        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 640, 70, 40));
 
-        labelUsername.setFont(new java.awt.Font("Yu Gothic UI", 0, 14)); // NOI18N
+        labelUsername.setFont(new java.awt.Font("Bebas Neue", 0, 30)); // NOI18N
         labelUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         labelUsername.setText("username");
-        getContentPane().add(labelUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 120, 30));
+        getContentPane().add(labelUsername, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 22, 200, 50));
+
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/uang.png"))); // NOI18N
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 10, 70, 80));
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/marning.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 0, 80, 90));
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/jagung.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 10, 60, 70));
+
+        statusBar.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        statusBar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/scorebar.png"))); // NOI18N
+        getContentPane().add(statusBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohon cemara.png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 510, -1, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohongajelas.png"))); // NOI18N
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, -1, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohongajelas.png"))); // NOI18N
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, -1, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohongajelas.png"))); // NOI18N
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 320, -1, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohongajelas.png"))); // NOI18N
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 570, -1, -1));
+
+        btnToko.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/toko.png"))); // NOI18N
+        btnToko.setBorderPainted(false);
+        btnToko.setContentAreaFilled(false);
+        btnToko.setFocusable(false);
+        btnToko.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/tokoHover.png"))); // NOI18N
+        getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 440, 240));
+
+        btnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/gudang.png"))); // NOI18N
+        btnGudang.setBorderPainted(false);
+        btnGudang.setContentAreaFilled(false);
+        btnGudang.setFocusable(false);
+        btnGudang.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/gudangHover.png"))); // NOI18N
+        getContentPane().add(btnGudang, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 450, 300));
+
+        btnKoperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/koperasi.png"))); // NOI18N
+        btnKoperasi.setBorderPainted(false);
+        btnKoperasi.setContentAreaFilled(false);
+        btnKoperasi.setFocusable(false);
+        btnKoperasi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/koperasiHover.png"))); // NOI18N
+        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, 280, 270));
+
+        btnSawah1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/sawah.png"))); // NOI18N
+        btnSawah1.setBorderPainted(false);
+        btnSawah1.setContentAreaFilled(false);
+        btnSawah1.setFocusable(false);
+        btnSawah1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/sawahHover.png"))); // NOI18N
+        getContentPane().add(btnSawah1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, -1));
+
+        btnRuProduksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/pabrik.png"))); // NOI18N
+        btnRuProduksi.setBorderPainted(false);
+        btnRuProduksi.setContentAreaFilled(false);
+        btnRuProduksi.setFocusable(false);
+        btnRuProduksi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/pabrikHover.png"))); // NOI18N
+        getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 150, 320, 280));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohongajelas.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, -1, -1));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohon cemara.png"))); // NOI18N
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/rumah.png"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 330, -1, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/pohon cemara.png"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 440, 140, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/mapKosong.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
@@ -161,10 +245,23 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JButton btnRuProduksi;
     private javax.swing.JButton btnSawah1;
     private javax.swing.JButton btnToko;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel labelUsername;
+    private javax.swing.JLabel lblJagung;
+    private javax.swing.JLabel lblKoin;
+    private javax.swing.JLabel statusBar;
     // End of variables declaration//GEN-END:variables
 }

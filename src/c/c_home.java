@@ -39,6 +39,8 @@ public class c_home {
         vHome.getBtnRuProduksi().addActionListener(new ruProduksiAction());
         vHome.getBtnLogOut().addActionListener(new logOutAction());
 
+        vHome.getLblKoin().setText(mAset.getKoin(mAset.cekIdPlayer(username)) + "");
+        vHome.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
         vHome.getLabelUsername().setText(username);
         vHome.setVisible(true);
     }
@@ -73,6 +75,12 @@ public class c_home {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            try {
+                toko.getView().getLblKoin().setText(mAset.getKoin(mAset.cekIdPlayer(username)) + "");
+//                toko.getView().getLblMarning().setText(totalMarning + ""); (intinya nampilin marning)
+            } catch (SQLException ex) {
+                Logger.getLogger(c_home.class.getName()).log(Level.SEVERE, null, ex);
+            }
             toko.getView().setVisible(true);
             vHome.setVisible(false);
         }
@@ -137,9 +145,21 @@ public class c_home {
 
         @Override
         public void actionPerformed(ActionEvent e) {
+            try {
+                gudang.getView().getLblBibit().setText(mAset.getBibit(mAset.cekIdPlayer(username)) + "");
+                gudang.getView().getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
+                gudang.getView().getLblGaram().setText(mAset.getGaram(mAset.cekIdPlayer(username)) + "");
+                gudang.getView().getLblMinyakGoreng().setText(mAset.getGaram(mAset.cekIdPlayer(username)) + "");
+            } catch (SQLException ex) {
+                Logger.getLogger(c_home.class.getName()).log(Level.SEVERE, null, ex);
+            }
             gudang.getView().setVisible(true);
             vHome.setVisible(false);
         }
+    }
+
+    public home getView() {
+        return vHome;
     }
 
 }

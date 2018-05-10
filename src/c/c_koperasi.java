@@ -137,6 +137,7 @@ public class c_koperasi {
         public void actionPerformed(ActionEvent e) {
             vKoperasi.setVisible(false);
             vHome.setVisible(true);
+            vHome.toFront();
         }
     }
 

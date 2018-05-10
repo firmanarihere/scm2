@@ -11,6 +11,8 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import m.m_aset;
+import m.m_marning;
 import m.m_player;
 import v.load;
 import v.menu;
@@ -24,11 +26,15 @@ public class c_menu {
     private menu vMenu;
     private load vLoad;
     private m_player mPlayer;
+    private m_aset mAset;
+    private m_marning mMarning;
 
     public c_menu() throws SQLException {
         vMenu = new menu();
         vLoad = new load();
         mPlayer = new m_player();
+        mMarning = new m_marning();
+        mAset = new m_aset();
         vMenu.getBtnMulai().addActionListener(new mulaiAction());
         vMenu.getBtnLoad().addActionListener(new loadAction());
         vMenu.getBtnBatal().addActionListener(new batalAction());
@@ -55,7 +61,11 @@ public class c_menu {
             if (vLoad.getSelectedRow() == -1) {
                 JOptionPane.showMessageDialog(vLoad, "Pilih dahulu");
             } else {
-                new c_home(vLoad.getIdTabel());
+                try {
+                    new c_home(vLoad.getIdTabel());
+                } catch (SQLException ex) {
+                    Logger.getLogger(c_menu.class.getName()).log(Level.SEVERE, null, ex);
+                }
                 vLoad.setVisible(false);
             }
         }
@@ -85,6 +95,8 @@ public class c_menu {
                     JOptionPane.showMessageDialog(vMenu, "Username tidak boleh kosong");
                 } else {
                     mPlayer.insertUsername(vMenu.getFieldUsername().getText());
+                    mAset.insertAset();
+                    mMarning.insertProduk(mMarning.cekIdPlayer(vMenu.getFieldUsername().getText()));
                     JOptionPane.showMessageDialog(vMenu, "Username " + vMenu.getFieldUsername().getText() + " berhasil dibuat");
                     new c_home(vMenu.getFieldUsername().getText());
                     vMenu.getUsernameFrame().dispose();

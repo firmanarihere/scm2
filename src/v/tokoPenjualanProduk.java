@@ -82,7 +82,7 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         lblKoin.setText("Koin");
         getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 30, 70, 40));
 
-        btnMulaiJual.setText("MULAI JUAL");
+        btnMulaiJual.setText("BUKA TOKO");
         btnMulaiJual.setFocusable(false);
         getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 120, 60));
 

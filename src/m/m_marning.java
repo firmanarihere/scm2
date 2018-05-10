@@ -59,12 +59,26 @@ public class m_marning extends m_function {
         String query = "UPDATE `penjualan` SET `marningA` = '" + marningA + "' WHERE `penjualan`.`id_penjualan` =  " + idPlayer;
         return getStatusQuery(query);
     }
+
     public boolean updateMarningB(int marningB, String idPlayer) throws SQLException {
         String query = "UPDATE `penjualan` SET `marningB` = '" + marningB + "' WHERE `penjualan`.`id_penjualan` =  " + idPlayer;
         return getStatusQuery(query);
     }
+
     public boolean updateMarningC(int marningC, String idPlayer) throws SQLException {
         String query = "UPDATE `penjualan` SET `marningC` = '" + marningC + "' WHERE `penjualan`.`id_penjualan` =  " + idPlayer;
+        return getStatusQuery(query);
+    }
+
+    //================================================================================
+    public int cekId() throws SQLException {
+        String query = "select id_penjualan from penjualan where id_penjualan = ";
+        return checkId(query);
+    }
+
+    public boolean insertProduk(String idUser) throws SQLException {
+        int id = cekId();
+        String query = "INSERT INTO `penjualan` VALUES (" + id + "," + idUser + ",0,0,0,0,0,0)";
         return getStatusQuery(query);
     }
 }
