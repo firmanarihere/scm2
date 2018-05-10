@@ -39,14 +39,39 @@ public class m_aset extends m_function {
         return getDataInt(query);
     }
 
+    public int getGaram(String idUser) throws SQLException {
+        String query = "SELECT garam FROM `aset` where id_user = " + idUser;
+        return getDataInt(query);
+    }
+
+    public int getMinyakGoreng(String idUser) throws SQLException {
+        String query = "SELECT minyak_goreng FROM `aset` where id_user = " + idUser;
+        return getDataInt(query);
+    }
+
     //==============================================================================================
-    public boolean setBibit(int bibit, String idUser) throws SQLException {
+    public boolean updateKoin(int koin, String idUser) throws SQLException {
+        String query = "UPDATE `aset` SET `koin` = '" + koin + "' WHERE id_user = " + idUser;
+        return getStatusQuery(query);
+    }
+
+    public boolean updateBibit(int bibit, String idUser) throws SQLException {
         String query = "UPDATE `aset` SET `bibit` = '" + bibit + "' WHERE id_user = " + idUser;
         return getStatusQuery(query);
     }
 
-    public boolean setJagung(int jagung, String idUser) throws SQLException {
+    public boolean updateJagung(int jagung, String idUser) throws SQLException {
         String query = "UPDATE `aset` SET `jagung` = '" + jagung + "' WHERE id_user = " + idUser;
+        return getStatusQuery(query);
+    }
+
+    public boolean updateGaram(int garam, String idUser) throws SQLException {
+        String query = "UPDATE `aset` SET `garam` = '" + garam + "' WHERE id_user = " + idUser;
+        return getStatusQuery(query);
+    }
+
+    public boolean updateMinyakGoreng(int minyakGoreng, String idUser) throws SQLException {
+        String query = "UPDATE `aset` SET `minyak_goreng` = '" + minyakGoreng + "' WHERE id_user = " + idUser;
         return getStatusQuery(query);
     }
 }

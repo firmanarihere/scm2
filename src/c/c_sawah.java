@@ -63,8 +63,7 @@ public class c_sawah {
         vSawah.getBtnKotak6().addActionListener(new kotak6Action());
         vSawah.getBtnAir().addActionListener(new airAction());
 
-        vSawah.getLblBibit().setText(bibit + "");
-        vSawah.getLblJagung().setText(jagung + "");
+        
         vSawah.getBtnAir().setEnabled(false);
 
         t = new time();
@@ -96,8 +95,8 @@ public class c_sawah {
                     statusKotak[0] = 2;
                     bibit -= 1;
                     try {
-                        mAset.setBibit(bibit, mAset.cekIdPlayer(username));
-                        vSawah.getLblBibit().setText(bibit + "");
+                        mAset.updateBibit(bibit, mAset.cekIdPlayer(username));
+                        vSawah.getLblBibit().setText(mAset.getBibit(mAset.cekIdPlayer(username)) + "");
                     } catch (SQLException ex) {
                         Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -109,8 +108,8 @@ public class c_sawah {
                 //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
                 jagung += random.nextInt((3 - 2) + 1) + 2;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -124,8 +123,8 @@ public class c_sawah {
                 //setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Sapi dewasa.png")));
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -147,8 +146,8 @@ public class c_sawah {
                     statusKotak[1] = 2;
                     bibit -= 1;
                     try {
-                        mAset.setBibit(bibit, mAset.cekIdPlayer(username));
-                        vSawah.getLblBibit().setText(bibit + "");
+                        mAset.updateBibit(bibit, mAset.cekIdPlayer(username));
+                        vSawah.getLblBibit().setText(mAset.getBibit(mAset.cekIdPlayer(username)) + "");
                     } catch (SQLException ex) {
                         Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -159,8 +158,8 @@ public class c_sawah {
                 //ganti gambar tananh kososng
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -173,8 +172,8 @@ public class c_sawah {
                 //ganti gambar tanah kosong
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -196,8 +195,8 @@ public class c_sawah {
                     statusKotak[2] = 2;
                     bibit -= 1;
                     try {
-                        mAset.setBibit(bibit, mAset.cekIdPlayer(username));
-                        vSawah.getLblBibit().setText(bibit + "");
+                        mAset.updateBibit(bibit, mAset.cekIdPlayer(username));
+                        vSawah.getLblBibit().setText(mAset.getBibit(mAset.cekIdPlayer(username)) + "");
                     } catch (SQLException ex) {
                         Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -208,8 +207,8 @@ public class c_sawah {
                 //ganti gambar tananh kososng
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -222,8 +221,8 @@ public class c_sawah {
                 //ganti gambar tanah kosong
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -246,8 +245,8 @@ public class c_sawah {
                     statusKotak[3] = 2;
                     bibit -= 1;
                     try {
-                        mAset.setBibit(bibit, mAset.cekIdPlayer(username));
-                        vSawah.getLblBibit().setText(bibit + "");
+                        mAset.updateBibit(bibit, mAset.cekIdPlayer(username));
+                        vSawah.getLblBibit().setText(mAset.getBibit(mAset.cekIdPlayer(username)) + "");
                     } catch (SQLException ex) {
                         Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -258,8 +257,8 @@ public class c_sawah {
                 //ganti gambar tananh kososng
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -272,8 +271,8 @@ public class c_sawah {
                 //ganti gambar tanah kosong
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -296,8 +295,8 @@ public class c_sawah {
                     statusKotak[4] = 2;
                     bibit -= 1;
                     try {
-                        mAset.setBibit(bibit, mAset.cekIdPlayer(username));
-                        vSawah.getLblBibit().setText(bibit + "");
+                        mAset.updateBibit(bibit, mAset.cekIdPlayer(username));
+                        vSawah.getLblBibit().setText(mAset.getBibit(mAset.cekIdPlayer(username)) + "");
                     } catch (SQLException ex) {
                         Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -308,8 +307,8 @@ public class c_sawah {
                 //ganti gambar tananh kososng
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -322,8 +321,8 @@ public class c_sawah {
                 //ganti gambar tanah kosong
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -346,8 +345,8 @@ public class c_sawah {
                     statusKotak[5] = 2;
                     bibit -= 1;
                     try {
-                        mAset.setBibit(bibit, mAset.cekIdPlayer(username));
-                        vSawah.getLblBibit().setText(bibit + "");
+                        mAset.updateBibit(bibit, mAset.cekIdPlayer(username));
+                        vSawah.getLblBibit().setText(mAset.getBibit(mAset.cekIdPlayer(username)) + "");
                     } catch (SQLException ex) {
                         Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                     }
@@ -358,8 +357,8 @@ public class c_sawah {
                 //ganti gambar tananh kososng
                 jagung += random.nextInt((3 - 1) + 1) + 1;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }
@@ -372,8 +371,8 @@ public class c_sawah {
                 //ganti gambar tanah kosong
                 jagung += random.nextInt((7 - 5) + 1) + 5;
                 try {
-                    mAset.setJagung(jagung, mAset.cekIdPlayer(username));
-                    vSawah.getLblJagung().setText(jagung + "");
+                    mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
+                    vSawah.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
                 } catch (SQLException ex) {
                     Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
                 }

@@ -23,7 +23,6 @@ public class c_gudang {
         vGudang = new gudang();
         this.vHome = vHome;
         vGudang.getBtnKembali().addActionListener(new kembaliAction());
-        vGudang.setVisible(true);
     }
 
     private class kembaliAction implements ActionListener {
@@ -35,4 +34,7 @@ public class c_gudang {
         }
     }
 
+    public gudang getView() {
+        return vGudang;
+    }
 }

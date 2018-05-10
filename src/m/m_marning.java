@@ -12,11 +12,11 @@ import java.sql.SQLException;
  *
  * @author Rangora
  */
-public class m_penjualan extends m_function {
+public class m_marning extends m_function {
 
     private ResultSet rs;
 
-    public m_penjualan() throws SQLException {
+    public m_marning() throws SQLException {
     }
 
     public String cekIdPlayer(String username) throws SQLException {
@@ -52,5 +52,19 @@ public class m_penjualan extends m_function {
     public int getEmpingC(String idPlayer) throws SQLException {
         String query = "SELECT empingC FROM `penjualan` where id_user = " + idPlayer;
         return getDataInt(query);
+    }
+
+    //=================================================================================
+    public boolean updateMarningA(int marningA, String idPlayer) throws SQLException {
+        String query = "UPDATE `penjualan` SET `marningA` = '" + marningA + "' WHERE `penjualan`.`id_penjualan` =  " + idPlayer;
+        return getStatusQuery(query);
+    }
+    public boolean updateMarningB(int marningB, String idPlayer) throws SQLException {
+        String query = "UPDATE `penjualan` SET `marningB` = '" + marningB + "' WHERE `penjualan`.`id_penjualan` =  " + idPlayer;
+        return getStatusQuery(query);
+    }
+    public boolean updateMarningC(int marningC, String idPlayer) throws SQLException {
+        String query = "UPDATE `penjualan` SET `marningC` = '" + marningC + "' WHERE `penjualan`.`id_penjualan` =  " + idPlayer;
+        return getStatusQuery(query);
     }
 }

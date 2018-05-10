@@ -6,6 +6,7 @@
 package v;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 
 /**
  *
@@ -25,10 +26,6 @@ public class koperasi extends javax.swing.JFrame {
         return btnItem1;
     }
 
-    public JButton getBtnItem10() {
-        return btnItem10;
-    }
-
     public JButton getBtnItem2() {
         return btnItem2;
     }
@@ -41,36 +38,28 @@ public class koperasi extends javax.swing.JFrame {
         return btnItem4;
     }
 
-    public JButton getBtnItem5() {
-        return btnItem5;
-    }
-
-    public JButton getBtnItem6() {
-        return btnItem6;
-    }
-
-    public JButton getBtnItem7() {
-        return btnItem7;
-    }
-
-    public JButton getBtnItem8() {
-        return btnItem8;
-    }
-
-    public JButton getBtnItem9() {
-        return btnItem9;
-    }
-
     public JButton getBtnKembali() {
         return btnKembali;
     }
 
-    public JButton getBtnNext() {
-        return btnNext;
+    public JLabel getLblGaram() {
+        return lblGaram;
     }
 
-    public JButton getBtnPrevious() {
-        return btnPrevious;
+    public JLabel getLblJagung() {
+        return lblJagung;
+    }
+
+    public JLabel getLblKoin() {
+        return lblKoin;
+    }
+
+    public JLabel getLblMinyak() {
+        return lblMinyak;
+    }
+
+    public JLabel getLblBibit() {
+        return lblBibit;
     }
     
 
@@ -83,29 +72,22 @@ public class koperasi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnItem5 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         btnItem1 = new javax.swing.JButton();
         btnItem2 = new javax.swing.JButton();
         btnItem3 = new javax.swing.JButton();
         btnItem4 = new javax.swing.JButton();
-        btnItem6 = new javax.swing.JButton();
-        btnItem7 = new javax.swing.JButton();
-        btnItem8 = new javax.swing.JButton();
-        btnItem9 = new javax.swing.JButton();
-        btnItem10 = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
-        btnNext = new javax.swing.JButton();
-        btnPrevious = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        lblMinyak = new javax.swing.JLabel();
+        lblKoin = new javax.swing.JLabel();
+        lblJagung = new javax.swing.JLabel();
+        lblGaram = new javax.swing.JLabel();
+        lblBibit = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnItem5.setText("item 5");
-        btnItem5.setFocusable(false);
-        getContentPane().add(btnItem5, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 120, 150, 150));
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -114,55 +96,47 @@ public class koperasi extends javax.swing.JFrame {
 
         btnItem1.setText("item 1");
         btnItem1.setFocusable(false);
-        getContentPane().add(btnItem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 150, 150));
+        getContentPane().add(btnItem1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 100, 150, 150));
 
         btnItem2.setText("item 2");
         btnItem2.setFocusable(false);
-        getContentPane().add(btnItem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 120, 150, 150));
+        getContentPane().add(btnItem2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 100, 150, 150));
 
         btnItem3.setText("item 3");
         btnItem3.setFocusable(false);
-        getContentPane().add(btnItem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 150, 150));
+        getContentPane().add(btnItem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, 180, 150));
 
         btnItem4.setText("item 4");
         btnItem4.setFocusable(false);
-        getContentPane().add(btnItem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 120, 150, 150));
-
-        btnItem6.setText("item 6");
-        btnItem6.setFocusable(false);
-        getContentPane().add(btnItem6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 150, 150));
-
-        btnItem7.setText("item 7");
-        btnItem7.setFocusable(false);
-        getContentPane().add(btnItem7, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 300, 150, 150));
-
-        btnItem8.setText("item 8");
-        btnItem8.setFocusable(false);
-        getContentPane().add(btnItem8, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 300, 150, 150));
-
-        btnItem9.setText("item 9");
-        btnItem9.setFocusable(false);
-        getContentPane().add(btnItem9, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 300, 150, 150));
-
-        btnItem10.setText("item 10");
-        btnItem10.setFocusable(false);
-        getContentPane().add(btnItem10, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 300, 150, 150));
+        getContentPane().add(btnItem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 470, 350, 150));
 
         btnKembali.setText("KEMBALI");
         btnKembali.setFocusable(false);
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 570, 150, 60));
-
-        btnNext.setText(">");
-        btnNext.setFocusable(false);
-        getContentPane().add(btnNext, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 490, 70, 70));
-
-        btnPrevious.setText("<");
-        btnPrevious.setFocusable(false);
-        getContentPane().add(btnPrevious, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 490, 70, 70));
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 50, 120, 60));
 
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Gambar Orang");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 450, 120, 160));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, 120, 160));
+
+        lblMinyak.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMinyak.setText("minyak goreng");
+        getContentPane().add(lblMinyak, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 10, 80, 20));
+
+        lblKoin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblKoin.setText("koin");
+        getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 10, 50, 20));
+
+        lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblJagung.setText("jagung");
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 10, 50, 20));
+
+        lblGaram.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblGaram.setText("garam");
+        getContentPane().add(lblGaram, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 10, 50, 20));
+
+        lblBibit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBibit.setText("bibit");
+        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 10, 50, 20));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -204,19 +178,16 @@ public class koperasi extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnItem1;
-    private javax.swing.JButton btnItem10;
     private javax.swing.JButton btnItem2;
     private javax.swing.JButton btnItem3;
     private javax.swing.JButton btnItem4;
-    private javax.swing.JButton btnItem5;
-    private javax.swing.JButton btnItem6;
-    private javax.swing.JButton btnItem7;
-    private javax.swing.JButton btnItem8;
-    private javax.swing.JButton btnItem9;
     private javax.swing.JButton btnKembali;
-    private javax.swing.JButton btnNext;
-    private javax.swing.JButton btnPrevious;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblBibit;
+    private javax.swing.JLabel lblGaram;
+    private javax.swing.JLabel lblJagung;
+    private javax.swing.JLabel lblKoin;
+    private javax.swing.JLabel lblMinyak;
     // End of variables declaration//GEN-END:variables
 }
