@@ -46,7 +46,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="940" y="30" width="130" height="120"/>
+          <AbsoluteConstraints x="960" y="30" width="130" height="120"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -114,6 +114,7 @@
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/gambar/isiKoperasi/tblBibitJagung.png"/>
         </Property>
+        <Property name="borderPainted" type="boolean" value="false"/>
         <Property name="contentAreaFilled" type="boolean" value="false"/>
         <Property name="defaultCapable" type="boolean" value="false"/>
         <Property name="focusable" type="boolean" value="false"/>
@@ -145,15 +146,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Yu Gothic" size="18" style="1"/>
         </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="minyak goreng"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="640" y="10" width="90" height="20"/>
+          <AbsoluteConstraints x="1120" y="343" width="140" height="32"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -162,15 +160,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Yu Gothic" size="18" style="1"/>
         </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="koin"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="1160" y="10" width="90" height="20"/>
+          <AbsoluteConstraints x="1120" y="252" width="140" height="35"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -179,15 +174,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Yu Gothic" size="18" style="1"/>
         </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="jagung"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="880" y="10" width="90" height="20"/>
+          <AbsoluteConstraints x="1120" y="525" width="140" height="33"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -196,15 +188,12 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Yu Gothic" size="18" style="1"/>
         </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="horizontalAlignment" type="int" value="11"/>
         <Property name="text" type="java.lang.String" value="garam"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="770" y="10" width="90" height="20"/>
+          <AbsoluteConstraints x="1130" y="436" width="130" height="34"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -213,15 +202,24 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Yu Gothic" size="18" style="1"/>
         </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-        </Property>
-        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="bibit"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="1010" y="10" width="90" height="20"/>
+          <AbsoluteConstraints x="1120" y="607" width="140" height="33"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/gambar/isiKoperasi/indicator.png"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="1050" y="220" width="-1" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

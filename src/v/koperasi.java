@@ -83,6 +83,7 @@ public class koperasi extends javax.swing.JFrame {
         lblJagung = new javax.swing.JLabel();
         lblGaram = new javax.swing.JLabel();
         lblBibit = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -98,7 +99,7 @@ public class koperasi extends javax.swing.JFrame {
         btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClosehover.png"))); // NOI18N
         btnKembali.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         btnKembali.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 30, 130, 120));
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 30, 130, 120));
 
         btnItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblGaram.png"))); // NOI18N
         btnItem1.setBorderPainted(false);
@@ -127,6 +128,7 @@ public class koperasi extends javax.swing.JFrame {
         getContentPane().add(btnItem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 240, 390, 180));
 
         btnItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblBibitJagung.png"))); // NOI18N
+        btnItem4.setBorderPainted(false);
         btnItem4.setContentAreaFilled(false);
         btnItem4.setDefaultCapable(false);
         btnItem4.setFocusable(false);
@@ -140,34 +142,32 @@ public class koperasi extends javax.swing.JFrame {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, 120, 160));
 
         lblMinyak.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
-        lblMinyak.setForeground(new java.awt.Color(255, 255, 255));
-        lblMinyak.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMinyak.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblMinyak.setText("minyak goreng");
-        getContentPane().add(lblMinyak, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 10, 90, 20));
+        getContentPane().add(lblMinyak, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 343, 140, 32));
 
         lblKoin.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
-        lblKoin.setForeground(new java.awt.Color(255, 255, 255));
-        lblKoin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblKoin.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblKoin.setText("koin");
-        getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 10, 90, 20));
+        getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 252, 140, 35));
 
         lblJagung.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
-        lblJagung.setForeground(new java.awt.Color(255, 255, 255));
-        lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblJagung.setText("jagung");
-        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, 90, 20));
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 525, 140, 33));
 
         lblGaram.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
-        lblGaram.setForeground(new java.awt.Color(255, 255, 255));
-        lblGaram.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblGaram.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         lblGaram.setText("garam");
-        getContentPane().add(lblGaram, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 10, 90, 20));
+        getContentPane().add(lblGaram, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 436, 130, 34));
 
         lblBibit.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
-        lblBibit.setForeground(new java.awt.Color(255, 255, 255));
-        lblBibit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBibit.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblBibit.setText("bibit");
-        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 10, 90, 20));
+        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 607, 140, 33));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/indicator.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 220, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Yu Gothic", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -220,6 +220,7 @@ public class koperasi extends javax.swing.JFrame {
     private javax.swing.JButton btnKembali;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblBibit;
     private javax.swing.JLabel lblGaram;
     private javax.swing.JLabel lblJagung;
