@@ -61,6 +61,31 @@ public class sawah extends javax.swing.JFrame {
     public JLabel getLblJagung() {
         return lblJagung;
     }
+
+    public JLabel getLblNotif() {
+        return lblNotif;
+    }
+
+    public JLabel getLblNotif1() {
+        return lblNotif1;
+    }
+
+    public JLabel getLblNotif2() {
+        return lblNotif2;
+    }
+
+    public JLabel getLblNotif3() {
+        return lblNotif3;
+    }
+
+    public JLabel getLblNotif4() {
+        return lblNotif4;
+    }
+
+    public JLabel getLblNotif5() {
+        return lblNotif5;
+    }
+    
     
     
 
@@ -73,6 +98,12 @@ public class sawah extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblNotif5 = new javax.swing.JLabel();
+        lblNotif4 = new javax.swing.JLabel();
+        lblNotif3 = new javax.swing.JLabel();
+        lblNotif2 = new javax.swing.JLabel();
+        lblNotif1 = new javax.swing.JLabel();
+        lblNotif = new javax.swing.JLabel();
         btnAir = new javax.swing.JButton();
         btnKotak6 = new javax.swing.JButton();
         btnKotak5 = new javax.swing.JButton();
@@ -83,12 +114,42 @@ public class sawah extends javax.swing.JFrame {
         btnKembali = new javax.swing.JButton();
         lblBibit = new javax.swing.JLabel();
         lblJagung = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        statusBar = new javax.swing.JLabel();
         bg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblNotif5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNotif5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/notif air.png"))); // NOI18N
+        lblNotif5.setToolTipText("");
+        getContentPane().add(lblNotif5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 330, 260, 230));
+
+        lblNotif4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNotif4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/notif air.png"))); // NOI18N
+        lblNotif4.setToolTipText("");
+        getContentPane().add(lblNotif4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, 260, 230));
+
+        lblNotif3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNotif3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/notif air.png"))); // NOI18N
+        lblNotif3.setToolTipText("");
+        getContentPane().add(lblNotif3, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 330, 260, 230));
+
+        lblNotif2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNotif2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/notif air.png"))); // NOI18N
+        lblNotif2.setToolTipText("");
+        getContentPane().add(lblNotif2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 110, 260, 230));
+
+        lblNotif1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNotif1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/notif air.png"))); // NOI18N
+        lblNotif1.setToolTipText("");
+        getContentPane().add(lblNotif1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 110, 260, 230));
+
+        lblNotif.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblNotif.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/notif air.png"))); // NOI18N
+        lblNotif.setToolTipText("");
+        getContentPane().add(lblNotif, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 110, 260, 230));
 
         btnAir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tblSiram.png"))); // NOI18N
         btnAir.setBorderPainted(false);
@@ -161,8 +222,8 @@ public class sawah extends javax.swing.JFrame {
         lblJagung.setText("Jagung");
         getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 40, 120, 40));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/statusBarSawah.png"))); // NOI18N
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, -1, -1));
+        statusBar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/statusBarSawah.png"))); // NOI18N
+        getContentPane().add(statusBar, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 0, -1, -1));
 
         bg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/backgroundsawah.png"))); // NOI18N
         getContentPane().add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
@@ -215,8 +276,14 @@ public class sawah extends javax.swing.JFrame {
     private javax.swing.JButton btnKotak4;
     private javax.swing.JButton btnKotak5;
     private javax.swing.JButton btnKotak6;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblBibit;
     private javax.swing.JLabel lblJagung;
+    private javax.swing.JLabel lblNotif;
+    private javax.swing.JLabel lblNotif1;
+    private javax.swing.JLabel lblNotif2;
+    private javax.swing.JLabel lblNotif3;
+    private javax.swing.JLabel lblNotif4;
+    private javax.swing.JLabel lblNotif5;
+    private javax.swing.JLabel statusBar;
     // End of variables declaration//GEN-END:variables
 }

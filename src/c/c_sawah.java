@@ -13,6 +13,7 @@ import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import m.m_aset;
 import v.home;
@@ -28,6 +29,7 @@ public class c_sawah {
     private home vHome;
     private m_aset mAset;
     private JButton btnKotak[] = new JButton[6];
+    private JLabel notif[] = new JLabel[6];
     private int statusKotak[] = {1, 1, 1, 1, 1, 1};
     private int statusTime1[] = {0, 0, 0, 0, 0, 0};
     private int statusTime2[] = {0, 0, 0, 0, 0, 0};
@@ -35,6 +37,8 @@ public class c_sawah {
     private boolean statusSiram[] = {false, false, false, false, false, false};
     private int bibit;
     private int jagung;
+    private int detikSiram = 0;
+    private boolean detikSiram1 = false;
     private String username;
     private Random random = new Random();
 
@@ -51,6 +55,15 @@ public class c_sawah {
         btnKotak[3] = vSawah.getBtnKotak4();
         btnKotak[4] = vSawah.getBtnKotak5();
         btnKotak[5] = vSawah.getBtnKotak6();
+        notif[0] = vSawah.getLblNotif();
+        notif[1] = vSawah.getLblNotif1();
+        notif[2] = vSawah.getLblNotif2();
+        notif[3] = vSawah.getLblNotif5();
+        notif[4] = vSawah.getLblNotif4();
+        notif[5] = vSawah.getLblNotif3();
+        for (int i = 0; i < notif.length; i++) {
+            notif[i].setVisible(false);
+        }
         bibit = mAset.getBibit(mAset.cekIdPlayer(username));
         jagung = mAset.getJagung(mAset.cekIdPlayer(username));
 
@@ -76,6 +89,9 @@ public class c_sawah {
             for (int i = 0; i < statusKotak.length; i++) {
                 if (statusKotak[i] == 2) {
                     statusSiram[i] = true;
+                    detikSiram1 = true;
+                    notif[i].setVisible(true);
+                    notif[i].setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/siram.gif")));
                     //set gif menyiram
                     //set label butuh air false
                     vSawah.getBtnAir().setEnabled(false);
@@ -423,20 +439,24 @@ public class c_sawah {
         public void run() {
             while (true) {
                 try {
+                    Thread.sleep(1000);
                     bibit = mAset.getBibit(mAset.cekIdPlayer(username));
                     jagung = mAset.getJagung(mAset.cekIdPlayer(username));
-                    Thread.sleep(1000);
                     for (int i = 0; i < statusKotak.length; i++) {
                         if (statusKotak[i] == 2) {
                             statusTime1[i] += 1;
                             if (statusTime1[i] == 5) {
-                                //set label butuh air true
+                                notif[i].setVisible(true);
+                                notif[i].setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/notif air.png")));
                                 vSawah.getBtnAir().setEnabled(true);
                             }
                         }
                         if (statusSiram[i]) {
+
                             statusTime2[i] += 1;
-                            if (statusTime2[i] == 20) {
+                            if (statusTime2[i] == 2) {
+                                notif[i].setVisible(false);
+                            } else if (statusTime2[i] == 20) {
                                 statusKotak[i] = 3;
                                 btnKotak[i].setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung1.png")));
                                 btnKotak[i].setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isisawah/tanahBerjagung1hover.png")));

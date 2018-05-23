@@ -101,22 +101,22 @@ public class gudang extends javax.swing.JFrame {
         lblMinyakGoreng.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblMinyakGoreng.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMinyakGoreng.setText("item4");
-        getContentPane().add(lblMinyakGoreng, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 430, 120, 30));
+        getContentPane().add(lblMinyakGoreng, new org.netbeans.lib.awtextra.AbsoluteConstraints(857, 422, 120, 30));
 
         lblGaram.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblGaram.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblGaram.setText("item3");
-        getContentPane().add(lblGaram, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 420, 120, 30));
+        getContentPane().add(lblGaram, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 424, 120, 30));
 
         lblBibit.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBibit.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBibit.setText("item2");
-        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, 120, 30));
+        getContentPane().add(lblBibit, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 423, 120, 30));
 
         lblJagung.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagung.setText("item1");
-        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 430, 120, 30));
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(285, 423, 120, 30));
 
         iconItem4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         iconItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/gudangminyak goreng.png"))); // NOI18N
@@ -132,7 +132,7 @@ public class gudang extends javax.swing.JFrame {
 
         iconItem3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         iconItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/gudanggaram.png"))); // NOI18N
-        getContentPane().add(iconItem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, 160, 210));
+        getContentPane().add(iconItem3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, 160, 220));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/kotakDasar.png"))); // NOI18N
