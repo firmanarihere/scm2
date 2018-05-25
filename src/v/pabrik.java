@@ -223,6 +223,8 @@ public class pabrik extends javax.swing.JFrame {
         btnKurangJRP3 = new javax.swing.JButton();
         lblBanyakJRP3 = new javax.swing.JLabel();
         btnTambahJRP3 = new javax.swing.JButton();
+        lblBanyakJRP3Max = new javax.swing.JLabel();
+        lblBanyakGP4Max = new javax.swing.JLabel();
         frameP4 = new javax.swing.JFrame();
         btnBatalP4 = new javax.swing.JButton();
         lblBanyakP4 = new javax.swing.JLabel();
@@ -322,23 +324,27 @@ public class pabrik extends javax.swing.JFrame {
         frameP3.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBatalP3.setText("Batal");
+        btnBatalP3.setFocusable(false);
         frameP3.getContentPane().add(btnBatalP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 50));
 
         lblBanyakGP3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakGP3.setText("banyak");
-        frameP3.getContentPane().add(lblBanyakGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, 90, 60));
+        lblBanyakGP3.setText("1");
+        frameP3.getContentPane().add(lblBanyakGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 40, 60));
 
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Proses 3 (Pemberian Bumbu)");
         frameP3.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 330, 60));
 
         btnMulaiP3.setText("Mulai Proses");
+        btnMulaiP3.setFocusable(false);
         frameP3.getContentPane().add(btnMulaiP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 230, 60));
 
         btnKurangGP3.setText("-");
+        btnKurangGP3.setFocusable(false);
         frameP3.getContentPane().add(btnKurangGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 70, 60));
 
         btnTambahGP3.setText("+");
+        btnTambahGP3.setFocusable(false);
         frameP3.getContentPane().add(btnTambahGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, 70, 60));
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -350,14 +356,24 @@ public class pabrik extends javax.swing.JFrame {
         frameP3.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 90, 60));
 
         btnKurangJRP3.setText("-");
+        btnKurangJRP3.setFocusable(false);
         frameP3.getContentPane().add(btnKurangJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 70, 60));
 
         lblBanyakJRP3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakJRP3.setText("banyak");
-        frameP3.getContentPane().add(lblBanyakJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 90, 60));
+        lblBanyakJRP3.setText("1");
+        frameP3.getContentPane().add(lblBanyakJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 40, 60));
 
         btnTambahJRP3.setText("+");
+        btnTambahJRP3.setFocusable(false);
         frameP3.getContentPane().add(btnTambahJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 70, 60));
+
+        lblBanyakJRP3Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakJRP3Max.setText("/ 20");
+        frameP3.getContentPane().add(lblBanyakJRP3Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 40, 60));
+
+        lblBanyakGP4Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakGP4Max.setText("/  6");
+        frameP3.getContentPane().add(lblBanyakGP4Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 40, 60));
 
         frameP4.setMinimumSize(new java.awt.Dimension(600, 500));
         frameP4.setPreferredSize(new java.awt.Dimension(600, 500));
@@ -526,7 +542,9 @@ public class pabrik extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblBanyakGP3;
+    private javax.swing.JLabel lblBanyakGP4Max;
     private javax.swing.JLabel lblBanyakJRP3;
+    private javax.swing.JLabel lblBanyakJRP3Max;
     private javax.swing.JLabel lblBanyakK1;
     private javax.swing.JLabel lblBanyakP1;
     private javax.swing.JLabel lblBanyakP2;

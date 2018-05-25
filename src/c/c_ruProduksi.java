@@ -33,12 +33,19 @@ public class c_ruProduksi {
     private int jumlahKaryawanP4 = 1;
     private int jagung = 13;
     private int jagungCuci = 3;
-    private int jagungRendam = 0;
+    private int jagungRendam = 6;
+    private int jagungBumbu = 0;
+    private int marningA = 0;
+    private int marningB = 0;
+    private int marningC = 0;
+    private int garam = 6;
     private int detikP1;
     private int detikP2;
     private int detikP3;
     private int wadahP1 = 0;
     private int wadahP2 = 0;
+    private int wadahJRP3 = 0;
+    private int wadahGP3 = 0;
 
     public c_ruProduksi(home home) {
         vPabrik = new pabrik();
@@ -59,6 +66,11 @@ public class c_ruProduksi {
         vPabrik.getBtnMulaiP2().addActionListener(new mulaiP2Action());
         vPabrik.getBtnKurangP2().addActionListener(new kurangP2Action());
         vPabrik.getBtnTambahP2().addActionListener(new tambahP2Action());
+        vPabrik.getBtnMulaiP3().addActionListener(new mulaiP3Action());
+        vPabrik.getBtnKurangJRP3().addActionListener(new kurangJRP3Action());
+        vPabrik.getBtnKurangGP3().addActionListener(new kurangGP3Action());
+        vPabrik.getBtnTambahJRP3().addActionListener(new tambahJRP3Action());
+        vPabrik.getBtnTambahGP3().addActionListener(new tambahGP3Action());
 
         Thread proses = new proses();
         proses.start();
@@ -66,6 +78,77 @@ public class c_ruProduksi {
 
     public pabrik getView() {
         return vPabrik;
+    }
+
+    private class tambahGP3Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (Integer.parseInt(vPabrik.getLblBanyakGP3().getText()) == 6) {
+
+            } else if (Integer.parseInt(vPabrik.getLblBanyakGP3().getText()) == garam) {
+
+            } else {
+                vPabrik.getLblBanyakGP3().setText((Integer.parseInt(vPabrik.getLblBanyakGP3().getText()) + 1) + "");
+            }
+        }
+    }
+
+    private class tambahJRP3Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (Integer.parseInt(vPabrik.getLblBanyakJRP3().getText()) == 20) {
+
+            } else if (Integer.parseInt(vPabrik.getLblBanyakJRP3().getText()) == jagungRendam) {
+
+            }else{
+                vPabrik.getLblBanyakJRP3().setText((Integer.parseInt(vPabrik.getLblBanyakJRP3().getText()) + 1) + "");
+                
+            }
+        }
+    }
+
+    private class kurangGP3Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (Integer.parseInt(vPabrik.getLblBanyakGP3().getText()) == 1) {
+
+            } else {
+                vPabrik.getLblBanyakGP3().setText((Integer.parseInt(vPabrik.getLblBanyakGP3().getText()) - 1) + "");
+            }
+        }
+
+    }
+
+    private class kurangJRP3Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (Integer.parseInt(vPabrik.getLblBanyakJRP3().getText()) == 0) {
+
+            } else {
+                vPabrik.getLblBanyakJRP3().setText((Integer.parseInt(vPabrik.getLblBanyakJRP3().getText()) - 1) + "");
+            }
+        }
+    }
+
+    private class mulaiP3Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            wadahJRP3 = Integer.parseInt(vPabrik.getLblBanyakJRP3().getText());
+            wadahGP3 = Integer.parseInt(vPabrik.getLblBanyakGP3().getText());
+            jagungRendam = jagungRendam - wadahJRP3;
+            garam = garam - wadahGP3;
+            p3 = true;
+            vPabrik.getLblBanyakJRP3().setText("1");
+            vPabrik.getLblBanyakGP3().setText("1");
+            vPabrik.getFrameP3().dispose();
+            vPabrik.getBtnProses3().setEnabled(false);
+        }
+
     }
 
     private class tambahP2Action implements ActionListener {
@@ -335,12 +418,83 @@ public class c_ruProduksi {
                     if (p3) {
                         detikP3 += 1;
                         if (jumlahKaryawanP3 == 1) {
-                            
+                            if (wadahJRP3 <= 10) {
+                                if (detikP3 == 10) {
+                                    if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 5) {
+                                        marningA += (int) roundHalfUp(wadahJRP3 * 3.0 / 5.0);
+                                        marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 4) {
+                                        marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 4.0);
+                                        marningB += (int) roundHalfUp(wadahJRP3 * 3 / 4);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 3) {
+                                        marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 3.0);
+                                        marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) < 3) {
+                                        marningB += (int) roundHalfUp(wadahJRP3 * 1);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) > 5) {
+                                        marningA += (int) roundHalfUp(wadahJRP3 * 10.0 / 100.0);
+                                        marningB += (int) roundHalfUp(wadahJRP3 * 15.0 / 100.0);
+                                        marningC += (int) roundHalfUp(wadahJRP3 * 75.0 / 100.0);
+                                    }
+                                    wadahJRP3 = 0;
+                                    detikP3 = 0;
+                                    p3 = false;
+                                    vPabrik.getBtnProses3().setEnabled(true);
+                                }
+                            } else if (wadahJRP3 > 10) {
+                                if (detikP3 == 10) {
+                                    if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 5) {
+                                        marningA += (int) roundHalfUp(10 * 3.0 / 5.0);
+                                        marningB += (int) roundHalfUp(10 * 2.0 / 5.0);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 4) {
+                                        marningA += (int) roundHalfUp(10 * 1.0 / 4.0);
+                                        marningB += (int) roundHalfUp(10 * 3 / 4);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 3) {
+                                        marningA += (int) roundHalfUp(10 * 1.0 / 3.0);
+                                        marningB += (int) roundHalfUp(10 * 2.0 / 5.0);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) < 3) {
+                                        marningB += (int) roundHalfUp(10 * 1);
+                                    } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) > 5) {
+                                        marningA += (int) roundHalfUp(10 * 10.0 / 100.0);
+                                        marningB += (int) roundHalfUp(10 * 15.0 / 100.0);
+                                        marningC += (int) roundHalfUp(10 * 75.0 / 100.0);
+                                    }
+                                    wadahJRP3 -= 20;
+                                    detikP3 = 0;
+                                }
+                            }
                         } else if (jumlahKaryawanP3 == 2) {
-
-                        } else if (jumlahKaryawanP3 == 3) {
-
-                        }
+                            if (detikP3 == 10) {
+                                if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 5) {
+                                    marningA += (int) roundHalfUp(wadahJRP3 * 3.0 / 5.0);
+                                    marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 4) {
+                                    marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 4.0);
+                                    marningB += (int) roundHalfUp(wadahJRP3 * 3 / 4);
+                                } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 3) {
+                                    marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 3.0);
+                                    marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) < 3) {
+                                    marningB += (int) roundHalfUp(wadahJRP3 * 1);
+                                } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) > 5) {
+                                    marningA += (int) roundHalfUp(wadahJRP3 * 10.0 / 100.0);
+                                    marningB += (int) roundHalfUp(wadahJRP3 * 15.0 / 100.0);
+                                    marningC += (int) roundHalfUp(wadahJRP3 * 75.0 / 100.0);
+                                }
+                                wadahJRP3 = 0;
+                                detikP3 = 0;
+                                p3 = false;
+                                vPabrik.getBtnProses3().setEnabled(true);
+                            }
+                        }System.out.println("");
+                        System.out.println("detik: " + detikP3);
+                        System.out.println("jagungRendam: " + jagungRendam);
+                        System.out.println("wadahJRP3: " + wadahJRP3);
+                        System.out.println("garam: " + wadahGP3);
+                        System.out.println("wadahGP3: " + wadahGP3);
+                        System.out.println("MarningA: " + marningA);
+                        System.out.println("MarningB: " + marningB);
+                        System.out.println("MarningC: " + marningC);
                     }
                     if (p4) {
 
@@ -353,11 +507,11 @@ public class c_ruProduksi {
     }
 
     private int parameterKualitasJagung(double jagungRendam, double garam) {
-        int hasil = (int) roundHalfDown(jagungRendam / garam);
+        int hasil = (int) roundHalfUp(jagungRendam / garam);
         return hasil;
     }
 
-    private double roundHalfDown(double d) {
+    private double roundHalfUp(double d) {
         return new BigDecimal(d).setScale(0, RoundingMode.HALF_UP).doubleValue();
     }
 }
