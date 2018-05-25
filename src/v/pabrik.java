@@ -256,6 +256,7 @@ public class pabrik extends javax.swing.JFrame {
         frameP1.setMinimumSize(new java.awt.Dimension(643, 530));
         frameP1.setUndecorated(true);
         frameP1.setPreferredSize(new java.awt.Dimension(643, 530));
+        frameP1.setResizable(false);
         frameP1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBatalP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
@@ -302,7 +303,9 @@ public class pabrik extends javax.swing.JFrame {
         frameP1.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 530));
 
         frameP2.setMinimumSize(new java.awt.Dimension(643, 530));
+        frameP2.setUndecorated(true);
         frameP2.setPreferredSize(new java.awt.Dimension(643, 530));
+        frameP2.setResizable(false);
         frameP2.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBatalP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
@@ -337,6 +340,7 @@ public class pabrik extends javax.swing.JFrame {
         btnKurangP2.setBorderPainted(false);
         btnKurangP2.setContentAreaFilled(false);
         btnKurangP2.setFocusPainted(false);
+        btnKurangP2.setFocusable(false);
         btnKurangP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinushover.png"))); // NOI18N
         frameP2.getContentPane().add(btnKurangP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 50, 50));
 
@@ -352,7 +356,9 @@ public class pabrik extends javax.swing.JFrame {
 
         frameP3.setMaximumSize(new java.awt.Dimension(643, 530));
         frameP3.setMinimumSize(new java.awt.Dimension(643, 530));
+        frameP3.setUndecorated(true);
         frameP3.setPreferredSize(new java.awt.Dimension(643, 530));
+        frameP3.setResizable(false);
         frameP3.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBatalP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
@@ -420,7 +426,9 @@ public class pabrik extends javax.swing.JFrame {
         frameP3.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 530));
 
         frameP4.setMinimumSize(new java.awt.Dimension(643, 530));
+        frameP4.setUndecorated(true);
         frameP4.setPreferredSize(new java.awt.Dimension(643, 530));
+        frameP4.setResizable(false);
         frameP4.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBatalP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
@@ -498,7 +506,9 @@ public class pabrik extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
+        setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1280, 720));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnProses1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1.png"))); // NOI18N

@@ -119,6 +119,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(1280, 720));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N

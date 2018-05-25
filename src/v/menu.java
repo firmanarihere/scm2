@@ -80,6 +80,8 @@ public class menu extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         usernameFrame.setMinimumSize(new java.awt.Dimension(1280, 720));
+        usernameFrame.setUndecorated(true);
+        usernameFrame.setResizable(false);
         usernameFrame.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         fieldUsername.setFont(new java.awt.Font("Yu Gothic", 1, 65)); // NOI18N
@@ -110,6 +112,8 @@ public class menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
+        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblExit.png"))); // NOI18N

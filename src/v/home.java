@@ -94,6 +94,8 @@ public class home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
+        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblJagung.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
@@ -111,8 +113,11 @@ public class home extends javax.swing.JFrame {
         jLabel3.setText("Produk");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 110, 30));
 
-        btnLogOut.setText("Logout");
-        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 640, 70, 40));
+        btnLogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/logout.png"))); // NOI18N
+        btnLogOut.setBorderPainted(false);
+        btnLogOut.setContentAreaFilled(false);
+        btnLogOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 620, 60, 60));
 
         labelUsername.setFont(new java.awt.Font("Bebas Neue", 0, 30)); // NOI18N
         labelUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

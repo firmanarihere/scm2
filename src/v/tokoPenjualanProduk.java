@@ -111,6 +111,8 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
+        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblMarning.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
@@ -128,14 +130,14 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         jButton1.setContentAreaFilled(false);
         jButton1.setFocusable(false);
         jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblIklanhover.png"))); // NOI18N
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 590, 90, 80));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 90, 80));
 
         btnMulaiJual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblTutupToko.png"))); // NOI18N
         btnMulaiJual.setBorderPainted(false);
         btnMulaiJual.setContentAreaFilled(false);
         btnMulaiJual.setFocusable(false);
         btnMulaiJual.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblTutupTokoHover.png"))); // NOI18N
-        getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 590, 90, 80));
+        getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 90, 80));
 
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
