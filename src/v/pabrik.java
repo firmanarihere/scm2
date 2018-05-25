@@ -210,6 +210,7 @@ public class pabrik extends javax.swing.JFrame {
         btnMulaiP2 = new javax.swing.JButton();
         btnKurangP2 = new javax.swing.JButton();
         jLabel10 = new javax.swing.JLabel();
+        lblMaxP2 = new javax.swing.JLabel();
         frameP3 = new javax.swing.JFrame();
         btnBatalP3 = new javax.swing.JButton();
         lblBanyakGP3 = new javax.swing.JLabel();
@@ -288,8 +289,8 @@ public class pabrik extends javax.swing.JFrame {
         frameP2.getContentPane().add(btnBatalP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
 
         lblBanyakP2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakP2.setText("Banyak");
-        frameP2.getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 80, 60));
+        lblBanyakP2.setText("1");
+        frameP2.getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 40, 60));
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("Proses 2 (Rendam jagung)");
@@ -310,6 +311,10 @@ public class pabrik extends javax.swing.JFrame {
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Jagung cuci");
         frameP2.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 80, 70));
+
+        lblMaxP2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblMaxP2.setText("/ 30");
+        frameP2.getContentPane().add(lblMaxP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 40, 60));
 
         frameP3.setMaximumSize(new java.awt.Dimension(600, 500));
         frameP3.setMinimumSize(new java.awt.Dimension(600, 500));
@@ -532,5 +537,6 @@ public class pabrik extends javax.swing.JFrame {
     private javax.swing.JLabel lblJagungRendam;
     private javax.swing.JLabel lblJumlahKaryawan;
     private javax.swing.JLabel lblMarning;
+    private javax.swing.JLabel lblMaxP2;
     // End of variables declaration//GEN-END:variables
 }
