@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-
+import c.c_home;
 import c.c_menu;
 import java.sql.SQLException;
 
@@ -19,6 +19,7 @@ public class Scm {
      */
     public static void main(String[] args) throws SQLException {
         new c_menu();
+//        new c_home("test1");
     }
-    
+
 }

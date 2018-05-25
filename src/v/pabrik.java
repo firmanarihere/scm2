@@ -21,6 +21,10 @@ public class pabrik extends javax.swing.JFrame {
     public pabrik() {
         initComponents();
         this.setLocationRelativeTo(null);
+        frameP1.setLocationRelativeTo(null);
+        frameP2.setLocationRelativeTo(null);
+        frameP3.setLocationRelativeTo(null);
+        frameP4.setLocationRelativeTo(null);
     }
 
     public JButton getBtnBatalP1() {
@@ -191,12 +195,13 @@ public class pabrik extends javax.swing.JFrame {
 
         frameP1 = new javax.swing.JFrame();
         btnBatalP1 = new javax.swing.JButton();
-        lblBanyakP1 = new javax.swing.JLabel();
+        lblBanyakK1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         btnMulaiP1 = new javax.swing.JButton();
         btnKurangP1 = new javax.swing.JButton();
         btnTambahP1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        lblBanyakP1 = new javax.swing.JLabel();
         frameP2 = new javax.swing.JFrame();
         btnBatalP2 = new javax.swing.JButton();
         lblBanyakP2 = new javax.swing.JLabel();
@@ -246,9 +251,9 @@ public class pabrik extends javax.swing.JFrame {
         btnBatalP1.setFocusable(false);
         frameP1.getContentPane().add(btnBatalP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 80, 50));
 
-        lblBanyakP1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakP1.setText("Banyak");
-        frameP1.getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 80, 40));
+        lblBanyakK1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakK1.setText("/ 30");
+        frameP1.getContentPane().add(lblBanyakK1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 40, 40));
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Proses 1 (Cuci Jagung)");
@@ -269,6 +274,10 @@ public class pabrik extends javax.swing.JFrame {
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("Jagung");
         frameP1.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 80, 40));
+
+        lblBanyakP1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakP1.setText("1");
+        frameP1.getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 40, 40));
 
         frameP2.setMinimumSize(new java.awt.Dimension(600, 500));
         frameP2.setPreferredSize(new java.awt.Dimension(600, 500));
@@ -513,6 +522,7 @@ public class pabrik extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblBanyakGP3;
     private javax.swing.JLabel lblBanyakJRP3;
+    private javax.swing.JLabel lblBanyakK1;
     private javax.swing.JLabel lblBanyakP1;
     private javax.swing.JLabel lblBanyakP2;
     private javax.swing.JLabel lblBanyakP4;

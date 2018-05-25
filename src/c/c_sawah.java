@@ -471,18 +471,18 @@ public class c_sawah {
                             }
                         }
                     }
-                    System.out.println("");
-                    System.out.println("air =" + statusSiram[0]);
-                    System.out.println("air2 =" + statusSiram[1]);
-                    System.out.println("");
-                    System.out.println("jagung= " + jagung);
-                    System.out.println("");
-                    System.out.println("kotak 1= " + statusKotak[0]);
-                    System.out.println("kotak 2= " + statusKotak[1]);
-                    System.out.println("kotak 3= " + statusKotak[2]);
-                    System.out.println("kotak 4= " + statusKotak[3]);
-                    System.out.println("kotak 5= " + statusKotak[4]);
-                    System.out.println("kotak 6= " + statusKotak[5]);
+//                    System.out.println("");
+//                    System.out.println("air =" + statusSiram[0]);
+//                    System.out.println("air2 =" + statusSiram[1]);
+//                    System.out.println("");
+//                    System.out.println("jagung= " + jagung);
+//                    System.out.println("");
+//                    System.out.println("kotak 1= " + statusKotak[0]);
+//                    System.out.println("kotak 2= " + statusKotak[1]);
+//                    System.out.println("kotak 3= " + statusKotak[2]);
+//                    System.out.println("kotak 4= " + statusKotak[3]);
+//                    System.out.println("kotak 5= " + statusKotak[4]);
+//                    System.out.println("kotak 6= " + statusKotak[5]);
                 } catch (InterruptedException ex) {
                     Logger.getLogger(c_toko.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (SQLException ex) {

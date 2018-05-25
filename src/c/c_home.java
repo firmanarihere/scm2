@@ -13,7 +13,6 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import m.m_aset;
 import v.home;
-import v.menu;
 import v.tokoPenjualanProduk;
 
 /**
@@ -23,13 +22,11 @@ import v.tokoPenjualanProduk;
 public class c_home {
 
     private home vHome;
-    private tokoPenjualanProduk vToko;
     private m_aset mAset;
     private String username;
 
     public c_home(String username) throws SQLException {
         vHome = new home();
-        vToko = new tokoPenjualanProduk();
         mAset = new m_aset();
         this.username = username;
         vHome.getBtnGudang().addActionListener(new gudangAction());
@@ -56,10 +53,17 @@ public class c_home {
     }
 
     private class ruProduksiAction implements ActionListener {
+        private c_ruProduksi ruProduksi;
+        public ruProduksiAction() {
+            ruProduksi = new c_ruProduksi(vHome);
+            ruProduksi.getView().setVisible(false);
+        }
 
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            //settext labelnya di baris ini
+            ruProduksi.getView().setVisible(true);
+            vHome.setVisible(false);
         }
 
     }
