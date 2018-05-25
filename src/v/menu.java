@@ -80,7 +80,6 @@ public class menu extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         usernameFrame.setMinimumSize(new java.awt.Dimension(1280, 720));
-        usernameFrame.setPreferredSize(new java.awt.Dimension(1280, 720));
         usernameFrame.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         fieldUsername.setFont(new java.awt.Font("Yu Gothic", 1, 65)); // NOI18N
@@ -91,9 +90,12 @@ public class menu extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isi nama/txtNama.png"))); // NOI18N
         usernameFrame.getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 360, 610, 110));
 
-        btnBatal.setText("BATAL");
+        btnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
+        btnBatal.setBorderPainted(false);
+        btnBatal.setContentAreaFilled(false);
         btnBatal.setFocusable(false);
-        usernameFrame.getContentPane().add(btnBatal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 100, 50));
+        btnBatal.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
+        usernameFrame.getContentPane().add(btnBatal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 70, 70));
 
         btnOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isi nama/tblNama.png"))); // NOI18N
         btnOk.setBorderPainted(false);

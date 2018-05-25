@@ -34,18 +34,25 @@ public class c_ruProduksi {
     private int jagung = 13;
     private int jagungCuci = 3;
     private int jagungRendam = 6;
-    private int jagungBumbu = 0;
     private int marningA = 0;
     private int marningB = 0;
     private int marningC = 0;
+    private int jagungBumbuA = 2;
+    private int jagungBumbuB = 4;
+    private int jagungBumbuC = 1;
+    private int jagungBumbu = jagungBumbuA + jagungBumbuB + jagungBumbuC;
     private int garam = 6;
     private int detikP1;
     private int detikP2;
     private int detikP3;
+    private int detikP4;
     private int wadahP1 = 0;
     private int wadahP2 = 0;
     private int wadahJRP3 = 0;
     private int wadahGP3 = 0;
+    private int wadahP4 = 0;
+    private int input1 = 0;
+    private int input2 = 0;
 
     public c_ruProduksi(home home) {
         vPabrik = new pabrik();
@@ -71,6 +78,9 @@ public class c_ruProduksi {
         vPabrik.getBtnKurangGP3().addActionListener(new kurangGP3Action());
         vPabrik.getBtnTambahJRP3().addActionListener(new tambahJRP3Action());
         vPabrik.getBtnTambahGP3().addActionListener(new tambahGP3Action());
+        vPabrik.getBtnMulaiP4().addActionListener(new mulaiP4Action());
+        vPabrik.getBtnKurangP4().addActionListener(new kurangP4Action());
+        vPabrik.getBtnTambahP4().addActionListener(new tambahP4Action());
 
         Thread proses = new proses();
         proses.start();
@@ -78,6 +88,62 @@ public class c_ruProduksi {
 
     public pabrik getView() {
         return vPabrik;
+    }
+
+    private class tambahP4Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (Integer.parseInt(vPabrik.getLblBanyakP4().getText()) == 20) {
+
+            } else if (Integer.parseInt(vPabrik.getLblBanyakP4().getText()) == jagungBumbu) {
+
+            } else {
+                vPabrik.getLblBanyakP4().setText((Integer.parseInt(vPabrik.getLblBanyakP4().getText()) + 1) + "");
+            }
+        }
+
+    }
+
+    private class kurangP4Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (Integer.parseInt(vPabrik.getLblBanyakP4().getText()) == 1) {
+
+            } else {
+                vPabrik.getLblBanyakP4().setText((Integer.parseInt(vPabrik.getLblBanyakP4().getText()) - 1) + "");
+            }
+        }
+
+    }
+
+    private class mulaiP4Action implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            wadahP4 = Integer.parseInt(vPabrik.getLblBanyakP4().getText());
+            if (wadahP4 <= jagungBumbuA) {
+                jagungBumbuA = jagungBumbuA - wadahP4;
+            } else if (wadahP4 > jagungBumbuA) {
+                input1 = wadahP4 - jagungBumbuA;
+                jagungBumbuA = 0;
+                if (input1 <= jagungBumbuB) {
+                    jagungBumbuB = jagungBumbuB - input1;
+                } else if (input1 > jagungBumbuB) {
+                    input2 = input1 - jagungBumbuB;
+                    jagungBumbuB = 0;
+                    if (input2 <= jagungBumbuC) {
+                        jagungBumbuC = jagungBumbuC - input2;
+                    }
+                }
+            }
+            p4 = true;
+            vPabrik.getLblBanyakP4().setText("1");
+            vPabrik.getFrameP4().dispose();
+            vPabrik.getBtnProses4().setEnabled(false);
+        }
+
     }
 
     private class tambahGP3Action implements ActionListener {
@@ -102,9 +168,9 @@ public class c_ruProduksi {
 
             } else if (Integer.parseInt(vPabrik.getLblBanyakJRP3().getText()) == jagungRendam) {
 
-            }else{
+            } else {
                 vPabrik.getLblBanyakJRP3().setText((Integer.parseInt(vPabrik.getLblBanyakJRP3().getText()) + 1) + "");
-                
+
             }
         }
     }
@@ -421,20 +487,20 @@ public class c_ruProduksi {
                             if (wadahJRP3 <= 10) {
                                 if (detikP3 == 10) {
                                     if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 5) {
-                                        marningA += (int) roundHalfUp(wadahJRP3 * 3.0 / 5.0);
-                                        marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                        jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 3.0 / 5.0);
+                                        jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 4) {
-                                        marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 4.0);
-                                        marningB += (int) roundHalfUp(wadahJRP3 * 3 / 4);
+                                        jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 1.0 / 4.0);
+                                        jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 3 / 4);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 3) {
-                                        marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 3.0);
-                                        marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                        jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 1.0 / 3.0);
+                                        jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) < 3) {
-                                        marningB += (int) roundHalfUp(wadahJRP3 * 1);
+                                        jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 1);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) > 5) {
-                                        marningA += (int) roundHalfUp(wadahJRP3 * 10.0 / 100.0);
-                                        marningB += (int) roundHalfUp(wadahJRP3 * 15.0 / 100.0);
-                                        marningC += (int) roundHalfUp(wadahJRP3 * 75.0 / 100.0);
+                                        jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 10.0 / 100.0);
+                                        jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 15.0 / 100.0);
+                                        jagungBumbuC += (int) roundHalfUp(wadahJRP3 * 75.0 / 100.0);
                                     }
                                     wadahJRP3 = 0;
                                     detikP3 = 0;
@@ -444,20 +510,20 @@ public class c_ruProduksi {
                             } else if (wadahJRP3 > 10) {
                                 if (detikP3 == 10) {
                                     if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 5) {
-                                        marningA += (int) roundHalfUp(10 * 3.0 / 5.0);
-                                        marningB += (int) roundHalfUp(10 * 2.0 / 5.0);
+                                        jagungBumbuA += (int) roundHalfUp(10 * 3.0 / 5.0);
+                                        jagungBumbuB += (int) roundHalfUp(10 * 2.0 / 5.0);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 4) {
-                                        marningA += (int) roundHalfUp(10 * 1.0 / 4.0);
-                                        marningB += (int) roundHalfUp(10 * 3 / 4);
+                                        jagungBumbuA += (int) roundHalfUp(10 * 1.0 / 4.0);
+                                        jagungBumbuB += (int) roundHalfUp(10 * 3 / 4);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 3) {
-                                        marningA += (int) roundHalfUp(10 * 1.0 / 3.0);
-                                        marningB += (int) roundHalfUp(10 * 2.0 / 5.0);
+                                        jagungBumbuA += (int) roundHalfUp(10 * 1.0 / 3.0);
+                                        jagungBumbuB += (int) roundHalfUp(10 * 2.0 / 5.0);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) < 3) {
-                                        marningB += (int) roundHalfUp(10 * 1);
+                                        jagungBumbuB += (int) roundHalfUp(10 * 1);
                                     } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) > 5) {
-                                        marningA += (int) roundHalfUp(10 * 10.0 / 100.0);
-                                        marningB += (int) roundHalfUp(10 * 15.0 / 100.0);
-                                        marningC += (int) roundHalfUp(10 * 75.0 / 100.0);
+                                        jagungBumbuA += (int) roundHalfUp(10 * 10.0 / 100.0);
+                                        jagungBumbuB += (int) roundHalfUp(10 * 15.0 / 100.0);
+                                        jagungBumbuC += (int) roundHalfUp(10 * 75.0 / 100.0);
                                     }
                                     wadahJRP3 -= 20;
                                     detikP3 = 0;
@@ -466,42 +532,121 @@ public class c_ruProduksi {
                         } else if (jumlahKaryawanP3 == 2) {
                             if (detikP3 == 10) {
                                 if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 5) {
-                                    marningA += (int) roundHalfUp(wadahJRP3 * 3.0 / 5.0);
-                                    marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                    jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 3.0 / 5.0);
+                                    jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
                                 } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 4) {
-                                    marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 4.0);
-                                    marningB += (int) roundHalfUp(wadahJRP3 * 3 / 4);
+                                    jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 1.0 / 4.0);
+                                    jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 3 / 4);
                                 } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) == 3) {
-                                    marningA += (int) roundHalfUp(wadahJRP3 * 1.0 / 3.0);
-                                    marningB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
+                                    jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 1.0 / 3.0);
+                                    jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 2.0 / 5.0);
                                 } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) < 3) {
-                                    marningB += (int) roundHalfUp(wadahJRP3 * 1);
+                                    jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 1);
                                 } else if (parameterKualitasJagung(wadahJRP3, wadahGP3) > 5) {
-                                    marningA += (int) roundHalfUp(wadahJRP3 * 10.0 / 100.0);
-                                    marningB += (int) roundHalfUp(wadahJRP3 * 15.0 / 100.0);
-                                    marningC += (int) roundHalfUp(wadahJRP3 * 75.0 / 100.0);
+                                    jagungBumbuA += (int) roundHalfUp(wadahJRP3 * 10.0 / 100.0);
+                                    jagungBumbuB += (int) roundHalfUp(wadahJRP3 * 15.0 / 100.0);
+                                    jagungBumbuC += (int) roundHalfUp(wadahJRP3 * 75.0 / 100.0);
                                 }
                                 wadahJRP3 = 0;
                                 detikP3 = 0;
                                 p3 = false;
                                 vPabrik.getBtnProses3().setEnabled(true);
                             }
-                        }System.out.println("");
+                        }
+                        System.out.println("");
                         System.out.println("detik: " + detikP3);
                         System.out.println("jagungRendam: " + jagungRendam);
                         System.out.println("wadahJRP3: " + wadahJRP3);
                         System.out.println("garam: " + wadahGP3);
                         System.out.println("wadahGP3: " + wadahGP3);
+                        System.out.println("jagungBumbuA: " + jagungBumbuA);
+                        System.out.println("jagungBumbuB: " + jagungBumbuB);
+                        System.out.println("jagungBumbuC: " + jagungBumbuC);
+                    }
+                    if (p4) {
+                        detikP4 += 1;
+                        if (jumlahKaryawanP4 == 1) {
+                            if (wadahP4 <= 10) {
+                                if (detikP4 == 15) {
+                                    marningA += wadahP4 - input1;
+                                    marningB += input1;
+                                    marningC += input2;
+                                    wadahP4 = 0;
+                                    input1 = 0;
+                                    input2 = 0;
+                                    jagungBumbu = jagungBumbuA + jagungBumbuB + jagungBumbuC;
+                                    detikP4 = 0;
+                                    p4 = false;
+                                    vPabrik.getBtnProses4().setEnabled(true);
+                                }
+                            } else if (wadahP4 > 10) {
+                                if (detikP4 == 15) {
+//                                    if (input1 > 10) {
+//                                        marningA += 10;
+//                                        input1 -= 10;
+//                                    } else if (input1 <= 10) {
+//                                        marningA += input1;
+//                                        input1 = 0;
+//                                        if (input2 > 10) {
+//                                            marningB += 10;
+//                                            input2 -= 10;
+//                                        } else if (input2 <= 10) {
+//                                            marningB += input2;
+//                                            input2 = 0;
+//                                        }
+//                                    }
+                                    detikP4 = 0;
+                                    wadahP4 -= 10;
+                                }
+                            }
+                        } else if (jumlahKaryawanP4 == 2) {
+                            if (wadahP4 <= 20) {
+                                if (detikP4 == 15) {
+                                    marningA += wadahP4 - input1;
+                                    marningB += input1;
+                                    marningC += input2;
+                                    wadahP4 = 0;
+                                    input1 = 0;
+                                    input2 = 0;
+                                    jagungBumbu = jagungBumbuA + jagungBumbuB + jagungBumbuC;
+                                    detikP4 = 0;
+                                    p4 = false;
+                                    vPabrik.getBtnProses4().setEnabled(true);
+                                }
+                            } else if (wadahP4 > 20) {
+                                if (detikP4 == 15) {
+                                    detikP4 = 0;
+                                    wadahP4 -= 20;
+                                }
+                            }
+                        } else if (jumlahKaryawanP4 == 3) {
+                            if (detikP4 == 15) {
+                                marningA += wadahP4 - input1;
+                                marningB += input1;
+                                marningC += input2;
+                                wadahP4 = 0;
+                                input1 = 0;
+                                input2 = 0;
+                                jagungBumbu = jagungBumbuA + jagungBumbuB + jagungBumbuC;
+                                detikP4 = 0;
+                                p4 = false;
+                                vPabrik.getBtnProses4().setEnabled(true);
+                            }
+                        }
+                        System.out.println("");
+                        System.out.println("detik: " + detikP4);
+                        System.out.println("wadahP4: " + wadahP4);
+                        System.out.println("jagungBumbuA: " + jagungBumbuA);
+                        System.out.println("jagungBumbuB: " + jagungBumbuB);
+                        System.out.println("jagungBumbuC: " + jagungBumbuC);
                         System.out.println("MarningA: " + marningA);
                         System.out.println("MarningB: " + marningB);
                         System.out.println("MarningC: " + marningC);
                     }
-                    if (p4) {
-
-                    }
                 } catch (InterruptedException ex) {
                     Logger.getLogger(c_ruProduksi.class.getName()).log(Level.SEVERE, null, ex);
                 }
+                jagungBumbu = jagungBumbuA + jagungBumbuB + jagungBumbuC;
             }
         }
     }

@@ -76,8 +76,12 @@ public class load extends javax.swing.JFrame {
         btnOk.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isi nama/tblNamahover.png"))); // NOI18N
         getContentPane().add(btnOk, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 590, 340, 100));
 
-        jButton1.setText("Batal");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 11, 90, 60));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setFocusable(false);
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 11, 70, 60));
 
         jLabel2.setFont(new java.awt.Font("Bw Surco DEMO Black", 1, 48)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));

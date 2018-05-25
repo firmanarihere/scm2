@@ -73,11 +73,13 @@ public class c_toko {
                     JOptionPane.showMessageDialog(vToko, "Stok di Toko Habis");
                 } else {
                     jual = true;
-                    vToko.getBtnMulaiJual().setText("Stop Jual");
+                    vToko.getBtnMulaiJual().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblBukaToko.png")));
+                    vToko.getBtnMulaiJual().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblBukaTokoHover.png")));
                 }
             } else {
                 jual = false;
-                vToko.getBtnMulaiJual().setText("Mulai Jual");
+                vToko.getBtnMulaiJual().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupToko.png")));
+                vToko.getBtnMulaiJual().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupTokoHover.png")));
             }
         }
     }

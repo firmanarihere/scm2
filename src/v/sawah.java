@@ -208,9 +208,12 @@ public class sawah extends javax.swing.JFrame {
         btnKotak1.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(btnKotak1, new org.netbeans.lib.awtextra.AbsoluteConstraints(172, 98, 290, 360));
 
-        btnKembali.setText("Kembali");
+        btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
+        btnKembali.setBorderPainted(false);
+        btnKembali.setContentAreaFilled(false);
         btnKembali.setFocusable(false);
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 80, 60));
+        btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 70, 60));
 
         lblBibit.setFont(new java.awt.Font("Bw Surco DEMO", 1, 18)); // NOI18N
         lblBibit.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);

@@ -58,37 +58,231 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
     private void initComponents() {
 
         lblMarning = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         lblKoin = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         btnMulaiJual = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblMarning.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
+        lblMarning.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblMarning.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMarning.setText("Marning");
-        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 30, 70, 40));
+        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 20, 80, 50));
+
+        lblKoin.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblKoin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblKoin.setText("Koin");
+        getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 20, 70, 50));
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblIklan.png"))); // NOI18N
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setFocusable(false);
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblIklanhover.png"))); // NOI18N
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 590, 90, 80));
+
+        btnMulaiJual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblTutupToko.png"))); // NOI18N
+        btnMulaiJual.setBorderPainted(false);
+        btnMulaiJual.setContentAreaFilled(false);
+        btnMulaiJual.setFocusable(false);
+        btnMulaiJual.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblTutupTokoHover.png"))); // NOI18N
+        getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 590, 90, 80));
+
+        btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
+        btnKembali.setBorderPainted(false);
+        btnKembali.setContentAreaFilled(false);
+        btnKembali.setFocusable(false);
+        btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 70, 60));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 200, -1, -1));
+
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 320, -1, -1));
+
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 320, -1, -1));
+
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 320, -1, -1));
+
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 320, -1, -1));
+
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 320, -1, -1));
+
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 320, -1, -1));
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 320, -1, -1));
+
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 320, -1, -1));
+
+        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, -1, -1));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 200, -1, -1));
+
+        jLabel26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 200, -1, -1));
+
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 200, -1, -1));
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 200, -1, -1));
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 200, -1, -1));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 200, -1, -1));
+
+        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/shopkeeper.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 540, 420));
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 200, -1, -1));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, -1, -1));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 200, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, -1, -1));
+
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 320, -1, -1));
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 320, -1, -1));
+
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 320, -1, -1));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 320, -1, -1));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, -1, -1));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, -1, -1));
+
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, -1, -1));
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 320, -1, -1));
+
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 320, -1, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, -1, -1));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marning.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 0, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/uang.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 10, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("TOKO");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 40, 130, 60));
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/scorebar.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 10, 420, 80));
 
-        lblKoin.setFont(new java.awt.Font("Yu Gothic", 0, 14)); // NOI18N
-        lblKoin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblKoin.setText("Koin");
-        getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 30, 70, 40));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/background.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
-        btnMulaiJual.setText("BUKA TOKO");
-        btnMulaiJual.setFocusable(false);
-        getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 120, 60));
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 200, -1, -1));
 
-        btnKembali.setText("KEMBALI");
-        btnKembali.setFocusable(false);
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, 60));
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 200, -1, -1));
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 200, -1, -1));
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 200, -1, -1));
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 200, -1, -1));
+
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 200, -1, -1));
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 200, -1, -1));
+
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marningVideo.png"))); // NOI18N
+        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 200, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -131,7 +325,53 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnKembali;
     private javax.swing.JButton btnMulaiJual;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblKoin;
     private javax.swing.JLabel lblMarning;
     // End of variables declaration//GEN-END:variables

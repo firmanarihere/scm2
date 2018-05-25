@@ -25,10 +25,10 @@ public class c_koperasi {
     private home vHome;
     private m_aset mAset;
     private String username;
-    private int hargaBibit = 10;
-    private int hargaJagung = 10;
-    private int hargaGaram = 10;
-    private int hargaMinyakGoreng = 10;
+    private int hargaBibit = 280;
+    private int hargaJagung = 60;
+    private int hargaGaram = 150;
+    private int hargaMinyakGoreng = 300;
 
     public c_koperasi(home vHome, String username) throws SQLException {
         vKoperasi = new koperasi();

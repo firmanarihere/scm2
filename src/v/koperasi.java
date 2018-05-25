@@ -77,7 +77,6 @@ public class koperasi extends javax.swing.JFrame {
         btnItem2 = new javax.swing.JButton();
         btnItem3 = new javax.swing.JButton();
         btnItem4 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         lblMinyak = new javax.swing.JLabel();
         lblKoin = new javax.swing.JLabel();
         lblJagung = new javax.swing.JLabel();
@@ -136,10 +135,6 @@ public class koperasi extends javax.swing.JFrame {
         btnItem4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         btnItem4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblBibitJagunghover.png"))); // NOI18N
         getContentPane().add(btnItem4, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 440, 620, 270));
-
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Gambar Orang");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, 120, 160));
 
         lblMinyak.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblMinyak.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -219,7 +214,6 @@ public class koperasi extends javax.swing.JFrame {
     private javax.swing.JButton btnItem4;
     private javax.swing.JButton btnKembali;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblBibit;
     private javax.swing.JLabel lblGaram;

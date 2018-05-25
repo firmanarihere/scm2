@@ -196,47 +196,49 @@ public class pabrik extends javax.swing.JFrame {
         frameP1 = new javax.swing.JFrame();
         btnBatalP1 = new javax.swing.JButton();
         lblBanyakK1 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         btnMulaiP1 = new javax.swing.JButton();
         btnKurangP1 = new javax.swing.JButton();
         btnTambahP1 = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         lblBanyakP1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         frameP2 = new javax.swing.JFrame();
         btnBatalP2 = new javax.swing.JButton();
         lblBanyakP2 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         btnTambahP2 = new javax.swing.JButton();
         btnMulaiP2 = new javax.swing.JButton();
         btnKurangP2 = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
         lblMaxP2 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         frameP3 = new javax.swing.JFrame();
         btnBatalP3 = new javax.swing.JButton();
         lblBanyakGP3 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         btnMulaiP3 = new javax.swing.JButton();
         btnKurangGP3 = new javax.swing.JButton();
         btnTambahGP3 = new javax.swing.JButton();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         btnKurangJRP3 = new javax.swing.JButton();
         lblBanyakJRP3 = new javax.swing.JLabel();
         btnTambahJRP3 = new javax.swing.JButton();
         lblBanyakJRP3Max = new javax.swing.JLabel();
         lblBanyakGP4Max = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
         frameP4 = new javax.swing.JFrame();
         btnBatalP4 = new javax.swing.JButton();
         lblBanyakP4 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
         btnTambahP4 = new javax.swing.JButton();
         btnMulaiP4 = new javax.swing.JButton();
         btnKurangP4 = new javax.swing.JButton();
+        lblBanyakP5Max = new javax.swing.JLabel();
+        btnKurangMinyak = new javax.swing.JButton();
+        lblBanyakMinyak = new javax.swing.JLabel();
+        lblBanyakP5Max1 = new javax.swing.JLabel();
+        btnTambahMinyak = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
-        btnProses2 = new javax.swing.JButton();
         btnProses1 = new javax.swing.JButton();
         btnProses4 = new javax.swing.JButton();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         btnProses3 = new javax.swing.JButton();
+        btnProses2 = new javax.swing.JButton();
         lblMarning = new javax.swing.JLabel();
         lblJagung = new javax.swing.JLabel();
         lblJagungBumbu = new javax.swing.JLabel();
@@ -245,228 +247,367 @@ public class pabrik extends javax.swing.JFrame {
         btnTambahKaryawan = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
         lblJumlahKaryawan = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
-        frameP1.setMinimumSize(new java.awt.Dimension(600, 500));
-        frameP1.setPreferredSize(new java.awt.Dimension(600, 500));
+        frameP1.setMinimumSize(new java.awt.Dimension(643, 530));
+        frameP1.setUndecorated(true);
+        frameP1.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnBatalP1.setText("batal");
+        btnBatalP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
+        btnBatalP1.setBorderPainted(false);
+        btnBatalP1.setContentAreaFilled(false);
         btnBatalP1.setFocusable(false);
-        frameP1.getContentPane().add(btnBatalP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 80, 50));
+        btnBatalP1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnBatalP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClosehover.png"))); // NOI18N
+        frameP1.getContentPane().add(btnBatalP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, -13, 110, 130));
 
+        lblBanyakK1.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakK1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakK1.setText("/ 30");
-        frameP1.getContentPane().add(lblBanyakK1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 40, 40));
+        frameP1.getContentPane().add(lblBanyakK1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 40, 40));
 
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Proses 1 (Cuci Jagung)");
-        frameP1.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 340, 40));
-
-        btnMulaiP1.setText("Mulai Proses");
+        btnMulaiP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOK.png"))); // NOI18N
+        btnMulaiP1.setBorderPainted(false);
+        btnMulaiP1.setContentAreaFilled(false);
         btnMulaiP1.setFocusable(false);
-        frameP1.getContentPane().add(btnMulaiP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 260, 220, 60));
+        btnMulaiP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOKhover.png"))); // NOI18N
+        frameP1.getContentPane().add(btnMulaiP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, 290, 100));
 
-        btnKurangP1.setText("-");
+        btnKurangP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangP1.setBorderPainted(false);
+        btnKurangP1.setContentAreaFilled(false);
         btnKurangP1.setFocusable(false);
-        frameP1.getContentPane().add(btnKurangP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 170, 70, 60));
+        btnKurangP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinushover.png"))); // NOI18N
+        frameP1.getContentPane().add(btnKurangP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 157, 60, 60));
 
-        btnTambahP1.setText("+");
+        btnTambahP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlus.png"))); // NOI18N
+        btnTambahP1.setBorderPainted(false);
+        btnTambahP1.setContentAreaFilled(false);
         btnTambahP1.setFocusable(false);
-        frameP1.getContentPane().add(btnTambahP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 70, 60));
+        btnTambahP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlushover.png"))); // NOI18N
+        frameP1.getContentPane().add(btnTambahP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 50, 50));
 
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Jagung");
-        frameP1.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 80, 40));
-
+        lblBanyakP1.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakP1.setText("1");
-        frameP1.getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 180, 40, 40));
+        frameP1.getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 40, 40));
 
-        frameP2.setMinimumSize(new java.awt.Dimension(600, 500));
-        frameP2.setPreferredSize(new java.awt.Dimension(600, 500));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tambahBahanProses1.png"))); // NOI18N
+        frameP1.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 530));
+
+        frameP2.setMinimumSize(new java.awt.Dimension(643, 530));
+        frameP2.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP2.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnBatalP2.setText("Batal");
+        btnBatalP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
+        btnBatalP2.setBorderPainted(false);
+        btnBatalP2.setContentAreaFilled(false);
         btnBatalP2.setFocusPainted(false);
-        frameP2.getContentPane().add(btnBatalP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 50));
+        btnBatalP2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnBatalP2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        btnBatalP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClosehover.png"))); // NOI18N
+        frameP2.getContentPane().add(btnBatalP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, -10, 130, 130));
 
+        lblBanyakP2.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakP2.setText("1");
-        frameP2.getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 40, 60));
+        frameP2.getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 40, 60));
 
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("Proses 2 (Rendam jagung)");
-        frameP2.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 370, 70));
-
-        btnTambahP2.setText("+");
+        btnTambahP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlus.png"))); // NOI18N
+        btnTambahP2.setBorderPainted(false);
+        btnTambahP2.setContentAreaFilled(false);
         btnTambahP2.setFocusPainted(false);
-        frameP2.getContentPane().add(btnTambahP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 180, 70, 60));
+        btnTambahP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlushover.png"))); // NOI18N
+        frameP2.getContentPane().add(btnTambahP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 50, 50));
 
-        btnMulaiP2.setText("Mulai Proses");
+        btnMulaiP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOK.png"))); // NOI18N
+        btnMulaiP2.setBorderPainted(false);
+        btnMulaiP2.setContentAreaFilled(false);
         btnMulaiP2.setFocusPainted(false);
-        frameP2.getContentPane().add(btnMulaiP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 250, 220, 60));
+        btnMulaiP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOKhover.png"))); // NOI18N
+        frameP2.getContentPane().add(btnMulaiP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 300, 110));
 
-        btnKurangP2.setText("-");
+        btnKurangP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangP2.setBorderPainted(false);
+        btnKurangP2.setContentAreaFilled(false);
         btnKurangP2.setFocusPainted(false);
-        frameP2.getContentPane().add(btnKurangP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 180, 70, 60));
+        btnKurangP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinushover.png"))); // NOI18N
+        frameP2.getContentPane().add(btnKurangP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 50, 50));
 
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Jagung cuci");
-        frameP2.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 80, 70));
-
+        lblMaxP2.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblMaxP2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMaxP2.setText("/ 30");
-        frameP2.getContentPane().add(lblMaxP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 40, 60));
+        frameP2.getContentPane().add(lblMaxP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 40, 60));
 
-        frameP3.setMaximumSize(new java.awt.Dimension(600, 500));
-        frameP3.setMinimumSize(new java.awt.Dimension(600, 500));
-        frameP3.setPreferredSize(new java.awt.Dimension(600, 500));
+        jLabel10.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tambahBahanProses2.png"))); // NOI18N
+        frameP2.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 530));
+
+        frameP3.setMaximumSize(new java.awt.Dimension(643, 530));
+        frameP3.setMinimumSize(new java.awt.Dimension(643, 530));
+        frameP3.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP3.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnBatalP3.setText("Batal");
+        btnBatalP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
+        btnBatalP3.setBorderPainted(false);
+        btnBatalP3.setContentAreaFilled(false);
         btnBatalP3.setFocusable(false);
-        frameP3.getContentPane().add(btnBatalP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 70, 50));
+        btnBatalP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClosehover.png"))); // NOI18N
+        frameP3.getContentPane().add(btnBatalP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, -10, 160, 130));
 
+        lblBanyakGP3.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakGP3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakGP3.setText("1");
-        frameP3.getContentPane().add(lblBanyakGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 40, 60));
+        frameP3.getContentPane().add(lblBanyakGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, 40, 60));
 
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Proses 3 (Pemberian Bumbu)");
-        frameP3.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 70, 330, 60));
-
-        btnMulaiP3.setText("Mulai Proses");
+        btnMulaiP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOK.png"))); // NOI18N
+        btnMulaiP3.setBorderPainted(false);
+        btnMulaiP3.setContentAreaFilled(false);
         btnMulaiP3.setFocusable(false);
-        frameP3.getContentPane().add(btnMulaiP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 310, 230, 60));
+        btnMulaiP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOKhover.png"))); // NOI18N
+        frameP3.getContentPane().add(btnMulaiP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, 300, 110));
 
-        btnKurangGP3.setText("-");
+        btnKurangGP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangGP3.setBorderPainted(false);
+        btnKurangGP3.setContentAreaFilled(false);
         btnKurangGP3.setFocusable(false);
-        frameP3.getContentPane().add(btnKurangGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 70, 60));
+        frameP3.getContentPane().add(btnKurangGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 245, 60, 50));
 
-        btnTambahGP3.setText("+");
+        btnTambahGP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlus.png"))); // NOI18N
+        btnTambahGP3.setBorderPainted(false);
+        btnTambahGP3.setContentAreaFilled(false);
         btnTambahGP3.setFocusable(false);
-        frameP3.getContentPane().add(btnTambahGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, 70, 60));
+        btnTambahGP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlushover.png"))); // NOI18N
+        frameP3.getContentPane().add(btnTambahGP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 245, 50, 50));
 
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Garam");
-        frameP3.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 90, 60));
-
-        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("Jagung Rendam");
-        frameP3.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 90, 60));
-
-        btnKurangJRP3.setText("-");
+        btnKurangJRP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangJRP3.setBorderPainted(false);
+        btnKurangJRP3.setContentAreaFilled(false);
         btnKurangJRP3.setFocusable(false);
-        frameP3.getContentPane().add(btnKurangJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 70, 60));
+        frameP3.getContentPane().add(btnKurangJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 163, 60, 50));
 
+        lblBanyakJRP3.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakJRP3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakJRP3.setText("1");
-        frameP3.getContentPane().add(lblBanyakJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 160, 40, 60));
+        frameP3.getContentPane().add(lblBanyakJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 40, 60));
 
-        btnTambahJRP3.setText("+");
+        btnTambahJRP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlus.png"))); // NOI18N
+        btnTambahJRP3.setBorderPainted(false);
+        btnTambahJRP3.setContentAreaFilled(false);
         btnTambahJRP3.setFocusable(false);
-        frameP3.getContentPane().add(btnTambahJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 160, 70, 60));
+        btnTambahJRP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlushover.png"))); // NOI18N
+        frameP3.getContentPane().add(btnTambahJRP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 163, 50, 50));
 
+        lblBanyakJRP3Max.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakJRP3Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakJRP3Max.setText("/ 20");
-        frameP3.getContentPane().add(lblBanyakJRP3Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 40, 60));
+        frameP3.getContentPane().add(lblBanyakJRP3Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 160, 40, 60));
 
+        lblBanyakGP4Max.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakGP4Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakGP4Max.setText("/  6");
-        frameP3.getContentPane().add(lblBanyakGP4Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 40, 60));
+        frameP3.getContentPane().add(lblBanyakGP4Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 240, 40, 60));
 
-        frameP4.setMinimumSize(new java.awt.Dimension(600, 500));
-        frameP4.setPreferredSize(new java.awt.Dimension(600, 500));
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tambahBahanProses3.png"))); // NOI18N
+        frameP3.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 530));
+
+        frameP4.setMinimumSize(new java.awt.Dimension(643, 530));
+        frameP4.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP4.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnBatalP4.setText("Batal");
-        frameP4.getContentPane().add(btnBatalP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 80, 50));
+        btnBatalP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
+        btnBatalP4.setBorderPainted(false);
+        btnBatalP4.setContentAreaFilled(false);
+        btnBatalP4.setFocusable(false);
+        btnBatalP4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnBatalP4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        btnBatalP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClosehover.png"))); // NOI18N
+        frameP4.getContentPane().add(btnBatalP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, -20, 150, 150));
 
+        lblBanyakP4.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakP4.setText("Banyak");
-        frameP4.getContentPane().add(lblBanyakP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 80, 50));
+        lblBanyakP4.setText("1");
+        frameP4.getContentPane().add(lblBanyakP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 40, 40));
 
-        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel17.setText("Proses 4 (goreng)");
-        frameP4.getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 90, 320, 50));
+        btnTambahP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlus.png"))); // NOI18N
+        btnTambahP4.setBorderPainted(false);
+        btnTambahP4.setContentAreaFilled(false);
+        btnTambahP4.setFocusable(false);
+        btnTambahP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlushover.png"))); // NOI18N
+        frameP4.getContentPane().add(btnTambahP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 160, 50, 50));
 
-        btnTambahP4.setText("+");
-        frameP4.getContentPane().add(btnTambahP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, 60, 50));
+        btnMulaiP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOK.png"))); // NOI18N
+        btnMulaiP4.setBorderPainted(false);
+        btnMulaiP4.setContentAreaFilled(false);
+        btnMulaiP4.setFocusable(false);
+        btnMulaiP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblOKhover.png"))); // NOI18N
+        frameP4.getContentPane().add(btnMulaiP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 290, 100));
 
-        btnMulaiP4.setText("Mulai Proses");
-        frameP4.getContentPane().add(btnMulaiP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 200, 50));
+        btnKurangP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangP4.setContentAreaFilled(false);
+        btnKurangP4.setDefaultCapable(false);
+        btnKurangP4.setFocusable(false);
+        btnKurangP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinushover.png"))); // NOI18N
+        frameP4.getContentPane().add(btnKurangP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, 50, 50));
 
-        btnKurangP4.setText("-");
-        frameP4.getContentPane().add(btnKurangP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, 60, 50));
+        lblBanyakP5Max.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblBanyakP5Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakP5Max.setText("/ 30");
+        frameP4.getContentPane().add(lblBanyakP5Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 40, 40));
+
+        btnKurangMinyak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangMinyak.setContentAreaFilled(false);
+        btnKurangMinyak.setDefaultCapable(false);
+        btnKurangMinyak.setFocusable(false);
+        btnKurangMinyak.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinushover.png"))); // NOI18N
+        frameP4.getContentPane().add(btnKurangMinyak, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 245, 50, 50));
+
+        lblBanyakMinyak.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblBanyakMinyak.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakMinyak.setText("1");
+        frameP4.getContentPane().add(lblBanyakMinyak, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 250, 40, 40));
+
+        lblBanyakP5Max1.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblBanyakP5Max1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakP5Max1.setText("/ 30");
+        frameP4.getContentPane().add(lblBanyakP5Max1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 250, 40, 40));
+
+        btnTambahMinyak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlus.png"))); // NOI18N
+        btnTambahMinyak.setBorderPainted(false);
+        btnTambahMinyak.setContentAreaFilled(false);
+        btnTambahMinyak.setFocusable(false);
+        btnTambahMinyak.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblPlushover.png"))); // NOI18N
+        btnTambahMinyak.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTambahMinyakActionPerformed(evt);
+            }
+        });
+        frameP4.getContentPane().add(btnTambahMinyak, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 245, 50, 50));
 
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel18.setText("Jagung Bumbu");
-        frameP4.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 80, 50));
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tambahBahanProses4.png"))); // NOI18N
+        frameP4.getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 530));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setPreferredSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnProses2.setText("proses2");
+        btnProses1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1.png"))); // NOI18N
+        btnProses1.setBorderPainted(false);
+        btnProses1.setContentAreaFilled(false);
+        btnProses1.setFocusable(false);
+        btnProses1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnProses1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1hover.png"))); // NOI18N
+        getContentPane().add(btnProses1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 200, 260, 220));
+
+        btnProses4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblkompor.png"))); // NOI18N
+        btnProses4.setBorderPainted(false);
+        btnProses4.setContentAreaFilled(false);
+        btnProses4.setFocusable(false);
+        btnProses4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnProses4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        btnProses4.setMaximumSize(new java.awt.Dimension(1280, 720));
+        btnProses4.setMinimumSize(new java.awt.Dimension(1280, 720));
+        btnProses4.setPreferredSize(new java.awt.Dimension(1280, 720));
+        btnProses4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblkomporHover.png"))); // NOI18N
+        getContentPane().add(btnProses4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 460, 250, 200));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/orang2.png"))); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 270, -1, -1));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/orang1.png"))); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, -1, -1));
+
+        btnProses3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses3.png"))); // NOI18N
+        btnProses3.setBorderPainted(false);
+        btnProses3.setContentAreaFilled(false);
+        btnProses3.setFocusable(false);
+        btnProses3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnProses3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        btnProses3.setMaximumSize(new java.awt.Dimension(1280, 720));
+        btnProses3.setMinimumSize(new java.awt.Dimension(1280, 720));
+        btnProses3.setPreferredSize(new java.awt.Dimension(1280, 720));
+        btnProses3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses3hover.png"))); // NOI18N
+        getContentPane().add(btnProses3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 500, 300, 240));
+
+        btnProses2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses2.png"))); // NOI18N
+        btnProses2.setBorderPainted(false);
+        btnProses2.setContentAreaFilled(false);
         btnProses2.setFocusable(false);
         btnProses2.setMaximumSize(new java.awt.Dimension(1280, 720));
         btnProses2.setMinimumSize(new java.awt.Dimension(1280, 720));
         btnProses2.setPreferredSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(btnProses2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 270, 150, 130));
-
-        btnProses1.setText("proses1");
-        btnProses1.setFocusable(false);
-        getContentPane().add(btnProses1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 270, 150, 130));
-
-        btnProses4.setText("proses4");
-        btnProses4.setFocusable(false);
-        btnProses4.setMaximumSize(new java.awt.Dimension(1280, 720));
-        btnProses4.setMinimumSize(new java.awt.Dimension(1280, 720));
-        btnProses4.setPreferredSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(btnProses4, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 270, 150, 130));
-
-        btnProses3.setText("proses3");
-        btnProses3.setFocusable(false);
-        btnProses3.setMaximumSize(new java.awt.Dimension(1280, 720));
-        btnProses3.setMinimumSize(new java.awt.Dimension(1280, 720));
-        btnProses3.setPreferredSize(new java.awt.Dimension(1280, 720));
-        getContentPane().add(btnProses3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 150, 130));
+        btnProses2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses2hover.png"))); // NOI18N
+        getContentPane().add(btnProses2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 340, 340, 250));
 
         lblMarning.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMarning.setText("marning");
-        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 40, 60, 30));
+        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 320, 60, 40));
 
         lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagung.setText("jagung");
-        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 40, 50, 30));
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 50, 50, 40));
 
         lblJagungBumbu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagungBumbu.setText("jagung bumbu");
-        getContentPane().add(lblJagungBumbu, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 80, 30));
+        getContentPane().add(lblJagungBumbu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 250, 80, 40));
 
         lblJagungCuci.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagungCuci.setText("jagung cuci");
-        getContentPane().add(lblJagungCuci, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 40, 70, 30));
+        getContentPane().add(lblJagungCuci, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 120, 70, 40));
 
         lblJagungRendam.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagungRendam.setText("jagung rendam");
-        getContentPane().add(lblJagungRendam, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 40, 80, 30));
+        getContentPane().add(lblJagungRendam, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 180, 80, 50));
 
-        btnTambahKaryawan.setText("Tambah Karyawan");
+        btnTambahKaryawan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblKaryawan.png"))); // NOI18N
+        btnTambahKaryawan.setBorderPainted(false);
+        btnTambahKaryawan.setContentAreaFilled(false);
         btnTambahKaryawan.setFocusable(false);
-        getContentPane().add(btnTambahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 100, 130, 50));
+        btnTambahKaryawan.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblKaryawanhover.png"))); // NOI18N
+        getContentPane().add(btnTambahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 490, 200, 190));
 
-        btnKembali.setText("Kembali");
+        btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
+        btnKembali.setBorderPainted(false);
+        btnKembali.setContentAreaFilled(false);
         btnKembali.setFocusable(false);
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 90, 60));
+        btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, -1));
 
         lblJumlahKaryawan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJumlahKaryawan.setText("Karyawan");
-        getContentPane().add(lblJumlahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 40, 60, 30));
+        getContentPane().add(lblJumlahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 380, 60, 40));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/scoreboard.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 10, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/jagungSudahCuci.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 330, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/siapJual.png"))); // NOI18N
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 580, 210, 170));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/jagungsiappakai.png"))); // NOI18N
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 160, 150));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/background.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnTambahMinyakActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahMinyakActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnTambahMinyakActionPerformed
 
     /**
      * @param args the command line arguments
@@ -511,6 +652,7 @@ public class pabrik extends javax.swing.JFrame {
     private javax.swing.JButton btnKembali;
     private javax.swing.JButton btnKurangGP3;
     private javax.swing.JButton btnKurangJRP3;
+    private javax.swing.JButton btnKurangMinyak;
     private javax.swing.JButton btnKurangP1;
     private javax.swing.JButton btnKurangP2;
     private javax.swing.JButton btnKurangP4;
@@ -525,6 +667,7 @@ public class pabrik extends javax.swing.JFrame {
     private javax.swing.JButton btnTambahGP3;
     private javax.swing.JButton btnTambahJRP3;
     private javax.swing.JButton btnTambahKaryawan;
+    private javax.swing.JButton btnTambahMinyak;
     private javax.swing.JButton btnTambahP1;
     private javax.swing.JButton btnTambahP2;
     private javax.swing.JButton btnTambahP4;
@@ -532,23 +675,28 @@ public class pabrik extends javax.swing.JFrame {
     private javax.swing.JFrame frameP2;
     private javax.swing.JFrame frameP3;
     private javax.swing.JFrame frameP4;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel lblBanyakGP3;
     private javax.swing.JLabel lblBanyakGP4Max;
     private javax.swing.JLabel lblBanyakJRP3;
     private javax.swing.JLabel lblBanyakJRP3Max;
     private javax.swing.JLabel lblBanyakK1;
+    private javax.swing.JLabel lblBanyakMinyak;
     private javax.swing.JLabel lblBanyakP1;
     private javax.swing.JLabel lblBanyakP2;
     private javax.swing.JLabel lblBanyakP4;
+    private javax.swing.JLabel lblBanyakP5Max;
+    private javax.swing.JLabel lblBanyakP5Max1;
     private javax.swing.JLabel lblJagung;
     private javax.swing.JLabel lblJagungBumbu;
     private javax.swing.JLabel lblJagungCuci;

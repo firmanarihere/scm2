@@ -78,10 +78,6 @@ public class tambahKaryawan extends javax.swing.JFrame {
         return lblBanyakP4;
     }
 
-    public JLabel getLblJumlahKaryawan() {
-        return lblJumlahKaryawan;
-    }
-
     public JLabel getLblUang() {
         return lblUang;
     }
@@ -99,13 +95,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
 
         btnBatal = new javax.swing.JButton();
         lblUang = new javax.swing.JLabel();
-        lblJumlahKaryawan = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         lblBanyakP4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         lblBanyakP1 = new javax.swing.JLabel();
         lblBanyakP2 = new javax.swing.JLabel();
         lblBanyakP3 = new javax.swing.JLabel();
@@ -122,108 +112,135 @@ public class tambahKaryawan extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnBatal.setText("Batal");
+        btnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
+        btnBatal.setBorderPainted(false);
+        btnBatal.setContentAreaFilled(false);
         btnBatal.setFocusable(false);
-        getContentPane().add(btnBatal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 30, 100, 60));
+        btnBatal.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
+        getContentPane().add(btnBatal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 70, 60));
 
+        lblUang.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblUang.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblUang.setText("Uang");
-        getContentPane().add(lblUang, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 20, 70, 30));
+        getContentPane().add(lblUang, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 40, 218, 32));
 
-        lblJumlahKaryawan.setText("karyawan");
-        getContentPane().add(lblJumlahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 20, 70, 30));
-
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Proses 4");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 150, 120, 50));
-
+        lblBanyakP4.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakP4.setText("Banyak");
-        getContentPane().add(lblBanyakP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 340, 120, 50));
+        getContentPane().add(lblBanyakP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 520, 120, 50));
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Proses 2");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 120, 50));
-
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Proses 3");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 150, 120, 50));
-
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Proses 4");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 150, 120, 50));
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Proses 1");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 150, 120, 50));
-
+        lblBanyakP1.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakP1.setText("Banyak");
-        getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 340, 120, 50));
+        getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 170, 120, 50));
 
+        lblBanyakP2.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakP2.setText("Banyak");
-        getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, 120, 50));
+        getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, 120, 50));
 
+        lblBanyakP3.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakP3.setText("Banyak");
-        getContentPane().add(lblBanyakP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 340, 120, 50));
+        getContentPane().add(lblBanyakP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 400, 120, 50));
 
-        btnKurangP3.setText("-");
+        btnKurangP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
+        btnKurangP3.setBorderPainted(false);
+        btnKurangP3.setContentAreaFilled(false);
         btnKurangP3.setFocusable(false);
-        getContentPane().add(btnKurangP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 410, 80, 60));
+        btnKurangP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
+        getContentPane().add(btnKurangP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, 80, 80));
 
-        btnTambahP3.setText("+");
+        btnTambahP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
+        btnTambahP3.setBorderPainted(false);
+        btnTambahP3.setContentAreaFilled(false);
         btnTambahP3.setFocusable(false);
-        getContentPane().add(btnTambahP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 260, 80, 60));
+        btnTambahP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
+        getContentPane().add(btnTambahP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 390, 80, 80));
 
-        btnKurangP2.setText("-");
+        btnKurangP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
+        btnKurangP2.setBorderPainted(false);
+        btnKurangP2.setContentAreaFilled(false);
         btnKurangP2.setFocusable(false);
-        getContentPane().add(btnKurangP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 80, 60));
+        btnKurangP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
+        getContentPane().add(btnKurangP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 80, 80));
 
-        btnTambahP2.setText("+");
+        btnTambahP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
+        btnTambahP2.setBorderPainted(false);
+        btnTambahP2.setContentAreaFilled(false);
         btnTambahP2.setFocusable(false);
-        getContentPane().add(btnTambahP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 260, 80, 60));
+        btnTambahP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
+        getContentPane().add(btnTambahP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 80, 80));
 
-        btnKurangP1.setText("-");
+        btnKurangP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
+        btnKurangP1.setBorderPainted(false);
+        btnKurangP1.setContentAreaFilled(false);
         btnKurangP1.setFocusable(false);
-        getContentPane().add(btnKurangP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 80, 60));
+        btnKurangP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
+        getContentPane().add(btnKurangP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 150, 80, 80));
 
-        btnTambahP1.setText("+");
+        btnTambahP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
+        btnTambahP1.setBorderPainted(false);
+        btnTambahP1.setContentAreaFilled(false);
         btnTambahP1.setFocusable(false);
-        getContentPane().add(btnTambahP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 80, 60));
+        btnTambahP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
+        getContentPane().add(btnTambahP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 150, 80, 80));
 
-        btnTambahP4.setText("+");
+        btnTambahP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
+        btnTambahP4.setBorderPainted(false);
+        btnTambahP4.setContentAreaFilled(false);
         btnTambahP4.setFocusable(false);
-        getContentPane().add(btnTambahP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 260, 80, 60));
+        btnTambahP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
+        getContentPane().add(btnTambahP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 500, 80, 80));
 
-        btnKurangP4.setText("-");
+        btnKurangP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
+        btnKurangP4.setBorderPainted(false);
+        btnKurangP4.setContentAreaFilled(false);
         btnKurangP4.setFocusable(false);
-        getContentPane().add(btnKurangP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 410, 80, 60));
+        btnKurangP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
+        getContentPane().add(btnKurangP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, 80, 80));
 
-        btnTambahKaryawan.setText("Tambah Karyawan");
+        btnTambahKaryawan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblTambah.png"))); // NOI18N
+        btnTambahKaryawan.setBorderPainted(false);
+        btnTambahKaryawan.setContentAreaFilled(false);
         btnTambahKaryawan.setFocusable(false);
-        getContentPane().add(btnTambahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 500, 370, 80));
+        btnTambahKaryawan.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblTambahhover.png"))); // NOI18N
+        getContentPane().add(btnTambahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 610, 300, 90));
 
-        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel10.setText("Harga/orang");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 210, 90, 30));
+        jLabel10.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("15000/orang");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 550, 120, 30));
 
-        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("Harga/orang");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 90, 30));
+        jLabel11.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel11.setText("10000/orang");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 210, 120, 30));
 
-        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel12.setText("Harga/orang");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 220, 90, 30));
+        jLabel12.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel12.setText("15000/orang");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, 110, 30));
 
-        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel13.setText("Harga/orang");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 210, 90, 30));
+        jLabel13.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel13.setText("20000/orang");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, -1, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/ikonUang.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 10, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/background.png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 720));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -279,15 +296,11 @@ public class tambahKaryawan extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblBanyakP1;
     private javax.swing.JLabel lblBanyakP2;
     private javax.swing.JLabel lblBanyakP3;
     private javax.swing.JLabel lblBanyakP4;
-    private javax.swing.JLabel lblJumlahKaryawan;
     private javax.swing.JLabel lblUang;
     // End of variables declaration//GEN-END:variables
 }
