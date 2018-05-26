@@ -127,6 +127,9 @@ public class c_toko {
                             vToko.getBtnMulaiJual().setText("Mulai Jual");
                         }
                         mAset.updateKoin(koin, mAset.cekIdPlayer(username));
+                        vHome.getLblMarning().setText((mMarning.getMarningA(mMarning.cekIdPlayer(username)) + mMarning.getMarningB(mMarning.cekIdPlayer(username))
+                                + mMarning.getMarningC(mMarning.cekIdPlayer(username))) + "");
+                        vHome.getLblKoin().setText(mAset.getKoin(mAset.cekIdPlayer(username)) + "");
                         System.out.println("marning a= " + marningA);
                         System.out.println("marning b= " + marningB);
                         System.out.println("marning c= " + marningC);

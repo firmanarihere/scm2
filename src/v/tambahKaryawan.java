@@ -108,6 +108,10 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnTambahP4 = new javax.swing.JButton();
         btnKurangP4 = new javax.swing.JButton();
         btnTambahKaryawan = new javax.swing.JButton();
+        lblBanyakP1Max = new javax.swing.JLabel();
+        lblBanyakP2Max = new javax.swing.JLabel();
+        lblBanyakP3Max = new javax.swing.JLabel();
+        lblBanyakP4Max = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -118,7 +122,6 @@ public class tambahKaryawan extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -136,23 +139,23 @@ public class tambahKaryawan extends javax.swing.JFrame {
 
         lblBanyakP4.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakP4.setText("Banyak");
-        getContentPane().add(lblBanyakP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 520, 120, 50));
+        lblBanyakP4.setText("0");
+        getContentPane().add(lblBanyakP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 520, 60, 50));
 
         lblBanyakP1.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakP1.setText("Banyak");
-        getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 170, 120, 50));
+        lblBanyakP1.setText("0");
+        getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 170, 60, 50));
 
         lblBanyakP2.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakP2.setText("Banyak");
-        getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 280, 120, 50));
+        lblBanyakP2.setText("0");
+        getContentPane().add(lblBanyakP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 280, 70, 50));
 
         lblBanyakP3.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblBanyakP3.setText("Banyak");
-        getContentPane().add(lblBanyakP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 400, 120, 50));
+        lblBanyakP3.setText("0");
+        getContentPane().add(lblBanyakP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 400, 60, 50));
 
         btnKurangP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
         btnKurangP3.setBorderPainted(false);
@@ -216,6 +219,26 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnTambahKaryawan.setFocusable(false);
         btnTambahKaryawan.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblTambahhover.png"))); // NOI18N
         getContentPane().add(btnTambahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 610, 300, 90));
+
+        lblBanyakP1Max.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblBanyakP1Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakP1Max.setText("/  2");
+        getContentPane().add(lblBanyakP1Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 170, 60, 50));
+
+        lblBanyakP2Max.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblBanyakP2Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakP2Max.setText("/  2");
+        getContentPane().add(lblBanyakP2Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 280, 70, 50));
+
+        lblBanyakP3Max.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblBanyakP3Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakP3Max.setText("/  1");
+        getContentPane().add(lblBanyakP3Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 400, 60, 50));
+
+        lblBanyakP4Max.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblBanyakP4Max.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBanyakP4Max.setText("/  2");
+        getContentPane().add(lblBanyakP4Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 520, 60, 50));
 
         jLabel10.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -299,9 +322,13 @@ public class tambahKaryawan extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblBanyakP1;
+    private javax.swing.JLabel lblBanyakP1Max;
     private javax.swing.JLabel lblBanyakP2;
+    private javax.swing.JLabel lblBanyakP2Max;
     private javax.swing.JLabel lblBanyakP3;
+    private javax.swing.JLabel lblBanyakP3Max;
     private javax.swing.JLabel lblBanyakP4;
+    private javax.swing.JLabel lblBanyakP4Max;
     private javax.swing.JLabel lblUang;
     // End of variables declaration//GEN-END:variables
 }

@@ -251,7 +251,7 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/marning.png"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 0, -1, -1));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/uang.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/uang.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 10, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Yu Gothic", 1, 36)); // NOI18N

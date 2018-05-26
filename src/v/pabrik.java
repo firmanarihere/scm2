@@ -255,7 +255,6 @@ public class pabrik extends javax.swing.JFrame {
 
         frameP1.setMinimumSize(new java.awt.Dimension(643, 530));
         frameP1.setUndecorated(true);
-        frameP1.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP1.setResizable(false);
         frameP1.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -296,7 +295,7 @@ public class pabrik extends javax.swing.JFrame {
         lblBanyakP1.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblBanyakP1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBanyakP1.setText("1");
-        frameP1.getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 40, 40));
+        frameP1.getContentPane().add(lblBanyakP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 170, 40, 40));
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tambahBahanProses1.png"))); // NOI18N
@@ -304,7 +303,6 @@ public class pabrik extends javax.swing.JFrame {
 
         frameP2.setMinimumSize(new java.awt.Dimension(643, 530));
         frameP2.setUndecorated(true);
-        frameP2.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP2.setResizable(false);
         frameP2.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -354,10 +352,8 @@ public class pabrik extends javax.swing.JFrame {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tambahBahanProses2.png"))); // NOI18N
         frameP2.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 640, 530));
 
-        frameP3.setMaximumSize(new java.awt.Dimension(643, 530));
         frameP3.setMinimumSize(new java.awt.Dimension(643, 530));
         frameP3.setUndecorated(true);
-        frameP3.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP3.setResizable(false);
         frameP3.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -427,7 +423,6 @@ public class pabrik extends javax.swing.JFrame {
 
         frameP4.setMinimumSize(new java.awt.Dimension(643, 530));
         frameP4.setUndecorated(true);
-        frameP4.setPreferredSize(new java.awt.Dimension(643, 530));
         frameP4.setResizable(false);
         frameP4.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -559,25 +554,30 @@ public class pabrik extends javax.swing.JFrame {
         btnProses2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses2hover.png"))); // NOI18N
         getContentPane().add(btnProses2, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 340, 340, 250));
 
+        lblMarning.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblMarning.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblMarning.setText("marning");
-        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 320, 60, 40));
+        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 320, 70, 40));
 
+        lblJagung.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblJagung.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagung.setText("jagung");
-        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 50, 50, 40));
+        getContentPane().add(lblJagung, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 50, 70, 40));
 
+        lblJagungBumbu.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblJagungBumbu.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagungBumbu.setText("jagung bumbu");
-        getContentPane().add(lblJagungBumbu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 250, 80, 40));
+        getContentPane().add(lblJagungBumbu, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 250, 70, 40));
 
+        lblJagungCuci.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblJagungCuci.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagungCuci.setText("jagung cuci");
         getContentPane().add(lblJagungCuci, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 120, 70, 40));
 
+        lblJagungRendam.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblJagungRendam.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJagungRendam.setText("jagung rendam");
-        getContentPane().add(lblJagungRendam, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 180, 80, 50));
+        getContentPane().add(lblJagungRendam, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 180, 70, 50));
 
         btnTambahKaryawan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblKaryawan.png"))); // NOI18N
         btnTambahKaryawan.setBorderPainted(false);
@@ -593,9 +593,10 @@ public class pabrik extends javax.swing.JFrame {
         btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
         getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, -1));
 
+        lblJumlahKaryawan.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
         lblJumlahKaryawan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblJumlahKaryawan.setText("Karyawan");
-        getContentPane().add(lblJumlahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 380, 60, 40));
+        getContentPane().add(lblJumlahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 380, 70, 40));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/scoreboard.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 10, -1, -1));

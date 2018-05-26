@@ -429,6 +429,11 @@ public class c_sawah {
         public void actionPerformed(ActionEvent e) {
             vSawah.setVisible(false);
             vHome.setVisible(true);
+            try {
+                vHome.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
+            } catch (SQLException ex) {
+                Logger.getLogger(c_sawah.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
 
     }

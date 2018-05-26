@@ -12,6 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import m.m_aset;
+import m.m_marning;
 import v.home;
 import v.tokoPenjualanProduk;
 
@@ -23,11 +24,13 @@ public class c_home {
 
     private home vHome;
     private m_aset mAset;
+    private m_marning mMarning;
     private String username;
 
     public c_home(String username) throws SQLException {
         vHome = new home();
         mAset = new m_aset();
+        mMarning = new m_marning();
         this.username = username;
         vHome.getBtnGudang().addActionListener(new gudangAction());
         vHome.getBtnKoperasi().addActionListener(new koperasiAction());
@@ -38,6 +41,8 @@ public class c_home {
 
         vHome.getLblKoin().setText(mAset.getKoin(mAset.cekIdPlayer(username)) + "");
         vHome.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
+        vHome.getLblMarning().setText((mMarning.getMarningA(mMarning.cekIdPlayer(username)) + mMarning.getMarningB(mMarning.cekIdPlayer(username))
+                + mMarning.getMarningC(mMarning.cekIdPlayer(username))) + "");
         vHome.getLabelUsername().setText(username);
         vHome.setVisible(true);
     }
@@ -53,17 +58,24 @@ public class c_home {
     }
 
     private class ruProduksiAction implements ActionListener {
+
         private c_ruProduksi ruProduksi;
-        public ruProduksiAction() {
-            ruProduksi = new c_ruProduksi(vHome);
+
+        public ruProduksiAction() throws SQLException {
+            ruProduksi = new c_ruProduksi(vHome, username);
             ruProduksi.getView().setVisible(false);
         }
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            //settext labelnya di baris ini
-            ruProduksi.getView().setVisible(true);
-            vHome.setVisible(false);
+            try {
+                //settext labelnya di baris ini
+                ruProduksi.getView().getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username))+"");
+                ruProduksi.getView().setVisible(true);
+                vHome.setVisible(false);
+            } catch (SQLException ex) {
+                Logger.getLogger(c_home.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
 
     }

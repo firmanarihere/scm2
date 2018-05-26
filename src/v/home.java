@@ -22,6 +22,10 @@ public class home extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     }
 
+    public JLabel getLblMarning() {
+        return lblMarning;
+    }
+
     public JLabel getLblJagung() {
         return lblJagung;
     }
@@ -69,7 +73,7 @@ public class home extends javax.swing.JFrame {
 
         lblJagung = new javax.swing.JLabel();
         lblKoin = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblMarning = new javax.swing.JLabel();
         btnLogOut = new javax.swing.JButton();
         labelUsername = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -108,10 +112,10 @@ public class home extends javax.swing.JFrame {
         lblKoin.setText("Koin");
         getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 40, 100, 30));
 
-        jLabel3.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel3.setText("Produk");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 110, 30));
+        lblMarning.setFont(new java.awt.Font("Yu Gothic", 1, 18)); // NOI18N
+        lblMarning.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblMarning.setText("Produk");
+        getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 110, 30));
 
         btnLogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/logout.png"))); // NOI18N
         btnLogOut.setBorderPainted(false);
@@ -259,7 +263,6 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -267,6 +270,7 @@ public class home extends javax.swing.JFrame {
     private javax.swing.JLabel labelUsername;
     private javax.swing.JLabel lblJagung;
     private javax.swing.JLabel lblKoin;
+    private javax.swing.JLabel lblMarning;
     private javax.swing.JLabel statusBar;
     // End of variables declaration//GEN-END:variables
 }

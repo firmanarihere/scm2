@@ -119,6 +119,11 @@ public class c_koperasi {
             vKoperasi.setVisible(false);
             vHome.setVisible(true);
             vHome.toFront();
+            try {
+                vHome.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
+            } catch (SQLException ex) {
+                Logger.getLogger(c_koperasi.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 

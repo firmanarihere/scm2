@@ -12,6 +12,8 @@ import java.math.RoundingMode;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import m.m_aset;
+import m.m_marning;
 import v.home;
 import v.pabrik;
 
@@ -23,6 +25,9 @@ public class c_ruProduksi {
 
     private pabrik vPabrik;
     private home vHome;
+    private m_aset mAset;
+    private m_marning mMarning;
+    private String username;
     private boolean p1 = false;
     private boolean p2 = false;
     private boolean p3 = false;
@@ -31,7 +36,7 @@ public class c_ruProduksi {
     private int jumlahKaryawanP2 = 1;
     private int jumlahKaryawanP3 = 1;
     private int jumlahKaryawanP4 = 1;
-    private int jagung = 13;
+    private int jagung;
     private int jagungCuci = 3;
     private int jagungRendam = 6;
     private int marningA = 0;
@@ -54,9 +59,12 @@ public class c_ruProduksi {
     private int input1 = 0;
     private int input2 = 0;
 
-    public c_ruProduksi(home home) {
+    public c_ruProduksi(home home, String username) throws SQLException {
         vPabrik = new pabrik();
+        mAset = new m_aset();
+        mMarning = new m_marning();
         vHome = home;
+        this.username = username;
         vPabrik.getBtnKembali().addActionListener(new kembaliAction());
         vPabrik.getBtnProses1().addActionListener(new proses1Action());
         vPabrik.getBtnProses2().addActionListener(new proses2Action());
@@ -82,10 +90,16 @@ public class c_ruProduksi {
         vPabrik.getBtnKurangP4().addActionListener(new kurangP4Action());
         vPabrik.getBtnTambahP4().addActionListener(new tambahP4Action());
 
+        vPabrik.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
+        vPabrik.getLblJagungCuci().setText(jagungCuci + "");
+        vPabrik.getLblJagungRendam().setText(jagungRendam + "");
+        vPabrik.getLblJagungBumbu().setText(jagungBumbu + "");
+        vPabrik.getLblMarning().setText((marningA + marningB + marningC) + "");
+        vPabrik.getLblJumlahKaryawan().setText((jumlahKaryawanP1 + jumlahKaryawanP2 + jumlahKaryawanP3 + jumlahKaryawanP4) + "");
+
         Thread proses = new proses();
         proses.start();
     }
-
     public pabrik getView() {
         return vPabrik;
     }
@@ -142,6 +156,12 @@ public class c_ruProduksi {
             vPabrik.getLblBanyakP4().setText("1");
             vPabrik.getFrameP4().dispose();
             vPabrik.getBtnProses4().setEnabled(false);
+
+            vPabrik.getLblJagungCuci().setText(jagungCuci + "");
+            vPabrik.getLblJagungRendam().setText(jagungRendam + "");
+            vPabrik.getLblJagungBumbu().setText(jagungBumbu + "");
+            vPabrik.getLblMarning().setText((marningA + marningB + marningC) + "");
+            vPabrik.getLblJumlahKaryawan().setText((jumlahKaryawanP1 + jumlahKaryawanP2 + jumlahKaryawanP3 + jumlahKaryawanP4) + "");
         }
 
     }
@@ -213,6 +233,12 @@ public class c_ruProduksi {
             vPabrik.getLblBanyakGP3().setText("1");
             vPabrik.getFrameP3().dispose();
             vPabrik.getBtnProses3().setEnabled(false);
+
+            vPabrik.getLblJagungCuci().setText(jagungCuci + "");
+            vPabrik.getLblJagungRendam().setText(jagungRendam + "");
+            vPabrik.getLblJagungBumbu().setText(jagungBumbu + "");
+            vPabrik.getLblMarning().setText((marningA + marningB + marningC) + "");
+            vPabrik.getLblJumlahKaryawan().setText((jumlahKaryawanP1 + jumlahKaryawanP2 + jumlahKaryawanP3 + jumlahKaryawanP4) + "");
         }
 
     }
@@ -255,6 +281,12 @@ public class c_ruProduksi {
             vPabrik.getLblBanyakP2().setText("1");
             vPabrik.getFrameP2().dispose();
             vPabrik.getBtnProses2().setEnabled(false);
+
+            vPabrik.getLblJagungCuci().setText(jagungCuci + "");
+            vPabrik.getLblJagungRendam().setText(jagungRendam + "");
+            vPabrik.getLblJagungBumbu().setText(jagungBumbu + "");
+            vPabrik.getLblMarning().setText((marningA + marningB + marningC) + "");
+            vPabrik.getLblJumlahKaryawan().setText((jumlahKaryawanP1 + jumlahKaryawanP2 + jumlahKaryawanP3 + jumlahKaryawanP4) + "");
         }
 
     }
@@ -263,12 +295,16 @@ public class c_ruProduksi {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (Integer.parseInt(vPabrik.getLblBanyakP1().getText()) == 30) {
+            try {
+                if (Integer.parseInt(vPabrik.getLblBanyakP1().getText()) == 30) {
 
-            } else if (Integer.parseInt(vPabrik.getLblBanyakP1().getText()) == jagung) {
+                } else if (Integer.parseInt(vPabrik.getLblBanyakP1().getText()) == mAset.getJagung(mAset.cekIdPlayer(username))) {
 
-            } else {
-                vPabrik.getLblBanyakP1().setText((Integer.parseInt(vPabrik.getLblBanyakP1().getText()) + 1) + "");
+                } else {
+                    vPabrik.getLblBanyakP1().setText((Integer.parseInt(vPabrik.getLblBanyakP1().getText()) + 1) + "");
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(c_ruProduksi.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
 
@@ -290,12 +326,24 @@ public class c_ruProduksi {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            wadahP1 = Integer.parseInt(vPabrik.getLblBanyakP1().getText());
-            jagung = jagung - wadahP1;
-            p1 = true;
-            vPabrik.getLblBanyakP1().setText("1");
-            vPabrik.getFrameP1().dispose();
-            vPabrik.getBtnProses1().setEnabled(false);
+            try {
+                wadahP1 = Integer.parseInt(vPabrik.getLblBanyakP1().getText());
+                jagung = mAset.getJagung(mAset.cekIdPlayer(username)) - wadahP1;
+
+                p1 = true;
+                vPabrik.getLblBanyakP1().setText("1");
+                vPabrik.getFrameP1().dispose();
+                vPabrik.getBtnProses1().setEnabled(false);
+
+                vPabrik.getLblJagung().setText(jagung + "");
+                vPabrik.getLblJagungCuci().setText(jagungCuci + "");
+                vPabrik.getLblJagungRendam().setText(jagungRendam + "");
+                vPabrik.getLblJagungBumbu().setText(jagungBumbu + "");
+                vPabrik.getLblMarning().setText((marningA + marningB + marningC) + "");
+                vPabrik.getLblJumlahKaryawan().setText((jumlahKaryawanP1 + jumlahKaryawanP2 + jumlahKaryawanP3 + jumlahKaryawanP4) + "");
+            } catch (SQLException ex) {
+                Logger.getLogger(c_ruProduksi.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 
@@ -356,8 +404,8 @@ public class c_ruProduksi {
 
         private c_tambahKaryawan karyawan;
 
-        public tambahKaryawanAction() {
-            karyawan = new c_tambahKaryawan(vPabrik);
+        public tambahKaryawanAction() throws SQLException {
+            karyawan = new c_tambahKaryawan(c_ruProduksi.this, vPabrik, username);
         }
 
         @Override
@@ -614,10 +662,10 @@ public class c_ruProduksi {
                                     vPabrik.getBtnProses4().setEnabled(true);
                                 }
                             } else if (wadahP4 > 20) {
-                                if (detikP4 == 15) {
-                                    detikP4 = 0;
-                                    wadahP4 -= 20;
-                                }
+//                                if (detikP4 == 15) {
+//                                    detikP4 = 0;
+//                                    wadahP4 -= 20;
+//                                }
                             }
                         } else if (jumlahKaryawanP4 == 3) {
                             if (detikP4 == 15) {
@@ -647,6 +695,11 @@ public class c_ruProduksi {
                     Logger.getLogger(c_ruProduksi.class.getName()).log(Level.SEVERE, null, ex);
                 }
                 jagungBumbu = jagungBumbuA + jagungBumbuB + jagungBumbuC;
+                vPabrik.getLblJagungCuci().setText(jagungCuci + "");
+                vPabrik.getLblJagungRendam().setText(jagungRendam + "");
+                vPabrik.getLblJagungBumbu().setText(jagungBumbu + "");
+                vPabrik.getLblMarning().setText((marningA + marningB + marningC) + "");
+                vPabrik.getLblJumlahKaryawan().setText((jumlahKaryawanP1 + jumlahKaryawanP2 + jumlahKaryawanP3 + jumlahKaryawanP4) + "");
             }
         }
     }
@@ -658,5 +711,11 @@ public class c_ruProduksi {
 
     private double roundHalfUp(double d) {
         return new BigDecimal(d).setScale(0, RoundingMode.HALF_UP).doubleValue();
+    }
+    public void setKaryawan(int k1, int k2, int k3, int k4){
+        jumlahKaryawanP1 += k1;
+        jumlahKaryawanP2 += k2;
+        jumlahKaryawanP3 += k3;
+        jumlahKaryawanP4 += k4;
     }
 }
