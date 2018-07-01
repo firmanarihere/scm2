@@ -132,21 +132,24 @@ public class home extends javax.swing.JFrame {
         btnAbout.setContentAreaFilled(false);
         btnAbout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAbout.setFocusPainted(false);
-        getContentPane().add(btnAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 620, 60, 70));
+        btnAbout.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/aboutHover.png"))); // NOI18N
+        getContentPane().add(btnAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 620, 70, 70));
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/help.png"))); // NOI18N
         btnHelp.setBorderPainted(false);
         btnHelp.setContentAreaFilled(false);
         btnHelp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnHelp.setFocusable(false);
-        getContentPane().add(btnHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 620, 60, 70));
+        btnHelp.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/helpHover.png"))); // NOI18N
+        getContentPane().add(btnHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 620, 70, 70));
 
         btnLogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/logout.png"))); // NOI18N
         btnLogOut.setBorderPainted(false);
         btnLogOut.setContentAreaFilled(false);
         btnLogOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLogOut.setFocusable(false);
-        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 620, 60, 70));
+        btnLogOut.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/logoutHover.png"))); // NOI18N
+        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 620, 70, 70));
 
         labelUsername.setFont(new java.awt.Font("Bebas Neue", 0, 30)); // NOI18N
         labelUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -187,6 +190,7 @@ public class home extends javax.swing.JFrame {
         btnToko.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/toko.png"))); // NOI18N
         btnToko.setBorderPainted(false);
         btnToko.setContentAreaFilled(false);
+        btnToko.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnToko.setFocusable(false);
         btnToko.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/tokoHover.png"))); // NOI18N
         getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 60, 300, 240));
@@ -194,6 +198,7 @@ public class home extends javax.swing.JFrame {
         btnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/gudang.png"))); // NOI18N
         btnGudang.setBorderPainted(false);
         btnGudang.setContentAreaFilled(false);
+        btnGudang.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnGudang.setFocusable(false);
         btnGudang.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/gudangHover.png"))); // NOI18N
         getContentPane().add(btnGudang, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 450, 300));
@@ -201,6 +206,7 @@ public class home extends javax.swing.JFrame {
         btnKoperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/koperasi.png"))); // NOI18N
         btnKoperasi.setBorderPainted(false);
         btnKoperasi.setContentAreaFilled(false);
+        btnKoperasi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKoperasi.setFocusable(false);
         btnKoperasi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/koperasiHover.png"))); // NOI18N
         getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 280, 260));
@@ -208,6 +214,7 @@ public class home extends javax.swing.JFrame {
         btnSawah1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/sawah.png"))); // NOI18N
         btnSawah1.setBorderPainted(false);
         btnSawah1.setContentAreaFilled(false);
+        btnSawah1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnSawah1.setFocusable(false);
         btnSawah1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/sawahHover.png"))); // NOI18N
         getContentPane().add(btnSawah1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 510, -1));
@@ -215,6 +222,7 @@ public class home extends javax.swing.JFrame {
         btnRuProduksi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/pabrik.png"))); // NOI18N
         btnRuProduksi.setBorderPainted(false);
         btnRuProduksi.setContentAreaFilled(false);
+        btnRuProduksi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnRuProduksi.setFocusable(false);
         btnRuProduksi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/pabrikHover.png"))); // NOI18N
         getContentPane().add(btnRuProduksi, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 150, 320, 280));

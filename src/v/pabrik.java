@@ -511,6 +511,7 @@ public class pabrik extends javax.swing.JFrame {
         btnProses1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1.png"))); // NOI18N
         btnProses1.setBorderPainted(false);
         btnProses1.setContentAreaFilled(false);
+        btnProses1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProses1.setFocusable(false);
         btnProses1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnProses1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1hover.png"))); // NOI18N
@@ -519,6 +520,7 @@ public class pabrik extends javax.swing.JFrame {
         btnProses4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblkompor.png"))); // NOI18N
         btnProses4.setBorderPainted(false);
         btnProses4.setContentAreaFilled(false);
+        btnProses4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProses4.setFocusable(false);
         btnProses4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnProses4.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -537,6 +539,7 @@ public class pabrik extends javax.swing.JFrame {
         btnProses3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses3.png"))); // NOI18N
         btnProses3.setBorderPainted(false);
         btnProses3.setContentAreaFilled(false);
+        btnProses3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProses3.setFocusable(false);
         btnProses3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnProses3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -549,6 +552,7 @@ public class pabrik extends javax.swing.JFrame {
         btnProses2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses2.png"))); // NOI18N
         btnProses2.setBorderPainted(false);
         btnProses2.setContentAreaFilled(false);
+        btnProses2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnProses2.setFocusable(false);
         btnProses2.setMaximumSize(new java.awt.Dimension(1280, 720));
         btnProses2.setMinimumSize(new java.awt.Dimension(1280, 720));
@@ -584,6 +588,7 @@ public class pabrik extends javax.swing.JFrame {
         btnTambahKaryawan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblKaryawan.png"))); // NOI18N
         btnTambahKaryawan.setBorderPainted(false);
         btnTambahKaryawan.setContentAreaFilled(false);
+        btnTambahKaryawan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTambahKaryawan.setFocusable(false);
         btnTambahKaryawan.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblKaryawanhover.png"))); // NOI18N
         getContentPane().add(btnTambahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 490, 200, 190));
@@ -591,6 +596,7 @@ public class pabrik extends javax.swing.JFrame {
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
         btnKembali.setContentAreaFilled(false);
+        btnKembali.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKembali.setFocusable(false);
         btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
         getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 70, -1));

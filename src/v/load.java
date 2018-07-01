@@ -74,6 +74,7 @@ public class load extends javax.swing.JFrame {
         btnOk.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isi nama/tblNama.png"))); // NOI18N
         btnOk.setBorderPainted(false);
         btnOk.setContentAreaFilled(false);
+        btnOk.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnOk.setFocusable(false);
         btnOk.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isi nama/tblNamahover.png"))); // NOI18N
         getContentPane().add(btnOk, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 590, 340, 100));

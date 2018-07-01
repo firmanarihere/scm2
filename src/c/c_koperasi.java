@@ -121,6 +121,7 @@ public class c_koperasi {
             vHome.toFront();
             try {
                 vHome.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
+                vHome.getLblKoin().setText(mAset.getKoin(mAset.cekIdPlayer(username)) + "");
             } catch (SQLException ex) {
                 Logger.getLogger(c_koperasi.class.getName()).log(Level.SEVERE, null, ex);
             }

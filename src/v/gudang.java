@@ -96,6 +96,7 @@ public class gudang extends javax.swing.JFrame {
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
         btnKembali.setContentAreaFilled(false);
+        btnKembali.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKembali.setFocusable(false);
         btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClosehover.png"))); // NOI18N
         getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 90, 140, 130));

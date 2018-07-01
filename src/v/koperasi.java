@@ -95,6 +95,7 @@ public class koperasi extends javax.swing.JFrame {
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isigudang/tier 1/tblClose.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
         btnKembali.setContentAreaFilled(false);
+        btnKembali.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKembali.setFocusable(false);
         btnKembali.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnKembali.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -106,6 +107,7 @@ public class koperasi extends javax.swing.JFrame {
         btnItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblGaram.png"))); // NOI18N
         btnItem1.setBorderPainted(false);
         btnItem1.setContentAreaFilled(false);
+        btnItem1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnItem1.setFocusable(false);
         btnItem1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnItem1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblGaramhover.png"))); // NOI18N
@@ -114,6 +116,7 @@ public class koperasi extends javax.swing.JFrame {
         btnItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblminyak.png"))); // NOI18N
         btnItem2.setBorderPainted(false);
         btnItem2.setContentAreaFilled(false);
+        btnItem2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnItem2.setFocusable(false);
         btnItem2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnItem2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -123,6 +126,7 @@ public class koperasi extends javax.swing.JFrame {
         btnItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblJagung.png"))); // NOI18N
         btnItem3.setBorderPainted(false);
         btnItem3.setContentAreaFilled(false);
+        btnItem3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnItem3.setFocusable(false);
         btnItem3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnItem3.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
@@ -132,6 +136,7 @@ public class koperasi extends javax.swing.JFrame {
         btnItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiKoperasi/tblBibitJagung.png"))); // NOI18N
         btnItem4.setBorderPainted(false);
         btnItem4.setContentAreaFilled(false);
+        btnItem4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnItem4.setDefaultCapable(false);
         btnItem4.setFocusable(false);
         btnItem4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);

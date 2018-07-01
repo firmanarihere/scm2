@@ -213,6 +213,7 @@ public class sawah extends javax.swing.JFrame {
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
         btnKembali.setContentAreaFilled(false);
+        btnKembali.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKembali.setFocusable(false);
         btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
         getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 70, 60));

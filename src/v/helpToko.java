@@ -64,7 +64,7 @@ public class helpToko extends javax.swing.JFrame {
         btnKembali.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKembali.setFocusable(false);
         btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/sayaPaham hover.png"))); // NOI18N
-        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 570, 200, 90));
+        getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 510, 200, 90));
 
         btnKiri.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/kiri.png"))); // NOI18N
         btnKiri.setBorderPainted(false);

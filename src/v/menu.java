@@ -122,6 +122,7 @@ public class menu extends javax.swing.JFrame {
         btnKeluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblExit.png"))); // NOI18N
         btnKeluar.setBorderPainted(false);
         btnKeluar.setContentAreaFilled(false);
+        btnKeluar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKeluar.setFocusable(false);
         btnKeluar.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblExithover.png"))); // NOI18N
         getContentPane().add(btnKeluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 510, 230, 90));
@@ -129,6 +130,7 @@ public class menu extends javax.swing.JFrame {
         btnMulai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblNewGame.png"))); // NOI18N
         btnMulai.setBorderPainted(false);
         btnMulai.setContentAreaFilled(false);
+        btnMulai.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnMulai.setFocusable(false);
         btnMulai.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblNewGamehover.png"))); // NOI18N
         getContentPane().add(btnMulai, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 140, 230, 90));
@@ -136,6 +138,7 @@ public class menu extends javax.swing.JFrame {
         btnAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblAbout.png"))); // NOI18N
         btnAbout.setBorderPainted(false);
         btnAbout.setContentAreaFilled(false);
+        btnAbout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnAbout.setFocusable(false);
         btnAbout.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblAbouthover.png"))); // NOI18N
         getContentPane().add(btnAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 390, 230, 90));
@@ -143,6 +146,7 @@ public class menu extends javax.swing.JFrame {
         btnLoad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblLanjutGame.png"))); // NOI18N
         btnLoad.setBorderPainted(false);
         btnLoad.setContentAreaFilled(false);
+        btnLoad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLoad.setFocusable(false);
         btnLoad.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mainmenu/tblLanjutGamehover.png"))); // NOI18N
         getContentPane().add(btnLoad, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 260, 230, 90));

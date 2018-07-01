@@ -128,6 +128,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnBatal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
         btnBatal.setBorderPainted(false);
         btnBatal.setContentAreaFilled(false);
+        btnBatal.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnBatal.setFocusable(false);
         btnBatal.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembaliHover.png"))); // NOI18N
         getContentPane().add(btnBatal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 70, 60));
@@ -160,6 +161,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnKurangP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
         btnKurangP3.setBorderPainted(false);
         btnKurangP3.setContentAreaFilled(false);
+        btnKurangP3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKurangP3.setFocusable(false);
         btnKurangP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
         getContentPane().add(btnKurangP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 390, 80, 80));
@@ -167,6 +169,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnTambahP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
         btnTambahP3.setBorderPainted(false);
         btnTambahP3.setContentAreaFilled(false);
+        btnTambahP3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTambahP3.setFocusable(false);
         btnTambahP3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
         getContentPane().add(btnTambahP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 390, 80, 80));
@@ -174,6 +177,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnKurangP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
         btnKurangP2.setBorderPainted(false);
         btnKurangP2.setContentAreaFilled(false);
+        btnKurangP2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKurangP2.setFocusable(false);
         btnKurangP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
         getContentPane().add(btnKurangP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 270, 80, 80));
@@ -181,6 +185,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnTambahP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
         btnTambahP2.setBorderPainted(false);
         btnTambahP2.setContentAreaFilled(false);
+        btnTambahP2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTambahP2.setFocusable(false);
         btnTambahP2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
         getContentPane().add(btnTambahP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 80, 80));
@@ -188,6 +193,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnKurangP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
         btnKurangP1.setBorderPainted(false);
         btnKurangP1.setContentAreaFilled(false);
+        btnKurangP1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKurangP1.setFocusable(false);
         btnKurangP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
         getContentPane().add(btnKurangP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 150, 80, 80));
@@ -195,6 +201,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnTambahP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
         btnTambahP1.setBorderPainted(false);
         btnTambahP1.setContentAreaFilled(false);
+        btnTambahP1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTambahP1.setFocusable(false);
         btnTambahP1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
         getContentPane().add(btnTambahP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 150, 80, 80));
@@ -202,6 +209,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnTambahP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlus.png"))); // NOI18N
         btnTambahP4.setBorderPainted(false);
         btnTambahP4.setContentAreaFilled(false);
+        btnTambahP4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTambahP4.setFocusable(false);
         btnTambahP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblPlusHover.png"))); // NOI18N
         getContentPane().add(btnTambahP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 500, 80, 80));
@@ -209,6 +217,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnKurangP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinus.png"))); // NOI18N
         btnKurangP4.setBorderPainted(false);
         btnKurangP4.setContentAreaFilled(false);
+        btnKurangP4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKurangP4.setFocusable(false);
         btnKurangP4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblMinusHover.png"))); // NOI18N
         getContentPane().add(btnKurangP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, 80, 80));
@@ -216,6 +225,7 @@ public class tambahKaryawan extends javax.swing.JFrame {
         btnTambahKaryawan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblTambah.png"))); // NOI18N
         btnTambahKaryawan.setBorderPainted(false);
         btnTambahKaryawan.setContentAreaFilled(false);
+        btnTambahKaryawan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnTambahKaryawan.setFocusable(false);
         btnTambahKaryawan.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambahKaryawan/tblTambahhover.png"))); // NOI18N
         getContentPane().add(btnTambahKaryawan, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 610, 300, 90));

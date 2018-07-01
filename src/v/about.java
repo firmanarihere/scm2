@@ -40,12 +40,12 @@ public class about extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1280, 720));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(1280, 720));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/about/tblOalah.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
         btnKembali.setContentAreaFilled(false);
+        btnKembali.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnKembali.setFocusable(false);
         btnKembali.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/about/tblOalahhover.png"))); // NOI18N
         getContentPane().add(btnKembali, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, 220, 70));
