@@ -39,9 +39,9 @@ public class c_ruProduksi {
     private int jagung;
     private int jagungCuci = 3;
     private int jagungRendam = 6;
-    private int marningA ;
-    private int marningB ;
-    private int marningC ;
+    private int marningA;
+    private int marningB;
+    private int marningC;
     private int jagungBumbuA = 2;
     private int jagungBumbuB = 4;
     private int jagungBumbuC = 1;
@@ -89,11 +89,11 @@ public class c_ruProduksi {
         vPabrik.getBtnMulaiP4().addActionListener(new mulaiP4Action());
         vPabrik.getBtnKurangP4().addActionListener(new kurangP4Action());
         vPabrik.getBtnTambahP4().addActionListener(new tambahP4Action());
-        
+
         marningA = mMarning.getMarningA(mMarning.cekIdPlayer(username));
         marningB = mMarning.getMarningB(mMarning.cekIdPlayer(username));
         marningC = mMarning.getMarningC(mMarning.cekIdPlayer(username));
-        
+
         vPabrik.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
         vPabrik.getLblJagungCuci().setText(jagungCuci + "");
         vPabrik.getLblJagungRendam().setText(jagungRendam + "");
@@ -161,6 +161,7 @@ public class c_ruProduksi {
             vPabrik.getLblBanyakP4().setText("1");
             vPabrik.getFrameP4().dispose();
             vPabrik.getBtnProses4().setEnabled(false);
+            vPabrik.getBtnProses4().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/4.gif")));
 
             vPabrik.getLblJagungCuci().setText(jagungCuci + "");
             vPabrik.getLblJagungRendam().setText(jagungRendam + "");
@@ -238,6 +239,7 @@ public class c_ruProduksi {
             vPabrik.getLblBanyakGP3().setText("1");
             vPabrik.getFrameP3().dispose();
             vPabrik.getBtnProses3().setEnabled(false);
+            vPabrik.getBtnProses3().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/2.gif")));
 
             vPabrik.getLblJagungCuci().setText(jagungCuci + "");
             vPabrik.getLblJagungRendam().setText(jagungRendam + "");
@@ -286,6 +288,7 @@ public class c_ruProduksi {
             vPabrik.getLblBanyakP2().setText("1");
             vPabrik.getFrameP2().dispose();
             vPabrik.getBtnProses2().setEnabled(false);
+            vPabrik.getBtnProses2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/3.gif")));
 
             vPabrik.getLblJagungCuci().setText(jagungCuci + "");
             vPabrik.getLblJagungRendam().setText(jagungRendam + "");
@@ -339,6 +342,7 @@ public class c_ruProduksi {
                 vPabrik.getLblBanyakP1().setText("1");
                 vPabrik.getFrameP1().dispose();
                 vPabrik.getBtnProses1().setEnabled(false);
+                vPabrik.getBtnProses1().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/1.gif")));
 
                 vPabrik.getLblJagung().setText(jagung + "");
                 vPabrik.getLblJagungCuci().setText(jagungCuci + "");
@@ -346,6 +350,8 @@ public class c_ruProduksi {
                 vPabrik.getLblJagungBumbu().setText(jagungBumbu + "");
                 vPabrik.getLblMarning().setText((marningA + marningB + marningC) + "");
                 vPabrik.getLblJumlahKaryawan().setText((jumlahKaryawanP1 + jumlahKaryawanP2 + jumlahKaryawanP3 + jumlahKaryawanP4) + "");
+
+                mAset.updateJagung(jagung, mAset.cekIdPlayer(username));
             } catch (SQLException ex) {
                 Logger.getLogger(c_ruProduksi.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -428,6 +434,8 @@ public class c_ruProduksi {
             try {
                 vHome.getLblMarning().setText((mMarning.getMarningA(mMarning.cekIdPlayer(username))
                         + mMarning.getMarningB(mMarning.cekIdPlayer(username)) + mMarning.getMarningC(mMarning.cekIdPlayer(username))) + "");
+                
+                vHome.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
             } catch (SQLException ex) {
                 Logger.getLogger(c_ruProduksi.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -452,6 +460,7 @@ public class c_ruProduksi {
                                     detikP1 = 0;
                                     p1 = false;
                                     vPabrik.getBtnProses1().setEnabled(true);
+                                    vPabrik.getBtnProses1().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1.png")));
                                 }
                             } else if (wadahP1 > 10) {
                                 if (detikP1 == 15) {
@@ -468,6 +477,7 @@ public class c_ruProduksi {
                                     detikP1 = 0;
                                     p1 = false;
                                     vPabrik.getBtnProses1().setEnabled(true);
+                                    vPabrik.getBtnProses1().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1.png")));
                                 }
                             } else if (wadahP1 > 20) {
                                 if (detikP1 == 15) {
@@ -483,6 +493,7 @@ public class c_ruProduksi {
                                 detikP1 = 0;
                                 p1 = false;
                                 vPabrik.getBtnProses1().setEnabled(true);
+                                vPabrik.getBtnProses1().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses1.png")));
                             }
                         }
                         System.out.println("");
@@ -501,6 +512,7 @@ public class c_ruProduksi {
                                     detikP2 = 0;
                                     p2 = false;
                                     vPabrik.getBtnProses2().setEnabled(true);
+                                    vPabrik.getBtnProses2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses2.png")));
                                 }
                             } else if (wadahP2 > 10) {
                                 if (detikP2 == 20) {
@@ -517,6 +529,7 @@ public class c_ruProduksi {
                                     detikP2 = 0;
                                     p2 = false;
                                     vPabrik.getBtnProses2().setEnabled(true);
+                                    vPabrik.getBtnProses2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses2.png")));
                                 }
                             } else if (wadahP2 > 20) {
                                 if (detikP2 == 20) {
@@ -532,6 +545,7 @@ public class c_ruProduksi {
                                 detikP2 = 0;
                                 p2 = false;
                                 vPabrik.getBtnProses2().setEnabled(true);
+                                vPabrik.getBtnProses2().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses2.png")));
                             }
                         }
                         System.out.println("");
@@ -565,6 +579,7 @@ public class c_ruProduksi {
                                     detikP3 = 0;
                                     p3 = false;
                                     vPabrik.getBtnProses3().setEnabled(true);
+                                    vPabrik.getBtnProses3().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses3.png")));
                                 }
                             } else if (wadahJRP3 > 10) {
                                 if (detikP3 == 10) {
@@ -610,6 +625,7 @@ public class c_ruProduksi {
                                 detikP3 = 0;
                                 p3 = false;
                                 vPabrik.getBtnProses3().setEnabled(true);
+                                vPabrik.getBtnProses3().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblproses3.png")));
                             }
                         }
                         System.out.println("");
@@ -637,6 +653,7 @@ public class c_ruProduksi {
                                     detikP4 = 0;
                                     p4 = false;
                                     vPabrik.getBtnProses4().setEnabled(true);
+                                    vPabrik.getBtnProses4().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblkompor.png")));
                                 }
                             } else if (wadahP4 > 10) {
                                 if (detikP4 == 15) {
@@ -671,6 +688,7 @@ public class c_ruProduksi {
                                     detikP4 = 0;
                                     p4 = false;
                                     vPabrik.getBtnProses4().setEnabled(true);
+                                    vPabrik.getBtnProses4().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblkompor.png")));
                                 }
                             } else if (wadahP4 > 20) {
 //                                if (detikP4 == 15) {
@@ -690,6 +708,7 @@ public class c_ruProduksi {
                                 detikP4 = 0;
                                 p4 = false;
                                 vPabrik.getBtnProses4().setEnabled(true);
+                                vPabrik.getBtnProses4().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tblkompor.png")));
                             }
                         }
                         System.out.println("");
@@ -735,7 +754,8 @@ public class c_ruProduksi {
         jumlahKaryawanP3 += k3;
         jumlahKaryawanP4 += k4;
     }
-    public void marning (int m1, int m2, int m3){
+
+    public void marning(int m1, int m2, int m3) {
         marningA = m1;
         marningB = m2;
         marningC = m3;
