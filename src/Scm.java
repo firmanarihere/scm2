@@ -6,6 +6,7 @@
 
 import c.c_home;
 import c.c_menu;
+import c.c_menuHelp;
 import java.sql.SQLException;
 
 /**
@@ -18,8 +19,9 @@ public class Scm {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws SQLException {
-        new c_menu();
+//        new c_menu();
 //        new c_home("test1");
+        new c_menuHelp();
     }
 
 }

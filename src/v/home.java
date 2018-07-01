@@ -22,6 +22,14 @@ public class home extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
     }
 
+    public JButton getBtnAbout() {
+        return btnAbout;
+    }
+
+    public JButton getBtnHelp() {
+        return btnHelp;
+    }
+
     public JLabel getLblMarning() {
         return lblMarning;
     }
@@ -74,6 +82,8 @@ public class home extends javax.swing.JFrame {
         lblJagung = new javax.swing.JLabel();
         lblKoin = new javax.swing.JLabel();
         lblMarning = new javax.swing.JLabel();
+        btnAbout = new javax.swing.JButton();
+        btnHelp = new javax.swing.JButton();
         btnLogOut = new javax.swing.JButton();
         labelUsername = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -117,11 +127,26 @@ public class home extends javax.swing.JFrame {
         lblMarning.setText("Produk");
         getContentPane().add(lblMarning, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 40, 110, 30));
 
+        btnAbout.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/about.png"))); // NOI18N
+        btnAbout.setBorderPainted(false);
+        btnAbout.setContentAreaFilled(false);
+        btnAbout.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnAbout.setFocusPainted(false);
+        getContentPane().add(btnAbout, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 620, 60, 70));
+
+        btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/help.png"))); // NOI18N
+        btnHelp.setBorderPainted(false);
+        btnHelp.setContentAreaFilled(false);
+        btnHelp.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnHelp.setFocusable(false);
+        getContentPane().add(btnHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 620, 60, 70));
+
         btnLogOut.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/logout.png"))); // NOI18N
         btnLogOut.setBorderPainted(false);
         btnLogOut.setContentAreaFilled(false);
         btnLogOut.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 620, 60, 60));
+        btnLogOut.setFocusable(false);
+        getContentPane().add(btnLogOut, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 620, 60, 70));
 
         labelUsername.setFont(new java.awt.Font("Bebas Neue", 0, 30)); // NOI18N
         labelUsername.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -164,7 +189,7 @@ public class home extends javax.swing.JFrame {
         btnToko.setContentAreaFilled(false);
         btnToko.setFocusable(false);
         btnToko.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/tokoHover.png"))); // NOI18N
-        getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 480, 440, 240));
+        getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 60, 300, 240));
 
         btnGudang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/gudang.png"))); // NOI18N
         btnGudang.setBorderPainted(false);
@@ -178,7 +203,7 @@ public class home extends javax.swing.JFrame {
         btnKoperasi.setContentAreaFilled(false);
         btnKoperasi.setFocusable(false);
         btnKoperasi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/koperasiHover.png"))); // NOI18N
-        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 0, 280, 270));
+        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 280, 260));
 
         btnSawah1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/map/tier1/sawah.png"))); // NOI18N
         btnSawah1.setBorderPainted(false);
@@ -248,7 +273,9 @@ public class home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAbout;
     private javax.swing.JButton btnGudang;
+    private javax.swing.JButton btnHelp;
     private javax.swing.JButton btnKoperasi;
     private javax.swing.JButton btnLogOut;
     private javax.swing.JButton btnRuProduksi;

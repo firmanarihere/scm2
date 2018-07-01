@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import m.m_aset;
 import m.m_marning;
+import v.about;
 import v.home;
 import v.tokoPenjualanProduk;
 
@@ -22,12 +23,14 @@ import v.tokoPenjualanProduk;
  */
 public class c_home {
 
+    private about vAbout;
     private home vHome;
     private m_aset mAset;
     private m_marning mMarning;
     private String username;
 
     public c_home(String username) throws SQLException {
+        vAbout = new about();
         vHome = new home();
         mAset = new m_aset();
         mMarning = new m_marning();
@@ -38,6 +41,9 @@ public class c_home {
         vHome.getBtnToko().addActionListener(new tokoAction());
         vHome.getBtnRuProduksi().addActionListener(new ruProduksiAction());
         vHome.getBtnLogOut().addActionListener(new logOutAction());
+        vHome.getBtnHelp().addActionListener(new helpAction());
+        vHome.getBtnAbout().addActionListener(new aboutAction());
+        vAbout.getBtnKembali().addActionListener(new kembaliAction());
 
         vHome.getLblKoin().setText(mAset.getKoin(mAset.cekIdPlayer(username)) + "");
         vHome.getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
@@ -45,6 +51,35 @@ public class c_home {
                 + mMarning.getMarningC(mMarning.cekIdPlayer(username))) + "");
         vHome.getLabelUsername().setText(username);
         vHome.setVisible(true);
+    }
+
+    private class helpAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            new c_menuHelp();
+        }
+
+    }
+
+    private class kembaliAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            vAbout.setVisible(false);
+            vHome.setVisible(true);
+        }
+
+    }
+
+    private class aboutAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            vAbout.setVisible(true);
+            vHome.setVisible(false);
+        }
+
     }
 
     private class logOutAction implements ActionListener {
@@ -70,8 +105,12 @@ public class c_home {
         public void actionPerformed(ActionEvent e) {
             try {
                 //settext labelnya di baris ini
-                ruProduksi.getView().getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username))+"");
+                ruProduksi.getView().getLblJagung().setText(mAset.getJagung(mAset.cekIdPlayer(username)) + "");
+                ruProduksi.getView().getLblMarning().setText((mMarning.getMarningA(mMarning.cekIdPlayer(username))
+                        + mMarning.getMarningB(mMarning.cekIdPlayer(username)) + mMarning.getMarningC(mMarning.cekIdPlayer(username))) + "");
                 ruProduksi.getView().setVisible(true);
+                ruProduksi.marning(mMarning.getMarningA(mMarning.cekIdPlayer(username)), mMarning.getMarningB(mMarning.cekIdPlayer(username)), 
+                        mMarning.getMarningC(mMarning.cekIdPlayer(username)));
                 vHome.setVisible(false);
             } catch (SQLException ex) {
                 Logger.getLogger(c_home.class.getName()).log(Level.SEVERE, null, ex);
@@ -93,7 +132,10 @@ public class c_home {
         public void actionPerformed(ActionEvent e) {
             try {
                 toko.getView().getLblKoin().setText(mAset.getKoin(mAset.cekIdPlayer(username)) + "");
-//                toko.getView().getLblMarning().setText(totalMarning + ""); (intinya nampilin marning)
+                toko.getView().getLblMarning().setText((mMarning.getMarningA(mMarning.cekIdPlayer(username))
+                        + mMarning.getMarningB(mMarning.cekIdPlayer(username)) + mMarning.getMarningC(mMarning.cekIdPlayer(username))) + "");
+                toko.marning(mMarning.getMarningA(mMarning.cekIdPlayer(username)), mMarning.getMarningB(mMarning.cekIdPlayer(username)), 
+                        mMarning.getMarningC(mMarning.cekIdPlayer(username)));
             } catch (SQLException ex) {
                 Logger.getLogger(c_home.class.getName()).log(Level.SEVERE, null, ex);
             }

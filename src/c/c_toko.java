@@ -68,18 +68,23 @@ public class c_toko {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (jual == false) {
-                if (marningA == 0 && marningB == 0 && marningC == 0) {
-                    JOptionPane.showMessageDialog(vToko, "Stok di Toko Habis");
+            try {
+                if (jual == false) {
+                    if (mMarning.getMarningA(mMarning.cekIdPlayer(username)) == 0 && mMarning.getMarningB(mMarning.cekIdPlayer(username)) == 0 && 
+                            mMarning.getMarningC(mMarning.cekIdPlayer(username)) == 0) {
+                        JOptionPane.showMessageDialog(vToko, "Stok Marning Habis");
+                    } else {
+                        jual = true;
+                        vToko.getBtnMulaiJual().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblBukaToko.png")));
+                        vToko.getBtnMulaiJual().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblBukaTokoHover.png")));
+                    }
                 } else {
-                    jual = true;
-                    vToko.getBtnMulaiJual().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblBukaToko.png")));
-                    vToko.getBtnMulaiJual().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblBukaTokoHover.png")));
+                    jual = false;
+                    vToko.getBtnMulaiJual().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupToko.png")));
+                    vToko.getBtnMulaiJual().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupTokoHover.png")));
                 }
-            } else {
-                jual = false;
-                vToko.getBtnMulaiJual().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupToko.png")));
-                vToko.getBtnMulaiJual().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupTokoHover.png")));
+            } catch (SQLException ex) {
+                Logger.getLogger(c_toko.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }
@@ -101,30 +106,32 @@ public class c_toko {
                 try {
                     Thread.sleep(3000);
                     if (jual) {
-                        if (marningA > 0) {
+                        if (mMarning.getMarningA(mMarning.cekIdPlayer(username)) > 0) {
                             if (random.nextInt(3) == 1) {
-                                marningA -= 1;
+                                marningA = mMarning.getMarningA(mMarning.cekIdPlayer(username))- 1;
                                 koin += 70;
                                 mMarning.updateMarningA(marningA, mMarning.cekIdPlayer(username));
                             }
                         }
-                        if (marningB > 0) {
+                        if (mMarning.getMarningB(mMarning.cekIdPlayer(username)) > 0) {
                             if (random.nextInt(5) == 1) {
-                                marningB -= 1;
+                                marningB =mMarning.getMarningB(mMarning.cekIdPlayer(username))- 1;
                                 koin += 70;
                                 mMarning.updateMarningB(marningB, mMarning.cekIdPlayer(username));
                             }
                         }
-                        if (marningC > 0) {
+                        if (mMarning.getMarningC(mMarning.cekIdPlayer(username)) > 0) {
                             if (random.nextInt(10) == 1) {
-                                marningC -= 1;
+                                marningC =mMarning.getMarningC(mMarning.cekIdPlayer(username))- 1;
                                 koin += 70;
                                 mMarning.updateMarningC(marningC, mMarning.cekIdPlayer(username));
                             }
                         }
-                        if (marningA == 0 && marningB == 0 && marningC == 0) {
+                        if (mMarning.getMarningA(mMarning.cekIdPlayer(username)) == 0 && mMarning.getMarningB(mMarning.cekIdPlayer(username)) == 0 && 
+                            mMarning.getMarningC(mMarning.cekIdPlayer(username)) == 0) {
                             jual = false;
-                            vToko.getBtnMulaiJual().setText("Mulai Jual");
+                            vToko.getBtnMulaiJual().setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupToko.png")));
+                            vToko.getBtnMulaiJual().setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isitoko/tblTutupTokoHover.png")));
                         }
                         mAset.updateKoin(koin, mAset.cekIdPlayer(username));
                         vHome.getLblMarning().setText((mMarning.getMarningA(mMarning.cekIdPlayer(username)) + mMarning.getMarningB(mMarning.cekIdPlayer(username))
@@ -146,6 +153,11 @@ public class c_toko {
         }
     }
 
+    public void marning (int m1, int m2, int m3){
+        marningA = m1;
+        marningB = m2;
+        marningC = m3;
+    }
     public tokoPenjualanProduk getView() {
         return vToko;
     }

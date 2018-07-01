@@ -455,6 +455,7 @@ public class pabrik extends javax.swing.JFrame {
         frameP4.getContentPane().add(btnMulaiP4, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 390, 290, 100));
 
         btnKurangP4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangP4.setBorderPainted(false);
         btnKurangP4.setContentAreaFilled(false);
         btnKurangP4.setDefaultCapable(false);
         btnKurangP4.setFocusable(false);
@@ -467,6 +468,7 @@ public class pabrik extends javax.swing.JFrame {
         frameP4.getContentPane().add(lblBanyakP5Max, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 170, 40, 40));
 
         btnKurangMinyak.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pabrik/tambah bahan/tblMinus.png"))); // NOI18N
+        btnKurangMinyak.setBorderPainted(false);
         btnKurangMinyak.setContentAreaFilled(false);
         btnKurangMinyak.setDefaultCapable(false);
         btnKurangMinyak.setFocusable(false);

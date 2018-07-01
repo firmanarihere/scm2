@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
 import m.m_aset;
 import m.m_marning;
 import m.m_player;
+import v.about;
 import v.load;
 import v.menu;
 
@@ -23,6 +24,7 @@ import v.menu;
  */
 public class c_menu {
 
+    private about vAbout;
     private menu vMenu;
     private load vLoad;
     private m_player mPlayer;
@@ -30,6 +32,7 @@ public class c_menu {
     private m_marning mMarning;
 
     public c_menu() throws SQLException {
+        vAbout = new about();
         vMenu = new menu();
         vLoad = new load();
         mPlayer = new m_player();
@@ -42,7 +45,29 @@ public class c_menu {
         vLoad.getBtnOk().addActionListener(new okActionLoad());
         vLoad.getBtnBatal().addActionListener(new batalActionLoad());
         vMenu.getBtnKeluar().addActionListener(new keluarAction());
+        vMenu.getBtnAbout().addActionListener(new aboutAction());
+        vAbout.getBtnKembali().addActionListener(new kembaliAction());
         vMenu.setVisible(true);
+    }
+
+    private class aboutAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            vAbout.setVisible(true);
+            vMenu.setVisible(false);
+        }
+
+    }
+
+    private class kembaliAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            vAbout.setVisible(false);
+            vMenu.setVisible(true);
+        }
+        
     }
 
     private class batalActionLoad implements ActionListener {
