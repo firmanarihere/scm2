@@ -8,9 +8,11 @@ package c;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import v.helpGudang;
+import v.helpKoperasi;
 import v.helpMap;
 import v.helpPabrik;
 import v.helpSawah;
+import v.helpToko;
 import v.menuHelp;
 
 /**
@@ -24,15 +26,21 @@ public class c_menuHelp {
     private helpGudang vHelpGudang;
     private helpSawah vHelpSawah;
     private helpPabrik vHelpPabrik;
+    private helpKoperasi vHelpKoperasi;
+    private helpToko vHelpToko;
     private String[] indexMap = new String[6];
     private String[] indexGudang = new String[2];
     private String[] indexSawah = new String[6];
     private String[] indexPabrik = new String[5];
+    private String[] indexKoperasi = new String[3];
+    private String[] indexToko = new String[3];
     private String posisi;
     private int iMap;
     private int iGudang;
     private int iSawah;
     private int iPabrik;
+    private int iKoperasi;
+    private int iToko;
 
     public c_menuHelp() {
         vMenuHelp = new menuHelp();
@@ -40,6 +48,8 @@ public class c_menuHelp {
         vHelpMap = new helpMap();
         vHelpPabrik = new helpPabrik();
         vHelpSawah = new helpSawah();
+        vHelpKoperasi = new helpKoperasi();
+        vHelpToko = new helpToko();
 
         indexMap[0] = "/gambar/petunjuk/map/overplaysawah.png";
         indexMap[1] = "/gambar/petunjuk/map/overplayKoperasi.png";
@@ -63,6 +73,14 @@ public class c_menuHelp {
         indexPabrik[2] = "/gambar/petunjuk/pabrik/overview3.png";
         indexPabrik[3] = "/gambar/petunjuk/pabrik/overview4.png";
         indexPabrik[4] = "/gambar/petunjuk/pabrik/overviewbar.png";
+        
+        indexKoperasi[0] = "/gambar/petunjuk/koperasi/1.png";
+        indexKoperasi[1] = "/gambar/petunjuk/koperasi/2.png";
+        indexKoperasi[2] = "/gambar/petunjuk/koperasi/3.png";
+        
+        indexToko[0] = "/gambar/petunjuk/toko/1.png";
+        indexToko[1] = "/gambar/petunjuk/toko/2.png";
+        indexToko[2] = "/gambar/petunjuk/toko/3.png";
 
         //tombol di menuHelp
         vMenuHelp.getBtnKembali().addActionListener(new disposeAction());
@@ -70,10 +88,15 @@ public class c_menuHelp {
         vMenuHelp.getBtnGudang().addActionListener(new gudangAction());
         vMenuHelp.getBtnSawah().addActionListener(new sawahAction());
         vMenuHelp.getBtnPabrik().addActionListener(new pabrikAction());
+        vMenuHelp.getBtnKoperasi().addActionListener(new koperasiAction());
+        vMenuHelp.getBtnToko().addActionListener(new tokoAction());
+        
         vHelpMap.getBtnKembali().addActionListener(new kembaliAction());
         vHelpGudang.getBtnKembali().addActionListener(new kembaliAction());
         vHelpSawah.getBtnKembali().addActionListener(new kembaliAction());
         vHelpPabrik.getBtnKembali().addActionListener(new kembaliAction());
+        vHelpKoperasi.getBtnKembali().addActionListener(new kembaliAction());
+        vHelpToko.getBtnKembali().addActionListener(new kembaliAction());
 
         //tombol di helpMap
         vHelpMap.getBtnKiri().addActionListener(new kiriAction());
@@ -90,6 +113,14 @@ public class c_menuHelp {
         //tombo di helpPabrik
         vHelpPabrik.getBtnKiri().addActionListener(new kiriAction());
         vHelpPabrik.getBtnKanan().addActionListener(new kananAction());
+        
+        //tombo di helpKoperasi
+        vHelpKoperasi.getBtnKiri().addActionListener(new kiriAction());
+        vHelpKoperasi.getBtnKanan().addActionListener(new kananAction());
+        
+        //tombo di helpToko
+        vHelpToko.getBtnKiri().addActionListener(new kiriAction());
+        vHelpToko.getBtnKanan().addActionListener(new kananAction());
 
         vHelpMap.getLblIniSawah().setVisible(false);
         vHelpMap.getLblIniKoperasi().setVisible(false);
@@ -176,6 +207,20 @@ public class c_menuHelp {
                     iPabrik += 1;
                 }
                 vHelpPabrik.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexPabrik[iPabrik])));
+            }else if (posisi == "koperasi") {
+                if (iKoperasi == indexKoperasi.length - 1) {
+                    iKoperasi = 0;
+                } else {
+                    iKoperasi += 1;
+                }
+                vHelpKoperasi.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexKoperasi[iKoperasi])));
+            }else if (posisi == "toko") {
+                if (iToko == indexToko.length - 1) {
+                    iToko = 0;
+                } else {
+                    iToko += 1;
+                }
+                vHelpToko.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexToko[iToko])));
             }
         }
 
@@ -213,6 +258,20 @@ public class c_menuHelp {
                     iPabrik -= 1;
                 }
                 vHelpPabrik.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexPabrik[iPabrik])));
+            }else if (posisi =="koperasi") {
+                if (iKoperasi == 0) {
+                    iKoperasi = indexKoperasi.length - 1;
+                } else {
+                    iKoperasi -= 1;
+                }
+                vHelpKoperasi.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexKoperasi[iKoperasi])));
+            }else if (posisi == "toko") {
+                if (iToko == 0) {
+                    iToko = indexToko.length - 1;
+                } else {
+                    iToko -= 1;
+                }
+                vHelpToko.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexToko[iToko])));
             }
         }
 
@@ -226,6 +285,8 @@ public class c_menuHelp {
             vHelpMap.dispose();
             vHelpPabrik.dispose();
             vHelpSawah.dispose();
+            vHelpKoperasi.dispose();
+            vHelpToko.dispose();
             vHelpMap.getLblIniSawah().setVisible(false);
             vHelpMap.getLblIniKoperasi().setVisible(false);
             vHelpMap.getLblIniGudang().setVisible(false);
@@ -236,6 +297,30 @@ public class c_menuHelp {
         }
     }
 
+    private class tokoAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            iToko = 0;
+            posisi = "toko";
+            vHelpToko.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexToko[iToko])));
+            vHelpToko.setVisible(true);
+            vMenuHelp.setVisible(false);
+        }
+
+    }
+    private class koperasiAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            iKoperasi = 0;
+            posisi = "koperasi";
+            vHelpKoperasi.getLblGambar().setIcon(new javax.swing.ImageIcon(getClass().getResource(indexKoperasi[iKoperasi])));
+            vHelpKoperasi.setVisible(true);
+            vMenuHelp.setVisible(false);
+        }
+
+    }
     private class pabrikAction implements ActionListener {
 
         @Override

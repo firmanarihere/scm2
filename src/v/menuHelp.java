@@ -41,6 +41,14 @@ public class menuHelp extends javax.swing.JFrame {
         return btnSawah;
     }
 
+    public JButton getBtnKoperasi() {
+        return btnKoperasi;
+    }
+
+    public JButton getBtnToko() {
+        return btnToko;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -55,8 +63,8 @@ public class menuHelp extends javax.swing.JFrame {
         btnMap = new javax.swing.JButton();
         btnGudang = new javax.swing.JButton();
         btnSawah = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnKoperasi = new javax.swing.JButton();
+        btnToko = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
@@ -101,21 +109,21 @@ public class menuHelp extends javax.swing.JFrame {
         btnSawah.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tblsawahhover.png"))); // NOI18N
         getContentPane().add(btnSawah, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, 570, 70));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tblkoperasi.png"))); // NOI18N
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setFocusable(false);
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tblkoperasihover.png"))); // NOI18N
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 570, 70));
+        btnKoperasi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tblkoperasi.png"))); // NOI18N
+        btnKoperasi.setBorderPainted(false);
+        btnKoperasi.setContentAreaFilled(false);
+        btnKoperasi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnKoperasi.setFocusable(false);
+        btnKoperasi.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tblkoperasihover.png"))); // NOI18N
+        getContentPane().add(btnKoperasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 310, 570, 70));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tbltoko.png"))); // NOI18N
-        jButton2.setBorderPainted(false);
-        jButton2.setContentAreaFilled(false);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setFocusable(false);
-        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tbltokohover.png"))); // NOI18N
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 550, 570, 70));
+        btnToko.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tbltoko.png"))); // NOI18N
+        btnToko.setBorderPainted(false);
+        btnToko.setContentAreaFilled(false);
+        btnToko.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnToko.setFocusable(false);
+        btnToko.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/petunjuk/helpMenu/tbltokohover.png"))); // NOI18N
+        getContentPane().add(btnToko, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 550, 570, 70));
 
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
@@ -169,11 +177,11 @@ public class menuHelp extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGudang;
     private javax.swing.JButton btnKembali;
+    private javax.swing.JButton btnKoperasi;
     private javax.swing.JButton btnMap;
     private javax.swing.JButton btnPabrik;
     private javax.swing.JButton btnSawah;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnToko;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables

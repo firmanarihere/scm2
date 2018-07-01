@@ -59,7 +59,6 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
 
         lblMarning = new javax.swing.JLabel();
         lblKoin = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         btnMulaiJual = new javax.swing.JButton();
         btnKembali = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
@@ -125,19 +124,12 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
         lblKoin.setText("Koin");
         getContentPane().add(lblKoin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1190, 20, 70, 50));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblIklan.png"))); // NOI18N
-        jButton1.setBorderPainted(false);
-        jButton1.setContentAreaFilled(false);
-        jButton1.setFocusable(false);
-        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblIklanhover.png"))); // NOI18N
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, 90, 80));
-
         btnMulaiJual.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblTutupToko.png"))); // NOI18N
         btnMulaiJual.setBorderPainted(false);
         btnMulaiJual.setContentAreaFilled(false);
         btnMulaiJual.setFocusable(false);
         btnMulaiJual.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/isiToko/tblTutupTokoHover.png"))); // NOI18N
-        getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 90, 80));
+        getContentPane().add(btnMulaiJual, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 90, 80));
 
         btnKembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tblKembali.png"))); // NOI18N
         btnKembali.setBorderPainted(false);
@@ -327,7 +319,6 @@ public class tokoPenjualanProduk extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnKembali;
     private javax.swing.JButton btnMulaiJual;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
